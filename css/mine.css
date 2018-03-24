@@ -1,0 +1,940 @@
+
+.topbar-sticky-shrink {
+  padding: 1rem 2em 0em 2em;
+  transition: padding 0.25s ease;
+  background: #222222;
+}
+
+.topbar-sticky-shrink .menu {
+  background: #222222;
+}
+
+.is-stuck .topbar-sticky-shrink {
+  padding: 1rem 0.75em 0em 1em;
+  transition: padding 0.25s ease;
+}
+
+[data-sticky] {
+  width: 100%;
+}
+
+.topbar-sticky-shrink-header {
+  height: 0px;
+}
+
+
+/* nav */
+
+.foundation-5-top-bar {
+  background: #fff;
+  color: #222;
+  padding: 0px;
+  margin: 0px;
+  
+-webkit-box-shadow: 0px 3px 26px -12px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 26px -12px rgba(0,0,0,0.75);
+box-shadow: 0px 3px 26px -12px rgba(0,0,0,0.75);
+
+}
+
+
+.foundation-5-top-bar .menu {
+  background: #fff;
+}
+
+
+
+.foundation-5-top-bar .menu a {
+  color: #222;
+  padding: 20px 18px;
+  border-left: 1px solid #eee;
+}
+
+.foundation-5-top-bar .menu a:hover {
+  color: #222;
+  background-color: #f7f7f7;
+  -webkit-box-shadow: inset 0px -4px 19px -10px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px -4px 19px -10px rgba(0,0,0,0.75);
+box-shadow: inset 0px -4px 19px -10px rgba(0,0,0,0.75);
+
+  
+  
+}
+
+.foundation-5-top-bar .is-dropdown-submenu {
+  border: 0px solid #111111;
+  
+}
+
+
+
+
+/* end nav */
+
+/* top bar stuff */
+
+
+.nav ul {
+  list-style: none;
+  background-color: #ededed;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+.nav li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.8em;
+  height: 36px;
+}
+ 
+.nav a {
+  text-decoration: none;
+  color: #444;
+  display: block;
+  padding: 8px 14px;
+  transition: .3s background-color;
+}
+ 
+.nav a:hover {
+  background-color: #ddd;
+}
+ 
+.nav a.active {
+  background-color: #efefef;
+  color: #444;
+  cursor: default;
+}
+ 
+@media screen and (min-width: 600px) {
+  .nav li {
+    border-bottom: none;
+    height: 36px;
+    font-size: 0.8em;
+  }
+ 
+  /* Option 1 - Display Inline */
+  .nav li {
+    display: inline-block;
+    margin-right: -4px;
+  }
+ 
+  /* Options 2 - Float
+  .nav li {
+    float: left;
+  }
+  .nav ul {
+    overflow: auto;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .nav {
+    background-color: #444;
+  }
+  */
+}
+
+/* end top bar stuff */
+
+/* video wrapper */
+video {
+  width: 100%    !important;
+  height: auto   !important;
+}
+
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/*end video wrapper */
+
+
+/* Large Video Images for Sports */
+
+.basketball0 {
+  background: url("../img/basketball-lg-box.jpg") no-repeat center center;
+  background-size: cover;
+  height: 28.125rem;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right: 0.0625rem solid #fefefe;
+}
+
+.baseball0 {
+  background: url("../img/video-baseball1.jpg") no-repeat center center;
+  background-size: cover;
+  height: 28.125rem;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right: 0.0625rem solid #fefefe;
+}
+
+.boxing0 {
+  background: url("../img/boxing0.jpg") no-repeat center center;
+  background-size: cover;
+  height: 28.125rem;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right: 0.0625rem solid #fefefe;
+}
+
+.softball0 {
+  background: url("../img/softball0.jpg") no-repeat center center;
+  background-size: cover;
+  height: 28.125rem;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right: 0.0625rem solid #fefefe;
+}
+
+.football0 {
+  background: url("../img/football0.jpg") no-repeat center center;
+  background-size: cover;
+  height: 28.125rem;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right: 0.0625rem solid #fefefe;
+}
+
+.golf0 {
+  background: url("../img/golf0.jpg") no-repeat center center;
+  background-size: cover;
+  height: 28.125rem;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right: 0.0625rem solid #fefefe;
+}
+
+.lifestyle0 {
+  background: url("../img/lifestyle0.jpg") no-repeat center center;
+  background-size: cover;
+  height: 28.125rem;
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right: 0.0625rem solid #fefefe;
+}
+
+
+
+.featured-article-big .featured-article-text .featured-article-title {
+  font-size: 1.75rem;
+  font-weight: bold;
+  line-height: 1.875rem;
+  padding-right:1em;
+}
+
+.featured-article-big .featured-article-text .featured-article-title .author {
+  font-size: 1.125rem;
+}
+
+.featured-article-big .featured-article-text p {
+  color: #fefefe;
+  margin-bottom: 0;
+}
+
+.featured-article-small-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 28.125rem;
+}
+
+.featured-article-small-container :last-child .featured-article-small {
+  border-bottom: 0;
+}
+
+.featured-article-small {
+  
+  
+  padding: 0.625rem;
+  border-bottom: 0.0625rem solid #fefefe;
+}
+
+.basketball1 {
+	background: url("../img/basketball1.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+
+
+.basketball2 {
+	background: url("../img/basketball2.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+
+.basketball3 {
+	background: url("../img/basketball3.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+.basketball4 {
+	background: url("../img/basketball4.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+.basketball5 {
+	background: url("../img/basketball5.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+.basketball6 {
+	background: url("../img/basketball6.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+
+
+.baseball1 {
+	background: url("../img/baseball1.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+
+
+.baseball2 {
+	background: url("../img/baseball2.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+
+
+.baseball3 {
+	background: url("../img/baseball3.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+
+.boxing1 {
+	background: url("../img/boxing1.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+.boxing2 {
+	background: url("../img/boxing2.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+.boxing3 {
+	background: url("../img/boxing3.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+.boxing4 {
+	background: url("../img/boxing4.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+
+.golf1 {
+	background: url("../img/golf1.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+.football1 {
+	background: url("../img/football1.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+.football2 {
+	background: url("../img/football2.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+.football3 {
+	background: url("../img/football3.jpg") no-repeat center center;
+	background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 9.375rem;
+    -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+
+}
+
+
+.featured-article-small :last-child {
+  border-bottom: 0;
+}
+
+.featured-article-small .featured-article-text .featured-article-title {
+  font-size: 1rem;
+  font-weight: bold;
+  line-height: 0.9375rem;
+  max-height: 2.8125rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.featured-article-small .featured-article-text p {
+  color: #fefefe;
+  margin-bottom: 0;
+}
+
+.featured-article-links-container {
+  background-color: #fefefe;
+  height: 28.125rem;
+  overflow: scroll;
+}
+
+.featured-article-links,
+.featured-article-links-header {
+  padding: 0.375rem 0.225rem 0rem 0.325rem ;
+}
+
+.featured-article-links:last-child,
+.featured-article-links-header:last-child {
+  border-bottom: 0;
+}
+
+.featured-article-links-header {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.littleroom {
+	padding:2em;
+}
+
+.littlemoreroom {
+	padding:2em;
+}
+
+
+
+
+.card-product-hover-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+.card-product-hover {
+  position: relative;
+  line-height: 1.2rem;
+  transition: all 0.35s ease;
+}
+
+.card-product-hover-details {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 1rem;
+}
+
+.card-product-hover-details > :last-child {
+  margin-bottom: 0;
+}
+
+.card-product-hover-price {
+  margin: 0.5rem 0;
+  font-weight: 700;
+  color: #1779ba;
+  font-size: #1779ba;
+}
+
+.card-product-hover-icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card-product-hover-icons a i {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  width: 2.5rem;
+  background-color: #fefefe;
+  text-align: center;
+  color: #0a0a0a;
+}
+
+.card-product-hover-icons a i:hover {
+  background-color: #8a8a8a;
+  color: #fefefe;
+  cursor: pointer;
+}
+
+.card-product-hover-icons a {
+  margin: 2px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  transition: all 0.35s ease;
+}
+
+.card-product-hover:hover a,
+.card-product-hover.hover a {
+  transition: all 0.35s ease;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.card-product-hover:hover a:nth-child(2),
+.card-product-hover.hover a:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.card-product-hover:hover a:nth-child(3),
+.card-product-hover.hover a:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+
+.image-hover-wrapper {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  transition-duration:.5s;-moz-transition-duration:.5s;-webkit-transition-duration:.5s;-o-transition-duration:.5s
+}
+.image-hover-wrapper:hover {
+	transition-duration:.5s;-moz-transition-duration:.5s;-webkit-transition-duration:.5s;-o-transition-duration:.5s;transform:scale(.95)
+} 
+
+.image-hover-wrapper a {
+  text-align: center;
+}
+
+.image-hover-wrapper a img {
+}
+
+.image-hover-wrapper a img:hover {
+  
+opacity:1;transition-duration:.5s;-moz-transition-duration:.5s;-webkit-transition-duration:.5s;-o-transition-duration:.5s;
+ 
+}
+
+
+
+.image-hover-wrapper a .image-hover-wrapper-reveal {
+  color: #fff;
+  display: inline;
+  height: 100%;
+  margin-left: -100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 80;
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-delay: 0s;
+}
+
+.image-hover-wrapper a .image-hover-wrapper-reveal:hover {
+  opacity: 1;
+  padding-top: -20px;
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+}
+
+.image-hover-wrapper a .image-hover-wrapper-reveal:hover p {
+  opacity: 1;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition-delay: 0s;
+}
+
+.image-hover-wrapper a .image-hover-wrapper-reveal p {
+  bottom: 0;
+  display: block;
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  transition: all 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.image-hover-wrapper a .fa {
+  font-size: 24px;
+}
+
+.image-hover-wrapper .image-hover-wrapper-banner {
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  top: 55%;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  z-index: 10;
+  transition-duration:.5s;-moz-transition-duration:.5s;-webkit-transition-duration:.5s;-o-transition-duration:.5s
+}
+
+.image-hover-wrapper:hover .image-hover-wrapper-banner {
+
+  transition-duration:.25s;-moz-transition-duration:.25s;-webkit-transition-duration:.25s;-o-transition-duration:.25s;
+font-size: 1em;
+}
+.image-hover-wrapper img:hover {
+z-index: 999!important;
+
+  -webkit-box-shadow: inset 0px 0px 98px 19px rgba(0,0,0,0.85);
+-moz-box-shadow: inset 0px 0px 98px 19px rgba(0,0,0,0.85);
+box-shadow: inset 0px 0px 98px 19px rgba(0,0,0,0.85);
+}
+
+
+
+
+
+/* share cards */
+.card-product-hover-title {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 0.2rem;
+}
+
+.card-product-hover {
+  position: relative;
+  line-height: 1.2rem;
+  transition: all 0.35s ease;
+}
+
+.card-product-hover-details {
+  -webkit-flex: 1 0 auto;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 1rem;
+}
+
+.card-product-hover-details > :last-child {
+  margin-bottom: 0;
+}
+
+.card-product-hover-price {
+  margin: 0.5rem 0;
+  font-weight: 700;
+  color: #1779ba;
+  font-size: #1779ba;
+}
+
+.card-product-hover-icons {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.5rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card-product-hover-icons a i {
+  display: block;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  width: 2.5rem;
+  background-color: #fefefe;
+  text-align: center;
+  color: #0a0a0a;
+}
+
+.card-product-hover-icons a i:hover {
+  background-color: #8a8a8a;
+  color: #fefefe;
+  cursor: pointer;
+}
+
+.card-product-hover-icons a {
+  margin: 2px;
+  opacity: 0;
+  -webkit-transform: translateY(50%);
+      -ms-transform: translateY(50%);
+          transform: translateY(50%);
+  transition: all 0.35s ease;
+}
+
+.card-product-hover:hover a,
+.card-product-hover.hover a {
+  transition: all 0.35s ease;
+  opacity: 1;
+  -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.card-product-hover:hover a:nth-child(2),
+.card-product-hover.hover a:nth-child(2) {
+  transition-delay: 0.1s;
+}
+
+.card-product-hover:hover a:nth-child(3),
+.card-product-hover.hover a:nth-child(3) {
+  transition-delay: 0.2s;
+}
+
+

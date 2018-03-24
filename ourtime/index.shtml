@@ -1,0 +1,199 @@
+<!--#include virtual="../head.shtml" -->
+<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
+<!-- Meta Tags -->
+<meta name="description" content="Professional Sports Training Products" />
+<meta name="author" content="POWERHANDZ" />
+<title>POWERHANDZ / Our Time</title>
+</head>
+<body class="boxed">
+   <div class="animsition">
+      <!--#include virtual="../top-bar.shtml" -->
+
+
+
+<style>
+
+.marketing-site-hero {
+  background: url("../img/ourtime-hero.jpg") top right no-repeat;
+  height: 60vh;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  max-width: 75rem;
+  margin-left:0px!important;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.marketing-site-hero-content h1 {
+  font-size: 32px;
+  color: #ffffff!important;
+}
+
+.marketing-site-hero-content .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+
+
+</style>
+
+   <div class="heroWrapper relPosition">
+<div class="marketing-site-hero">
+  <div class="marketing-site-hero-content">
+    <h1>IT'S OURTIME</h1>
+    <div class="divider"></div>
+    <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">EMPOWERING WOMEN TO BREAK OUR OWN GLASS CEILINGS</p>
+    <a href="//powerhandz.com/about" class="button btnWhite hollow">ABOUT POWERHANDZ</a>
+  </div>
+</div>
+
+   </div>
+
+
+
+      <!-- Intro -->
+      <div class="bgWhite">
+        <div class="row padding clearfix">
+
+          <div class="small-12 medium-10 large-8 small-centered columns">
+            <h5 class="text-center">IT'S OURTIME</h5>
+            <div class="dividerCenter"></div>
+            <h3 class="text-center">Women can achieve the impossible. Women have a heart that never stops beating. Women persevere beyond their circumstances. Athletes aren’t Women, Women are Athletes.</h3>
+
+
+          </div>
+          
+        </div>
+      </div>
+
+
+
+<div class="row stretched" data-equalizer="rfjbq2-equalizer" data-resize="rfjbq2-equalizer" data-mutate="rfjbq2-equalizer" data-events="mutate">
+        <div class="small-12 medium-12 large-4 columns noPadding">
+
+          <div class="teamBoxed" data-equalizer-watch="" style="height: 600px;">
+
+            <div>
+              <img src="../img/ourtime-2.jpg" alt="">
+            </div>
+
+            <div class="memberBio">
+              <h6>Lauren Chamberlain</h6>
+              <span class="smallText">AMERICAN SOFTBALL PLAYER</span>
+              <div class="dividerBlack"></div>
+              <p class="smallText">"The women that came before us have worked hard so that in time we could reap the benefits of their sacrifices. It is now our responsibility to demand what we deserve, and not settle for less. As female athletes, We need to recognize the importance of our craft and our fight, so that we can in turn help aid the future of our sports."</p>
+              <div class="socialIcons">
+                <ul class="inline-list">
+                  <li><a href="https://twitter.com/LChamberlain44?lang=en"><span class="icon-twitter"></span></a></li>
+                  <li><a href="https://www.facebook.com/lauren.chamberlain.9"><span class="icon-facebook"></span></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="small-12 medium-12 large-4 columns noPadding">
+
+          <div class="teamBoxed" data-equalizer-watch="" style="height: 600px;">
+
+            <div>
+              <img src="../img/ourtime-1.jpg" alt="">
+            </div>
+
+            <div class="memberBio">
+              <h6>Nicole Hage</h6>
+              <span class="smallText">FORMER LPGA PRO</span>
+              <div class="dividerBlack"></div>
+              <p class="smallText">"It is so important for women to train because you want to reach the highest level possible. Why settle for middle of the road, when you can be greater than great? Women should feed off of each other in a positive way. Everyone is fighting the same battle, there is no need to bring each other down, when you can use each other to push yourself and make yourself better."</p>
+              <div class="socialIcons">
+                <ul class="inline-list">
+                  <li><a href="https://twitter.com/NicoleHage?lang=en"><span class="icon-twitter"></span></a></li>
+                  <li><a href="https://www.facebook.com/nicolehage"><span class="icon-facebook"></span></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="small-12 medium-12 large-4 columns noPadding">
+
+          <div class="teamBoxed" data-equalizer-watch="" style="height: 600px;">
+
+            <div>
+              <img src="../img/ourtime-3.jpg" alt="">
+            </div>
+
+            <div class="memberBio">
+              <h6>Michelle Zada</h6>
+              <span class="smallText">DALLAS BLACK DANCE THEATRE</span>
+              <div class="dividerBlack"></div>
+              <p class="smallText">"You achieve the very best you, through blood, sweat and tears and you fight to give all that you have and leave it on the dance floor. During times of obstacles in the road, you use that fight to hurdle those obstacles. Go hard….or go home!"</p>
+              <div class="socialIcons">
+                <ul class="inline-list">
+                  <li><a href="https://www.facebook.com/michelle.z.hall"><span class="icon-facebook"></span></a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+
+      <!--#include virtual="../programs.shtml" -->
+      <!--#include virtual="../cta-ourtime.shtml" -->
+
+
+
+
+<style>
+.clientsGrid li, .testimonialsGrid li
+{padding: 4px 14px;
+}
+</style>
+
+   
+   
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+    $('#heroSlider').pogoSlider({
+        autoplay: false,
+        pauseOnHover: true,
+        displayProgess: false,
+        preserveTargetSize: false,
+        targetHeight: 4300,
+        responsive: true
+    }).data('plugin_pogoSlider');
+
+});
+
+</script>
+   <!--#include virtual="../press.shtml" -->
+   <!--#include virtual="../footer.shtml" -->
+   <a href="../#0" class="backTop">Top</a>
+</body>
+</html>

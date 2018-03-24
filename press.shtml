@@ -1,0 +1,77 @@
+
+
+      <!-- Client Carousel -->
+      <div class="bgWhite">
+        <div class="row padding clearfix">
+          <div class="small-12 columns">
+            <!-- Clients Carousel -->
+            <div id="clientCarousel" class="owl-carousel row">
+
+              <!-- #1 Item -->
+              <div class="item small-12 columns">
+                <img src="//powerhandz.com/img/slider-good-morning-texas.jpg" alt="">
+              </div>
+
+              <!-- #2 Item -->
+              <div class="item small-12 columns">
+                <img src="//powerhandz.com/img/slider-bloomburg.jpg" alt="">
+              </div>
+
+              <!-- #3 Item -->
+              <div class="item small-12 columns">
+                <img src="//powerhandz.com/img/slider-golf-channel.jpg" alt="">
+              </div>
+
+              <!-- #4 Item -->
+              <div class="item small-12 columns">
+                <img src="//powerhandz.com/img/slider-cbs.jpg" alt="">
+              </div>
+
+              <!-- #5 Item -->
+              <div class="item small-12 columns">
+                <img src="//powerhandz.com/img/slider-si.jpg" alt="">
+              </div>
+
+              <!-- #6 Item -->
+              <div class="item small-12 columns">
+                <img src="//powerhandz.com/img/slider-nba.jpg" alt="">
+              </div>
+
+              <!-- #7 Item -->
+              <div class="item small-12 columns">
+                <img src="//powerhandz.com/img/slider-crave.jpg" alt="">
+              </div>
+
+              <!-- #8 Item -->
+              <div class="item small-12 columns">
+                <img src="//powerhandz.com/img/slider-espn.jpg" alt="">
+              </div>
+
+            </div>
+
+            <script type="text/javascript">
+              $(document).on('ready', function() {
+
+                var owlPost = $("#clientCarousel");
+                    
+                  owlPost.owlCarousel({
+                    pagination: false,
+                    navigation: false,
+                    navigationText: ['<span class="icon-angle-left"></span>','<span class="icon-angle-right"></span>'],
+                    autoPlay: 3000,
+                    slideSpeed: 600,
+                    stopOnHover: true,
+                    navRewind: false,
+                    items: 6,
+                    itemsDesktop : [1000,5],
+                    itemsDesktopSmall : [900,4],
+                    itemsTablet: [700,3],
+                    itemsMobile : [480,2]
+                  });
+
+                });
+            </script>
+           <!-- Clients Carousel End -->
+          </div>
+        </div>
+      </div>

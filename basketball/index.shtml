@@ -1,0 +1,691 @@
+<!--#include virtual="../head.shtml" -->
+<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
+<!-- Meta Tags -->
+<meta name="description" content="Professional Sports Training Products" />
+<meta name="author" content="POWERHANDZ" />
+<title>POWERHANDZ / Basketball</title>
+</head>
+
+<body class="boxed">
+    <div class="animsition">
+        <div class="large reveal" id="exampleModal0" data-reveal data-reset-on-close="true">
+            <h2>Frank Mason III: I Am Phenom</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/jI4ctA8UxGU?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="large reveal" id="exampleModal1" data-reveal data-reset-on-close="true">
+            <h2>Powerhandz Review and Overall Thoughts</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/kqQIgOgSscc?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="large reveal" id="exampleModal2" data-reveal data-reset-on-close="true">
+            <h2>GymRatz Coach Z Training</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/oFbVYp7NVIk?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="large reveal" id="exampleModal3" data-reveal data-reset-on-close="true">
+            <h2>Power To Be Great</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Fgx2G50mqS8?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="large reveal" id="exampleModal4" data-reveal data-reset-on-close="true">
+            <h2>Instructional with Tyler Relph</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Y-aTQuyWDQ&t?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="large reveal" id="exampleModal5" data-reveal data-reset-on-close="true">
+            <h2>Kyrie Irving Combo Drill</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/seaOyvYo06k?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="large reveal" id="exampleModal6" data-reveal data-reset-on-close="true">
+            <h2>Perry Jones Workout</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/B0jl7HeeroM?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <!--#include virtual="../top-bar.shtml" -->
+
+        <div class="heroWrapper relPosition">
+            <div class="heroSmallBlack relPosition" style="background-image: url('../img/main-hero-img-9.jpg');background-position: 50% 50%;">
+                <div class="row">
+                    <div class="heroIntro padding horizontalCenter">
+                        <div class="small-10 medium-8 large-6 columns">
+                            <h6>POWERHANDZ Basketball Collection</h6>
+                            <div class="divider"></div>
+                            <h1>Join the thousands of athletes who have already started improving their Basketball game.</h1>
+                            <div class="ctaBtns">
+                                <a class="button btnWhite hollow" href="https://shop.powerhandz.com/collections/basketball">GET POWERHANDZ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Banner Ends -->
+        </div>
+        <div class="mainWrapper">
+            <header id="header" class="topbar-sticky-shrink-header"></header>
+            <div data-sticky-container>
+                <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
+                    <div class="top-bar topbar-sticky-shrink show-for-medium">
+                        <div class="top-bar-title ">
+                            <a class="button btnWhite hollow expanded" href="//shop.powerhandz.com/collections/basketball"><i class="iconLeft icon-cart"></i>SHOP</a>
+                        </div>
+                        <div class="top-bar-right">
+                            <ul class="menu" style="padding-top:8px;">
+                                <li><a href="#products">Products</a></li>
+                                <li><a href="#works">How It Works</a></li>
+                                <li><a href="#reviews">Reviews</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <br />
+                </div>
+            </div>
+
+
+            <a name="products"></a>
+            <div class="bgWhite">
+                <div class="row relPosition stretched">
+                    <div class="small-12 medium-6 large-6 columns">
+                        <div id="hoverbar">
+                        </div>
+                        <div class="card-product-hover">
+                            <a href="//shop.powerhandz.com/">
+                            <img content src="../img/Anti-Grip-Clear.jpg">
+                            </a>
+                            <div class="card-product-hover-icons">
+                                <a href="https://shop.powerhandz.com/collections/all/products/anti-grip-basketball-gloves"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a href="https://shop.powerhandz.com/collections/all/products/anti-grip-basketball-gloves#reviews"><i class="fa fa-star-o"></i></a>
+
+
+
+
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa fa-share-alt"></i></a>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.color_main = "111111";
+a2a_config.color_border = "000000";
+a2a_config.color_link_text = "ffffff";
+a2a_config.color_link_text_hover = "fefefe";
+a2a_config.color_bg = "111111";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-6 columns">
+                        <div class="littleroom">
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                                        <h3 style="padding-left:15px;padding-top:15px;"><strong>Weighted Anti-Grip Gloves</strong>
+                           <span style="display:inline;float:right;"><a class="button btnBlack hollow small show-for-large" href="https://shop.powerhandz.com/collections/all/products/anti-grip-basketball-gloves"><i class="iconLeft icon-cart"></i>Shop</a></span>
+                           <span style="display:inline;float:right;"><a class="hide-for-large" href="https://shop.powerhandz.com/collections/all/products/anti-grip-basketball-gloves"><i class="iconLeft icon-cart"></i></a></span>
+                        </h3>
+                                        <li class="accordion-item is-active" data-accordion-item>
+                                            <a class="accordion-title">Product Features</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p>POWERHANDZ Anti-Grip Weighted Training Gloves have weight distributed across the top side of the gloves and an anti-friction material on the palm side of the gloves, making it more difficult to dribble a basketball when training.</p>
+                                                <ul class="iconList">
+                                                    <li><span class="icon-circle-plus coloredText"></span>Weight resistance on the gloves improves strength in the hand and arm muscles</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Increased hand speed</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Makes dribbling and catching the ball more difficult during training</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Improved confidence once gloves are removed</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Up to 2 LB in weight for each pair based on size</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+<!--
+                                        <li class="accordion-item" data-accordion-item>
+                                            <a class="accordion-title">Specifications</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p>.</p>
+                                            </div>
+                                        </li>
+-->
+                                        <li class="accordion-item" data-accordion-item>
+                                            <a class="accordion-title">Product Sizing</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <ul class="row small-up-2 medium-up-4 large-up-4 clientsGrid">
+                                                    <img src="https://powerhandz.com/img/PH-Chart-Glove.png">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="bgWhite">
+                <div class="row relPosition stretched">
+                    <div class="small-12 medium-6 large-6 columns">
+                        <div class="card-product-hover">
+                            <img src="../img/powerarch-clear.jpg">
+                            <div class="card-product-hover-icons">
+                                <a href="https://shop.powerhandz.com/collections/basketball/products/powerarch"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a href="https://shop.powerhandz.com/collections/basketball/products/powerarch#reviews"><i class="fa fa-star-o"></i></a>
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa fa-share-alt"></i></a>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.color_main = "111111";
+a2a_config.color_border = "000000";
+a2a_config.color_link_text = "ffffff";
+a2a_config.color_link_text_hover = "fefefe";
+a2a_config.color_bg = "111111";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="small-12 medium-6 large-6 columns">
+                        <div class="littleroom">
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                                        <h3 style="padding-left:15px;padding-top:15px;"><strong>Basketball POWERARCH</strong>
+                           <span style="display:inline;float:right;"><a class="button btnBlack hollow small show-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i>Shop</a></span>
+                           <span style="display:inline;float:right;"><a class="hide-for-large" href="https://shop.powerhandz.com/collections/all/products/powerarch"><i class="iconLeft icon-cart"></i></a></span>
+                        </h3>
+                                        <li class="accordion-item is-active" data-accordion-item>
+                                            <a class="accordion-title">Product Features</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p>The POWERARCH is a first of its kind training accessory designed to force a ball handler on the basketball court to stay low with their dribble. Previously, athletes were forced to use chairs or other items not designed for ball handling to work on staying low with their dribble.</p>
+                                                <ul class="iconList">
+                                                    <li><span class="icon-circle-plus coloredText"></span>Weight resistance on the gloves improves strength in the hand and arm muscles</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Increased hand speed</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Makes dribbling and catching the ball more difficult during training</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Improved confidence once gloves are removed</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+<!--
+                                        <li class="accordion-item" data-accordion-item>
+                                            <a class="accordion-title">Specifications</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p></p>
+                                            </div>
+                                        </li>
+-->
+                                        <li class="accordion-item" data-accordion-item>
+                                            <a class="accordion-title">Product Sizing</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p>The POWERARCH is 13" high and 22" wide.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="bgWhite">
+                <div class="row relPosition stretched">
+                    <div class="small-12 medium-6 large-6 columns">
+                        <div class="card-product-hover">
+                            <img src="../img/popup-clear.jpg">
+                            <div class="card-product-hover-icons">
+                                <a href="https://shop.powerhandz.com/collections/basketball/products/popup-defender"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a href="https://shop.powerhandz.com/collections/basketball/products/popup-defender#reviews"><i class="fa fa-star-o"></i></a>
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa fa-share-alt"></i></a>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.color_main = "111111";
+a2a_config.color_border = "000000";
+a2a_config.color_link_text = "ffffff";
+a2a_config.color_link_text_hover = "fefefe";
+a2a_config.color_bg = "111111";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="small-12 medium-6 large-6 columns">
+                        <div class="littleroom">
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                                        <h3 style="padding-left:15px;padding-top:15px;"><strong>Basketball POPUP Defender</strong>
+                           <span style="display:inline;float:right;"><a class="button btnBlack hollow small show-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i>Shop</a></span>
+                           <span style="display:inline;float:right;"><a class="hide-for-large" href="https://shop.powerhandz.com/collections/all/products/popup-defender"><i class="iconLeft icon-cart"></i></a></span>
+                        </h3>
+                                        <li class="accordion-item is-active" data-accordion-item>
+                                            <a class="accordion-title">Product Features</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p>POWERHANDZ Pop Up Defender is a compressed, collapsible 3-foot-5 statue that can be used as a defender for basketball, football and soccer. The innovative Pop Up Defender easily collapses and contains storage space inside, making it the perfect choice for coaches and athletes to take with them to simulate real live defenders on the field or court.</p>
+                                                <ul class="iconList">
+                                                    <li><span class="icon-circle-plus coloredText"></span>3-foot-5 standing barrier created to mimic a real defender</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Can easily be collapsed for coaches and athletes to take with them on the road</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Contains storage space inside to store training gear</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Durable solution to previously used training methods like garbage cans or chairs</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Designed for basketball, football and soccer</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+<!--
+                                        <li class="accordion-item" data-accordion-item>
+                                            <a class="accordion-title">Specifications</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p></p>
+                                            </div>
+                                        </li>
+-->
+                                        <li class="accordion-item" data-accordion-item>
+                                            <a class="accordion-title">Product Sizing</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+
+
+
+
+
+            <div class="bgWhite">
+                <div class="row relPosition stretched">
+                    <div class="small-12 medium-6 large-6 columns">
+                        <div class="card-product-hover">
+                            <img src="../img/Dribble-Sleeve-Clear.jpg">
+                            <div class="card-product-hover-icons">
+                                <a href="https://shop.powerhandz.com/products/dribblesleeve"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a href="https://shop.powerhandz.com/products/dribblesleeve#reviews"><i class="fa fa-star-o"></i></a>
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa fa-share-alt"></i></a>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.color_main = "111111";
+a2a_config.color_border = "000000";
+a2a_config.color_link_text = "ffffff";
+a2a_config.color_link_text_hover = "fefefe";
+a2a_config.color_bg = "111111";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="small-12 medium-6 large-6 columns">
+                        <div class="littleroom">
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                                        <h3 style="padding-left:15px;padding-top:15px;"><strong>Basketball Dribble Sleeve</strong>
+                           <span style="display:inline;float:right;"><a class="button btnBlack hollow small show-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i>Shop</a></span>
+                           <span style="display:inline;float:right;"><a class="hide-for-large" href="https://shop.powerhandz.com/products/dribblesleeve"><i class="iconLeft icon-cart"></i></a></span>
+                        </h3>
+                                        <li class="accordion-item is-active" data-accordion-item>
+                                            <a class="accordion-title">Product Features</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p>POWERHANDZ Anti-Grip removable basketball wrap is placed around the circumference of a basketball, decreasing control when dribbling or catching the ball.</p>
+                                                <ul class="iconList">
+                                                    <li><span class="icon-circle-plus coloredText"></span>Designed to improve ball handling for athletes of all ages and levels</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Enhances ball handling confidence</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Reduces grip by eliminating the feel of the rubber and leather on the balls outer surface</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+<!--
+                                        <li class="accordion-item" data-accordion-item>
+                                            <a class="accordion-title">Specifications</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p></p>
+                                            </div>
+                                        </li>
+-->
+                                        <li class="accordion-item" data-accordion-item>
+                                            <a class="accordion-title">Product Sizing</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p><img src="//powerhandz.com/img/PH-Chart-Wrap.jpg" /> </p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>                        <a name="works"></a>
+
+            </div>
+
+
+
+
+            <div class="featured-article-side-links">
+                <div class="row collapse">
+                    <!-- big feature -->
+                    <div class="small-9 medium-8 large-6 columns">
+                        <div data-open="exampleModal0">
+                            <div class="featured-article-big basketball0">
+                                <div class="featured-article-tag">
+                                    <!--             <span class="label">News</span> -->
+                                </div>
+                                <div class="featured-article-text" style="padding-left:1em;">
+                                    <p class="featured-article-title">Frank Mason III: I Am Phenom <span class="author">by POWERHANDZ</span></p>
+                                    <p style="line-height:1em;max-width:500px;padding-bottom:30px;">POWERHANDZ ADDS PHENOM, FRANK MASON TO ITS AMBASSADOR ROSTER</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- side links -->
+                    <div class="small-3 medium-4 large-2 columns featured-article-links-container">
+                        <div data-open="exampleModal1">
+                            <div class="featured-article-small basketball1">
+                                <div class="featured-article-tag">
+                                    <span class="label">Review</span>
+                                </div>
+                                <div class="featured-article-text">
+                                    <p class="featured-article-title">Review and Overall Thoughts</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-open="exampleModal2">
+                            <div class="featured-article-small basketball2">
+                                <div class="featured-article-tag">
+                                    <!-- 	                                <span class="label"></span> -->
+                                </div>
+                                <div class="featured-article-text">
+                                    <p class="featured-article-title">GymRatz Coach Z training</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-open="exampleModal3">
+                            <div class="featured-article-small basketball3">
+                                <div class="featured-article-tag">
+                                    <!--               <span class="label">News</span> -->
+                                </div>
+                                <div class="featured-article-text">
+                                    <p class="featured-article-title">Power To Be Great</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-open="exampleModal4">
+                            <div class="featured-article-small basketball4">
+                                <div class="featured-article-tag">
+                                    <!--               <span class="label">News</span> -->
+                                </div>
+                                <div class="featured-article-text">
+                                    <p class="featured-article-title">Instructional with Tyler Relph</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-open="exampleModal5">
+                            <div class="featured-article-small basketball5">
+                                <div class="featured-article-tag">
+                                    <!--               <span class="label">News</span> -->
+                                </div>
+                                <div class="featured-article-text">
+                                    <p class="featured-article-title">Kyrie Irving Combo Drill</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-open="exampleModal6">
+                            <div class="featured-article-small basketball6">
+                                <div class="featured-article-tag">
+                                    <!--               <span class="label">News</span> -->
+                                </div>
+                                <div class="featured-article-text">
+                                    <p class="featured-article-title">Perry Jones Workout</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-4 small-12 medium-12 columns">
+                            <div class="large-12 small-12 medium-12 columns">
+                                <br>
+                                <h3><strong>Get Control.</strong></h3>
+                                <p>Need to work on those handles? You’ve come to the right place. It doesn’t matter what stage of development your game is in, consistent use of POWERHANDZ AntiGrip gloves and Dribble Sleeve can propel you to the next level of personal success on the court. Find out why coaches, trainers and players at all levels of basketball are raving about our product and how you will too. Let POWERHANDZ elevate your game and guide you to train with purpose. </p>
+                                <br>
+                                <a class="button btnBlack hollow" href="https://shop.powerhandz.com/collections/basketball"><i class="iconLeft icon-cart"></i>GET POWERHANDZ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            
+            <!--#include virtual="../cta.shtml" -->
+
+
+
+
+
+
+            <!-- Testimonials Scroller Start -->
+            <div class="bgWhite">
+                <div class="row padding clearfix">
+                    <div class="small-12 medium-10 large-9 small-centered columns">
+
+                        <!-- Testimonials Scroller -->
+                        <div id="testimonialScroller" class="owl-carousel row">
+                                <a name="reviews"></a>
+                            <!-- #1 Testimonial -->
+                            <div class="item small-12 small-centered medium-10 large-11 columns">
+                                <div class="testimonImg">
+                                    <img src="../img/quote-it.jpg" alt="Isaiah Thomas Testimonial">
+                                </div>
+                                <div class="testimonContent">
+                                    <p>Working hard and pushing my limits have gotten me to where I am today. I am always looking to have the competitive edge, and using POWERHANDZ as part of my training has helped make my ball-handling more explosive yet controlled.</p>
+                                </div>
+                                <div class="testimonMeta">
+                                    Isaiah Thomas
+                                    <span>NBA Point Guard</span>
+                                </div>
+                            </div>
+
+                            <!-- #3 Testimonial -->
+                            <div class="item small-10 small-centered medium-10 large-11 columns">
+                                <div class="testimonImg">
+                                    <img src="../img/quote-price.jpg" alt="Ronnie Price Testimonial">
+                                </div>
+                                <div class="testimonContent">
+                                    <p>The POWERHANDZ AntiGrip Gloves are by far the most challenging dribbling product I’ve ever used and it's amazing how quick you see the result…I believe its the best product out there.</p>
+                                </div>
+                                <div class="testimonMeta">
+                                    Ronnie Price
+                                    <span>NBA</span>
+                                </div>
+                            </div>
+
+                            <!-- #3 Testimonial -->
+                            <div class="item small-10 small-centered medium-10 large-11 columns">
+                                <div class="testimonImg">
+                                    <img src="../img/quote-sloan.jpg" alt="Donald Sloan Testimonial">
+                                </div>
+                                <div class="testimonContent">
+                                    <p>POWERHANDZ is by far the best ball handling product in the game right now if you want total control and confidence in your ability to handle the rock like some of the leagues best. POWERHANDZ is that next step to get you there.</p>
+                                </div>
+                                <div class="testimonMeta">
+                                    Donald Sloan
+                                    <span>NBA Indiana Pacers</span>
+                                </div>
+                            </div>
+
+                            <!-- #3 Testimonial -->
+                            <div class="item small-10 small-centered medium-10 large-11 columns">
+                                <div class="testimonImg">
+                                    <img src="../img/quote-burgos.jpg" alt="Bill Burgos Testimonial">
+                                </div>
+                                <div class="testimonContent">
+                                    <p>POWERHANDZ is a great tool to add into any Strength Coach or Athletic Trainers' workbox. It provides the necessary proprioceptive training along with the development of strength in the 9 extrinsic and 10 intrinsic muscles of the hand/wrist. As a Strength Coach, my goal is to help make every athlete better, and I believe that POWERHANDZ can help me achieve that goal by ensuring that we can cover all aspects of training.</p>
+                                </div>
+                                <div class="testimonMeta">
+                                    Bill Burgos
+                                    <span>NBA Strength and Conditioning Coach</span>
+                                </div>
+                            </div>
+
+                            <!-- #3 Testimonial -->
+                            <div class="item small-10 small-centered medium-10 large-11 columns">
+                                <div class="testimonImg">
+                                    <img src="../img/quote-relph.jpg" alt="Tyler Relph Testimonial">
+                                </div>
+                                <div class="testimonContent">
+                                    <p>My number one goal is to help players gain and keep a competitive edge. POWERHANDZ is by far the best training product for basketball players I have seen on the market. It’s not only a great ball handling tool, but it’s great for big guys too, as it helps with hands and explosion with the ball. I incorporate these products into my drills and they have truly been a game changer.</p>
+                                </div>
+                                <div class="testimonMeta">
+                                    Tyler Relph
+                                    <span>Elite Basketball Trainer</span>
+                                </div>
+                            </div>
+
+                            <!-- #3 Testimonial -->
+                            <div class="item small-10 small-centered medium-10 large-11 columns">
+                                <div class="testimonImg">
+                                    <img src="../img/quote-dribble2much.jpg" alt="Dribble2much Testimonial">
+                                </div>
+                                <div class="testimonContent">
+                                    <p>When I started using POWERHANDZ on myself and on my clients, I was amazed by the instant results and how the products intensified my training. I love this game and I love seeing hard work and tactical training with POWERHANDZ products, make a direct impact on these players. I’m excited to be apart of their team.</p>
+                                </div>
+                                <div class="testimonMeta">
+                                    Dribble2much
+                                    <span>Elite Basketball Trainer</span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <script type="text/javascript">
+                            $(document).on('ready', function() {
+
+                                var owlPost = $("#testimonialScroller");
+
+                                owlPost.owlCarousel({
+                                    pagination: true,
+                                    navigation: true,
+                                    navigationText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>'],
+                                    autoPlay: 5000,
+                                    stopOnHover: true,
+                                    navRewind: false,
+                                    singleItem: true,
+                                    slideSpeed: 1000
+                                });
+
+                            });
+                        </script>
+                        <!-- Testimonial Scroller End -->
+                        <a name="faq"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column row" id="content">
+                <div class="small-12 medium-12 large-12 columns" data-equalizer-watch>
+                    <div class="padding">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                                    <li class="accordion-item is-active" data-accordion-item>
+                                        <a class="accordion-title">How much do the gloves weigh?</a>
+                                        <div class="accordion-content" data-tab-content>
+                                            <p>Youth-Medium: Weigh Approximately 400 Grams or .88 lbs In Each Glove<br>Large- XXL: Weigh Approximately 453 Grams or 1 lb In Each Glove
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-item" data-accordion-item>
+                                        <a class="accordion-title">How do you wash the gloves?</a>
+                                        <div class="accordion-content" data-tab-content>
+                                            <p>We Suggest Using a Non Toxic Aerosol Spray. Do Not Wash In The Wash Machine.</p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-item" data-accordion-item>
+                                        <a class="accordion-title">Do I have to use the products together?</a>
+                                        <div class="accordion-content" data-tab-content>
+                                            <p>Our Basketball products can be used as You Ultimate Degree Of Difficulty While Training.</p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-item" data-accordion-item>
+                                        <a class="accordion-title">Do the gloves come in a pair?</a>
+                                        <div class="accordion-content" data-tab-content>
+                                            <p>Yes.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--#include virtual="../stats.shtml" -->
+            <!--#include virtual="../press.shtml" -->
+            <!--#include virtual="../footer.shtml" -->
+            <a href="../#0" class="backTop">Top</a>
+</body>
+
+</html>

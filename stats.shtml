@@ -1,0 +1,32 @@
+            <!-- Counters Center Aligned Start -->
+            <div class="bgBlack">
+                <div class="padding row">
+                    <div class="counters clearfix">
+                        <div class="small-6 medium-6 large-3 columns">
+                            <!-- <span class="icon-presentation text-center"></span> -->
+                            <div class="timer text-center" data-from="1" data-to="81" data-refresh-interval="50" data-speed="2000"></div>
+                            <div class="dividerCenter"></div>
+                            <h6 class="text-center">Countries Sold In</h6><br>
+                        </div>
+                        <div class="small-6 medium-6 large-3 columns">
+                            <!-- <span class="icon-hourglass2 text-center"></span> -->
+                            <div class="timer text-center" data-from="1" data-to="16" data-refresh-interval="50" data-speed="2000"></div>
+                            <div class="dividerCenter"></div>
+                            <h6 class="text-center">Brand Ambassadors</h6><br>
+                        </div>
+                        <div class="small-6 medium-6 large-3 columns">
+                            <!-- <span class="icon-layers2 text-center"></span> -->
+                            <div class="timer text-center" data-from="1" data-to="20" data-refresh-interval="50" data-speed="2000"></div>
+                            <div class="dividerCenter"></div>
+                            <h6 class="text-center">Pro Teams Using POWERHANDZ</h6>
+                        </div>
+                        <div class="small-6 medium-6 large-3 columns">
+                            <!-- <span class="icon-linegraph text-center"></span> -->
+                            <div class="timer text-center" data-from="100" data-to="150000" data-refresh-interval="50" data-speed="2000"></div>
+                            <div class="dividerCenter"></div>
+                            <h6 class="text-center">Social Followers</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Counters Center Aligned End -->

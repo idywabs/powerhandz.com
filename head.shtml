@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta content='width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;' name='viewport' />
+	<meta name="viewport" content="width=device-width" />
+	<meta name="google-site-verification" content="E_bXUFDEsWM4oTRodOPpKsncVxlAr6kQVC8VQbM-WdM" />
+
+    <!-- Favicons:: Replace with yours -->
+    <link rel="shortcut icon" href="//powerhandz.com/mstile-144x144.png">
+
+    <!-- Stylesheets and Fonts-->
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:300,400,400italic,700|Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="//powerhandz.com/css/foundation.min.css" />
+    <link rel="stylesheet" href="//powerhandz.com/css/main.css" />
+    <link rel="stylesheet" href="//powerhandz.com/css/animate.css">
+    <link rel="stylesheet" href="//powerhandz.com/css/animsition.min.css">
+    <link rel="stylesheet" href="//powerhandz.com/css/icomoon.css" />
+    <link rel="stylesheet" href="//powerhandz.com/css/pogo-slider.min.css">
+    <link rel="stylesheet" href="//powerhandz.com/css/colors/gold.css">
+    <link rel="stylesheet" href="//powerhandz.com/css/responsive.css">
+    <link rel="stylesheet" href="//powerhandz.com/css/mine.css">
+	<!-- stickynav -->
+<!--     <link rel="stylesheet" href="//powerhandz.com/css/stickynav/sticky-shrinknav.scss"> -->
+    
+    <!-- font awesome -->
+	<link rel="stylesheet" href="//powerhandz.com/fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- Scripts -->
+    <script src="//powerhandz.com/js/vendor/jquery.min.js"></script>
+	<!-- stickynav -->
+<!--     <script src="//powerhandz.com/js/stickynav/sticky-shrinknav.js"></script> -->
+    

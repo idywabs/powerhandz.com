@@ -1,0 +1,116 @@
+    <!-- Footer Small Starts -->
+    <footer class="footerWrapper footerBig">
+      <div class="bgGrey">
+
+        <div class="footerWidgets">
+          <div class="row padding clearfix">
+
+            <div class="small-12 medium-12 large-6 columns widget">
+              <h6>About POWERHANDZ</h6>
+              <div class="divider"></div>
+              <p>POWERHANDZ is a global Athletic training products company with unique patented and patent pending products that span across several markets: Basketball, Football, Baseball/Softball, Boxing/MMA and other Lifestyle sports. Our products are used and endorsed by skills trainers, youth athletes and the world’s most elite professional athletes.</p>
+
+              <div class="row">
+                <div class="small-12 medium-6 large-6 columns">
+                  <ul class="iconList" >
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/about/">About</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/team/">Team</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//shop.powerhandz.com">Shop</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/events/">Events</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/blog/">Blog</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/shop/faq/">FAQ</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/contact/">Contact</a></li>
+                  </ul>
+                </div>
+
+                <div class="small-12 medium-6 large-6 columns">
+                  <ul class="iconList">
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/power-to-give/">Power To Give</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/press/">Press</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/affiliates/">Affiliate Program</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/shop/terms/">Terms and Conditions</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/shop/privacy-policy/">Privacy Policy</a></li>
+                    <li><span class="icon-angle-right"></span><a href="//powerhandz.com/shop/return-exchange-policy/">Returns / Exchanges</a></li>
+                  </ul>
+                </div>
+
+              </div>
+
+              <div><a class="link" href="//shop.powerhandz.com">Visit Our Shop</a></div>
+            </div>
+
+            <div class="small-12 medium-6 large-3 columns widget">
+              <h6>Latest Tweets</h6>
+              <div class="divider"></div>
+
+              <ul id="twitter-widget" class="iconList twitter-feed">
+                  <li class="txtWhite"></li>
+              </ul>
+
+              <script type="text/javascript">
+                  jQuery( function($){
+                      $.getJSON('include/twitter/tweets.php?username=POWERHANDZ&count=2', function(tweets){
+                            $("#twitter-widget").html(sm_format_twitter(tweets));
+                          });
+                      });
+              </script>
+              
+            </div>
+
+            <div class="small-12 medium-6 large-3 columns widget">
+              <h6>Find Us</h6>
+              <div class="divider"></div>
+
+			  <p>2633 McKinney Ave<br>Ste 130 #255<br>Dallas, TX 75204<br>888-724-1106</p>
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="row footerSmall">
+          <div class="small-12 medium-12 large-6 columns">
+            <p class="smallText">&copy; 2017 POWERHANDZ. All rights reserved.</p>
+          </div>
+
+          <div class="small-12 medium-12 large-6 columns">
+            <div class="socialIcons">
+              <a href="https://twitter.com/powerhandz"><span class="icon-twitter"></span></a>
+              <a href="https://www.facebook.com/PowerHandzInc"><span class="icon-facebook"></span></a>
+              <a href="https://instagram.com/powerhandz"><span class="icon-instagram"></span></a>
+              <a href="https://www.youtube.com/channel/UCdjZ_Du0CpDZSpLTjCC11BA"><span class="icon-youtube"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Small Ends -->
+
+  </div>
+    
+  <a href="#0" class="backTop">Top</a>
+
+  <!-- Scripts -->
+  <script src="//powerhandz.com/js/vendor/modernizr.js"></script>
+  <script src="//powerhandz.com/js/vendor/what-input.min.js"></script>
+  <script src="//powerhandz.com/js/foundation.min.js"></script>
+  <script src="//powerhandz.com/js/plugins.js"></script>
+  <script src="//powerhandz.com/js/functions.js"></script>
+  <script src="//powerhandz.com/js/ajax-form.js"></script>
+	
+  <!-- retina addition -->
+  <script type="text/javascript" src="//powerhandz.com/js/retina.js"></script>
+  
+  
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52467503-1', 'auto');
+  ga('send', 'pageview');
+
+  </script>

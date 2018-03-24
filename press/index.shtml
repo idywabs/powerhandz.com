@@ -1,0 +1,2288 @@
+<!--#include virtual="../head.shtml" -->
+<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
+<!-- Meta Tags -->
+<meta name="description" content="Professional Sports Training Products" />
+<meta name="author" content="POWERHANDZ" />
+<title>POWERHANDZ / Press</title>
+</head>
+<body class="boxed">
+   <div class="animsition">
+      <!--#include virtual="../top-bar.shtml" -->
+
+
+
+<style>
+
+.marketing-site-hero {
+  background: url("../img/about-hero.jpg") top right no-repeat;
+  height: 60vh;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  max-width: 75rem;
+  margin-left:0px!important;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.marketing-site-hero-content h1 {
+  font-size: 32px;
+  color: #ffffff!important;
+}
+
+.marketing-site-hero-content .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.presscopy {
+    font-family: 'Oxygen', sans-serif;
+    padding-left: 11px;
+    min-height: 100% !important;
+    padding-top: 0px;
+    color: #555555;
+    line-height: 1.2em;
+    font-weight: normal;
+}
+
+.presscopytitle {
+    font-size: 1.7em;
+    font-weight: bold;
+    color: #111111;
+    line-height: 1.04em;
+}
+
+.presscopytitle:hover {
+    color: #bf9b41;
+    transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+
+.greyitout {
+	background-color: #eeeeee !important;
+}
+
+
+
+
+/* <--PRESS ITEMS--> */
+
+
+/* Portfolio Item */
+
+.press-item {
+    color: #ffffff !important;
+	overflow: hidden;
+	
+
+}
+
+.press-item a {
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    color: #ffffff !important;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed', sans-serif;
+    
+
+}
+
+
+
+.press-item img {
+    display: block;
+    width: 100%;
+	height: auto;
+	transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	overflow: hidden;
+	bottom: 0px;
+	
+
+}
+
+.press-item img:hover {
+	transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+		transition: all 1s;
+	-moz-transition: all 1s;
+	-webkit-transition: all 1s;
+	-o-transition: all 1s;
+	overflow: hidden;
+	bottom: 0px;
+
+
+}
+
+.press-item-content {
+    height: 50px;
+    padding: 9px;
+    color: #ffffff !important;
+    background-color: rgba(17, 17, 18, 1) !important;
+}
+
+.press-item-content .title {
+    margin-top: 0px;
+    float: left !important;
+    display: inline-block;
+    color: #ffffff !important;
+    background-color: rgba(17, 17, 17, 1) !important;
+
+}
+
+.press-item-content p {
+    font-size: 1.1em;
+    float: right;
+    display: inline-block;
+    color: #ffffff !important;
+}
+
+
+</style>
+
+   <div class="heroWrapper relPosition">
+<div class="marketing-site-hero">
+  <div class="marketing-site-hero-content">
+    <h1>POWERHANDZ Press</h1>
+    <div class="divider"></div>
+    <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">Our products are used and endorsed by skills trainers, youth athletes and the world’s most elite professional athletes.</p>
+    <a href="//shop.powerhandz.com" class="button btnWhite hollow">SHOP NOW</a>
+  </div>
+</div>
+
+   </div>
+
+
+
+      <!-- Intro -->
+      <div class="bgWhite">
+        <div class="row padding clearfix">
+
+	 	<h2>PRESS RELEASE</h2>
+	 	<span>
+ 		<div class="hide-for-small " style="float:right; text-align:right;margin-top:-45px;">
+				<a class="hollowblack" href="#mediakit"><i class="fa fa-asterisk"></i>&nbsp;&nbsp; Media Kit</a> &nbsp;&nbsp;
+ 		</div>
+ 		</span>
+<br>	<hr>
+
+
+
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//assets-origin.bizjournals.com/houston/prnewswire/press_releases/Texas/2017/04/11/DA59606">
+    				<img src="//powerhandz.com/img/hbj-logo.jpg" alt="Business Journal Houston"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//assets-origin.bizjournals.com/houston/prnewswire/press_releases/Texas/2017/04/11/DA59606">
+				<div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ Launches I COMPETE WITH ME, Its Global Basketball Campaign with All-Star Isaiah Thomas</span><br><br>
+					Date: April 11, 2017<br>
+					Contact: POWERHANDZ <br>
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="https://www.si.com/nba/2017/04/06/tyler-johnson-heat-d-league-pat-riley-erik-spoelstra">
+    				<img src="//powerhandz.com/img/press-sportsillustrated.jpg" alt="Sports Illustrated"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="https://www.si.com/nba/2017/04/06/tyler-johnson-heat-d-league-pat-riley-erik-spoelstra">
+				<div class="presscopy">
+					<span class="presscopytitle">How Tyler Johnson Transformed From Positionless Player To Crafty Combo</span><br><br>
+					Date: April 6, 2017<br>
+					Contact: JAKE FISCHER <br>
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="https://issuu.com/begreatmagazine/docs/begreatmagazine_issue13">
+    				<img src="//powerhandz.com/img/begreatmag.jpg" alt="Be GREAT Magazine"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="https://issuu.com/begreatmagazine/docs/begreatmagazine_issue13">
+				<div class="presscopy">
+					<span class="presscopytitle">Issue 13 — Leaders of the New School</span><br><br>
+					Date: Feb 28, 2017<br>
+					Contact: Be GREAT Magainze <br>
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="http://www.fox5vegas.com/video?autoStart=true&amp;topVideoCatNo=default&amp;clipId=12960059">
+    				<img src="//powerhandz.com/img/fox5-logo.jpg" alt="Fox 5 Logo"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="http://www.fox5vegas.com/video?autoStart=true&amp;topVideoCatNo=default&amp;clipId=12960059">
+				<div class="presscopy">
+					<span class="presscopytitle">FOX 5 Las Vegas [Video Segment]</span><br><br>
+					Date: Dec 15, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="http://www.athleticbusiness.com/industry-press-room/powerhandz-announces-retail-agreement-with-walmart-and-dick-s-sporting-goods.html">
+    				<img src="//powerhandz.com/img/athleticbusiness-logo.jpg" alt="Athletic Business Website Logo"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="http://www.athleticbusiness.com/industry-press-room/powerhandz-announces-retail-agreement-with-walmart-and-dick-s-sporting-goods.html">
+				<div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ Announces Retail Agreement with Walmart and Dick’s Sporting Goods</span><br><br>
+					Date: Dec 12, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="http://blog.bullz-eye.com/2016/11/23/product-review-powerhandz-pop-up-defender/">
+    				<img src="//powerhandz.com/img/bullz-logo.jpg" alt="Bullz-Eye Blog"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="http://blog.bullz-eye.com/2016/11/23/product-review-powerhandz-pop-up-defender/">
+				<div class="presscopy">
+					<span class="presscopytitle">Product Review: POWERHANDZ Pop Up Defender</span><br><br>
+					Date: Nov 23, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="http://www.lasvegasnow.com/holiday-gift-guide">
+    				<img src="../img/lvn-8-logo.jpg" alt="Holiday Gift Guide"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="http://www.lasvegasnow.com/holiday-gift-guide">
+				<div class="presscopy">
+					<span class="presscopytitle">Michelle Mortensen's 5th Annual Holiday Gift Guide</span><br><br>
+					Date: Nov 22, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="http://www.huffingtonpost.com/entry/581aaf20e4b0570d6d6f0bb1?timestamp=1478453026988">
+    				<img src="../img/thp-logo.jpg" alt="Bullz-Eye Blog"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="http://www.huffingtonpost.com/entry/581aaf20e4b0570d6d6f0bb1?timestamp=1478453026988">
+				<div class="presscopy">
+					<span class="presscopytitle">Unique Golf Gifts For Your Holiday Shopping List</span><br><br>
+					Date: Nov 8, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="http://www.inc.com/christina-desmarais/11-ways-to-succeed-in-business-without-wrecking-your-personal-life.html">
+    				<img src="../img/inc-logo.jpg" alt="11 Ways to Succeed in Business Without Wrecking Your Personal Life"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="http://www.inc.com/christina-desmarais/11-ways-to-succeed-in-business-without-wrecking-your-personal-life.html">
+				<div class="presscopy">
+					<span class="presscopytitle">11 Ways to Succeed in Business Without Wrecking Your Personal Life</span><br><br>
+					Date: Nov 3, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="http://www.si.com/edge/2016/08/05/boxer-andre-ward-alexander-brand-fight-training-powerhandz">
+    				<img src="../img/sportsillustrated.jpg" alt="Pushing cars and running hills: How boxer Andre Ward prepares for a fight"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="http://www.si.com/edge/2016/08/05/boxer-andre-ward-alexander-brand-fight-training-powerhandz">
+				<div class="presscopy">
+					<span class="presscopytitle">Pushing cars and running hills: How boxer Andre Ward prepares for a fight</span><br><br>
+					Date: June 30, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="https://s3.amazonaws.com/360mediawatch-video-gallery/59839/Powerhandz_PowerLunch_CNBC_National_06-16-16_2p.mp4">
+    				<img src="../img/logo-cnbc.jpg" alt="CNBC Logo"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="https://s3.amazonaws.com/360mediawatch-video-gallery/59839/Powerhandz_PowerLunch_CNBC_National_06-16-16_2p.mp4">
+				<div class="presscopy">
+					<span class="presscopytitle">CNBC Power Pitch</span><br><br>
+					Date: June 16, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//www.stack.com/video/4924162277001/game-changers-episode-2-can-powerhandz-gloves-and-blast-motion-basketball-replay-make-you-a-basketball-all-star">
+    				<img src="../img/stacklogo.jpg" alt="The Power of Handz - Elevate your game by training with the best ballhandling product around."></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="////www.stack.com/video/4924162277001/game-changers-episode-2-can-powerhandz-gloves-and-blast-motion-basketball-replay-make-you-a-basketball-all-star">
+				<div class="presscopy">
+					<span class="presscopytitle">Game Changers Episode 2: Can PowerHandz Gloves and Blast Motion Basketball Replay Make You a Basketball All-Star? </span><br><br>
+					Date: June 3, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//www.slamonline.com/training-2/the-power-of-powerhandz/#0A5zDmSPywKzmedo.97">
+    				<img src="../img/slam-logo.jpg" alt="The Power of Handz - Elevate your game by training with the best ballhandling product around."></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//www.slamonline.com/training-2/the-power-of-powerhandz/#0A5zDmSPywKzmedo.97">
+				<div class="presscopy">
+					<span class="presscopytitle">The Power of Handz - Elevate your game by training with the best ballhandling product around.</span><br><br>
+					Date: April 8, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//www.mademan.com/2-new-batting-gadgets-could-turn-you-into-a-real-hit-man/">
+    				<img src="../img/manmade-logo.jpg" alt="2 New Batting Gadgets Could Turn You Into a Real Hit Man"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//www.mademan.com/2-new-batting-gadgets-could-turn-you-into-a-real-hit-man/">
+				<div class="presscopy">
+					<span class="presscopytitle">2 New Batting Gadgets Could Turn You Into a Real Hit Man</span><br><br>
+					Date: April 6, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//www.txnp.org/Article/?ArticleID=18447">
+    				<img src="../img/tnp-logo.jpg" alt="The Power to Give Foundation"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//www.txnp.org/Article/?ArticleID=18447">
+				<div class="presscopy">
+					<span class="presscopytitle">The Power to Give Foundation</span><br><br>
+					Date: April 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//thesbjournal.com/sports-ceo/jimmy-butler-endorsed-powerhandz-by-accident-and-thats-exactly-why-its-successful/">
+    				<img src="../img/sbj-logo.jpg" alt="POWERHANDZ Announces Softball Star Lauren Chamberlain as the Newest “OUR TIME” Ambassador"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//thesbjournal.com/sports-ceo/jimmy-butler-endorsed-powerhandz-by-accident-and-thats-exactly-why-its-successful/">
+				<div class="presscopy">
+					<span class="presscopytitle">Jimmy Butler Endorsed POWERHANDZ by Accident- and That’s Exactly Why It’s Successful</span><br><br>
+					Date: March 24, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//athlonsports.com/life/pick-6-our-favorite-things-march-2016">
+    				<img src="../img/athlon-logo.jpg" alt="POWERHANDZ Announces Softball Star Lauren Chamberlain as the Newest “OUR TIME” Ambassador"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//athlonsports.com/life/pick-6-our-favorite-things-march-2016">
+				<div class="presscopy">
+					<span class="presscopytitle">Pick 6: Our Favorite Things for March</span><br><br>
+					Date: March 16, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+		
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-6 columns medium-6 small-12">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                       <div class="press-item bottom-shadow">
+  	    	    			<div class="videoWrapper">
+  	    	    			<video width="320" height="240" controls="">
+							    <source src="//powerhandz.com/vid/NBC-Louisville-4.mp4" type="video/mp4">
+							</video>
+  	    	    			<br>
+  	    	    			</div>
+  	    	    	   </div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+			</div>
+	  	
+	  		<div class="large-6 columns medium-6 small-12">
+					<a href="#"><div class="presscopy">
+					<span class="presscopytitle">NBC Louisville</span><br><br>
+					Date: March 3, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+			</div>
+					</a>
+	</div>
+				
+				
+			
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-6 columns medium-6 small-12">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                       <div class="press-item bottom-shadow">
+  	    	    			<div class="videoWrapper">
+  	    	    			<video width="320" height="240" controls="">
+							    <source src="//powerhandz.com/vid/NBC-Louisville-3.mp4" type="video/mp4">
+							</video><br> 
+							</div>
+  	    	    	   </div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+			</div>
+	  	
+	  		<div class="large-6 columns medium-6 small-12">
+					<a href="#"><div class="presscopy">
+					<span class="presscopytitle">NBC Louisville</span><br><br>
+					Date: March 2, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+			</div>
+					</a>
+	</div>
+				
+				
+			
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//www.sporttechie.com/2016/03/01/powerhandzlauren-chamberlain/">
+    				<img src="../img/sporttechie-logo.jpg" alt="POWERHANDZ Announces Softball Star Lauren Chamberlain as the Newest “OUR TIME” Ambassador"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//www.sporttechie.com/2016/03/01/powerhandzlauren-chamberlain/">
+				<div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ Announces Softball Star Lauren Chamberlain as the Newest “OUR TIME” Ambassador</span><br><br>
+					Date: FEBUARY 28, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//bustedcoverage.com/2016/02/28/powerhandz-golf-gloves-review/">
+    				<img src="../img/bc-logo.jpg" alt="BC Review: POWERHANDZ Pure Grip Golf Gloves"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//bustedcoverage.com/2016/02/28/powerhandz-golf-gloves-review/">
+				<div class="presscopy">
+					<span class="presscopytitle">BC Review: POWERHANDZ Pure Grip Golf Gloves</span><br><br>
+					Date: FEBUARY 28, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//www.prweb.com/releases/2016/02/prweb13197234.htm">
+    				<img src="../img/prweb-logo.jpg" alt="POWERHANDZ and The Power to Give Foundation Hosts Private Screening of “Concussion”, Highlighting the Importance of Player Safety While Playing Sports"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//www.prweb.com/releases/2016/02/prweb13197234.htm">
+				<div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ and The Power to Give Foundation Hosts Private Screening of “Concussion”, Highlighting the Importance of Player Safety While Playing Sports</span><br><br>
+					Date: FEBUARY 2, 2016<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//www.modernmom.com/powerhandz-117125.html">
+    				<img src="../img/modern-mom-logo.jpg" alt="POWERHANDZ"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//www.modernmom.com/powerhandz-117125.html">
+				<div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ</span><br><br>
+					Date: FEBUARY 2, 2016<br>
+					Source: modernmom.com<br>
+					Contact: MODERNMOM STAFF 
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//gearpatrol.com/2016/01/21/today-in-gear-january-21-2016/">
+    				<img src="../img/gear-patrol-logo.jpg" alt="POWERHANDZ Launches POWERHANDZ Media, a Dedicated Platform to Share Innovative Training Techniques"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//gearpatrol.com/2016/01/21/today-in-gear-january-21-2016/">
+				<div class="presscopy">
+					<span class="presscopytitle">Powerhandz Sports Training Gloves</span><br><br>
+					Date: JANUARY 21, 2016<br>
+					Source: gearpatrol.com<br>
+					Contact: NICK MILANES 
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    				<a href="//www.urbasm.com/2016/01/powerhandz-sports-gloves-wearable-tech-to-improve-your-training/">
+    				<img src="../img/urbasm-logo.jpg" alt="Powerhandz Sports Gloves – Wearable Tech to Improve Your Training"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//www.urbasm.com/2016/01/powerhandz-sports-gloves-wearable-tech-to-improve-your-training/">
+				<div class="presscopy">
+					<span class="presscopytitle">Powerhandz Sports Gloves – Wearable Tech to Improve Your Training</span><br><br>
+					Date: JANUARY 15, 2016<br>
+					Source: urbasm.com<br>
+					Contact: ERIC J. LEECH 
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+
+
+
+
+   	<div class="row animated fadeInUp">
+  		<div class="large-4 columns hide-for-small medium-4">
+             <div class="pressspace">
+             	<div class="press-item bottom-shadow">
+    						<a href="//www.examiner.com/review/hands-on-with-powerhandz-s-extreme-grip-football-weighted-glove"><img src="../img/examiner-press.jpg" alt="POWERHANDZ Launches POWERHANDZ Media, a Dedicated Platform to Share Innovative Training Techniques"></a>
+            	</div>
+             </div>
+		</div>	  	
+  		<div class="large-8 columns small-12 medium-8">
+			<a href="//www.examiner.com/review/hands-on-with-powerhandz-s-extreme-grip-football-weighted-glove">
+				<div class="presscopy">
+					<span class="presscopytitle">Hands on with POWERHANDZ's EXTREME GRIP Football Weighted Glove</span><br><br>
+					Date: December 23, 2015<br>
+					Source: examiner.com<br>
+					Contact: Marshal Rosenthal 
+				</div>
+			</a>
+		</div>
+  	</div><br><hr><br>
+  	
+
+
+
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.everyjoe.com/2015/12/15/lifestyle/holiday-gift-ideas-for-active-guy/#1"><img src="../img/everyjoe.jpg" alt="POWERHANDZ Launches POWERHANDZ Media, a Dedicated Platform to Share Innovative Training Techniques"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.everyjoe.com/2015/12/15/lifestyle/holiday-gift-ideas-for-active-guy/#1"><div class="presscopy">
+					<span class="presscopytitle">Holiday Gift Ideas for the Active Guy</span><br><br>
+					Date: Dec 15, 2015<br>
+					Source: everyjoe.com<br>
+					Contact: Wil Reagan 
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.maxim.com/tech/gadgets/article/powerhandz-training-gloves-2015-12"><img src="../img/maxim-logo.jpg" alt="POWERHANDZ Launches POWERHANDZ Media, a Dedicated Platform to Share Innovative Training Techniques"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.maxim.com/tech/gadgets/article/powerhandz-training-gloves-2015-12"><div class="presscopy">
+					<span class="presscopytitle">How Having Heavier Hands Helps You Train Better</span><br><br>
+					Date: Dec 3, 2015<br>
+					Source: maxim.com<br>
+					Contact: SCOTT THARLER
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+
+
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="http://www.streetinsider.com/Press+Releases/POWERHANDZ+Announces+a+Huge+Launch+into+Baseball+With+Red+Sox+Superstar,+David+Ortiz/11087678.html"><img src="../img/street-insider-logo.jpg" alt="POWERHANDZ Launches POWERHANDZ Media, a Dedicated Platform to Share Innovative Training Techniques"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="http://www.streetinsider.com/Press+Releases/POWERHANDZ+Announces+a+Huge+Launch+into+Baseball+With+Red+Sox+Superstar,+David+Ortiz/11087678.html"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ Announces a Huge Launch into Baseball With Red Sox Superstar, David Ortiz</span><br><br>
+					Date: Nov. 18, 2015<br>
+					Source: GreenRoom <br>
+					Contact: Alex Onaindia <br>
+					Email: alex.o@grnrm.com
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-6 columns medium-6 small-12">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                       <div class="press-item bottom-shadow">
+  	    	    			<div class="videoWrapper">
+  	    	    				 <iframe width="560" height="315" src="https://www.youtube.com/embed/b0h2OUkLkvQ" frameborder="0" allowfullscreen=""></iframe>           <br>              			</div>
+  	    	    	   </div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+			</div>
+	  	
+	  		<div class="large-6 columns medium-6 small-12">
+					<a href="#"><div class="presscopy">
+					<span class="presscopytitle">How Having Heavier Hands Helps You Train Better</span><br><br>
+					Date: Nov 13, 2015<br>
+					Source: Worldwide Business with kathy ireland®<br>
+			</div>
+					</a>
+	</div>
+				
+				
+			
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.prweb.com/releases/2015/12/prweb13112895.htm"><img src="../img/prweb-logo.jpg" alt="POWERHANDZ Launches POWERHANDZ Media, a Dedicated Platform to Share Innovative Training Techniques"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.prweb.com/releases/2015/12/prweb13112895.htm"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ Launches POWERHANDZ Media, a Dedicated Platform to Share Innovative Training Techniques</span><br><br>
+					Date: Dec 3, 2015<br>
+					Source: prweb.com<br>
+					Contact: Alex Onaindia / GreenRoom 
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.craveonline.com/culture/925161-2015-sports-gift-guide-athletes-fans#/slide/2"><img src="../img/crave-logo.jpg" alt="POWERHANDZ Brings Out the “PINK” for Breast Cancer Awareness Month"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.craveonline.com/culture/925161-2015-sports-gift-guide-athletes-fans#/slide/2"><div class="presscopy">
+					<span class="presscopytitle">2015 Sports Gift Guide For Athletes &amp; Fans</span><br><br>
+					Date: Nov 24, 2015<br>
+					Contact: Josh Helmuth
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//beforeitsnews.com/business/2015/11/innovative-sports-products-from-powerhandz-highlighted-on-worldwide-business-by-kathy-ireland-2764746.html"><img src="../img/beforeitsnews-logo.jpg" alt="POWERHANDZ Brings Out the “PINK” for Breast Cancer Awareness Month"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//beforeitsnews.com/business/2015/11/innovative-sports-products-from-powerhandz-highlighted-on-worldwide-business-by-kathy-ireland-2764746.html"><div class="presscopy">
+					<span class="presscopytitle">Innovative Sports Products From POWERHANDZ Highlighted on Worldwide Business by kathy ireland®</span><br><br>
+					Date: Nov 3, 2015<br>
+					Source: www.tvwwb.com<br>
+					Contact: Gila Stern I Communications Director
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+
+
+
+
+
+
+
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.prweb.com/releases/2015/10/prweb12996515.htm/"><img src="../img/prweb-logo.jpg" alt="POWERHANDZ Brings Out the “PINK” for Breast Cancer Awareness Month"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.prweb.com/releases/2015/10/prweb12996515.htm/"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ Brings Out the “PINK” for Breast Cancer Awareness Month</span><br><br>
+					Date: Oct 1, 2015<br>
+					Source: prweb.com<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+
+
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//powerhandz.com/files/Powerhandz-Enters-Year-Two.pdf"><img src="../img/oct20.jpg" alt="POWERHANDZ Press"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//powerhandz.com/files/Powerhandz-Enters-Year-Two.pdf"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ Enters Year Two </span><br><br>
+					Date: July 30, 2015<br>
+					Source: Franchise Sports &amp; Entertainment<br>
+					Contact: Rob Scichili<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+  	
+
+
+
+   	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//shawsports.net/the-baseline-nba-playoff-changes-powerhandz-training-and-free-agency-news/"><img src="../img/shawsports.jpg" alt="POWERHANDZ LOOKS TO BE THE NEXT INNOVATION IN SPORTS TRAINING"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//shawsports.net/the-baseline-nba-playoff-changes-powerhandz-training-and-free-agency-news/"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ Pushes The Limits Of Athletic Training Gloves</span><br><br>
+					Date: July 27, 2015<br>
+					Source: ShawSports.Net<br>
+					Contact: Warren Shaw<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+
+
+ 
+   	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.sporttechie.com/2015/06/23/powerhandz-pushes-limits-athletic-training-gloves/"><img src="../img/sporttechie.jpg" alt="POWERHANDZ Pushes The Limits Of Athletic Training Gloves"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.sporttechie.com/2015/06/23/powerhandz-pushes-limits-athletic-training-gloves/"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ Pushes The Limits Of Athletic Training Gloves</span><br><br>
+					Date: June 23, 2015<br>
+					Source: //www.sporttechie.com/<br>
+					Contact: Freddy Lopez<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+
+ 
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//shawsports.net/powerhandz-looks-to-be-the-next-innovation-in-sports-training/"><img src="../img/shawsports.jpg" alt="POWERHANDZ LOOKS TO BE THE NEXT INNOVATION IN SPORTS TRAINING"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//shawsports.net/powerhandz-looks-to-be-the-next-innovation-in-sports-training/"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ LOOKS TO BE THE NEXT INNOVATION IN SPORTS TRAINING</span><br><br>
+					Date: June 3, 2015<br>
+					Source: ShawSports.Net<br>
+					Contact: Warren Shaw<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.si.com/sports-illustrated/video/2015/06/03/si-now-wedesday-june-3-2015"><img src="../img/sportsillustrated.jpg" alt="SI Now Wednesday June 3, 2015"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.si.com/sports-illustrated/video/2015/06/03/si-now-wedesday-june-3-2015"><div class="presscopy">
+					<span class="presscopytitle">On SI Now, Dallas Cowboys safety J.J. Wilcox and Sports Illustrated senior writer Phil Taylor.</span><br><br>
+					Date: June 3, 2015<br>
+					Source: ginny@newsandexperts.com<br>
+					Contact: Ginny Grimsley<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.dmagazine.com/publications/d-ceo/2015/april/powerhandz-pure-grip-golf-glove/"><img src="../img/dmagazine.jpg" alt="D Magazine"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.dmagazine.com/publications/d-ceo/2015/april/powerhandz-pure-grip-golf-glove/"><div class="presscopy">
+					<span class="presscopytitle">The Science of the Golf Swing</span><br><br>
+					Date: April 2015<br>
+					Source: D CEO<br>
+					Contact: HILARY LAU<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+  	
+  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.star-telegram.com/sports/golf/article21398259.html"><img src="../img/startelegram.jpg" alt="D Magazine"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.star-telegram.com/sports/golf/article21398259.html"><div class="presscopy">
+					<span class="presscopytitle">PowerHandz latest product working its way to golfers</span><br><br>
+					Date: May 19, 2015<br>
+					Source: kcasas@star-telegram.com<br>
+					Contact: KEVIN CASAS<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>
+  	
+  	
+  	
+  	
+  	
+  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.marketwired.com/press-release/powerhandz-inc-and-soccer-star-hope-solo-team-up-for-our-time-campaign-2012337.htm"><img src="../img/marketwired.jpg" alt="Powerhandz Signs NBA's Deron Williams as Brand Ambassador"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.marketwired.com/press-release/powerhandz-inc-and-soccer-star-hope-solo-team-up-for-our-time-campaign-2012337.htm"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ, Inc. and Soccer Star Hope Solo Team Up for "OUR TIME" Campaign</span><br><br>
+					Date: April 22, 2015<br>
+					Source: ginny@newsandexperts.com<br>
+					Contact: Ginny Grimsley<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.sportsonesource.com/news/spor/spor_article.asp?section=1&amp;Prod=1&amp;id=55539"><img src="../img/sos.jpg" alt="Powerhandz Signs NBA's Deron Williams as Brand Ambassador"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.sportsonesource.com/news/spor/spor_article.asp?section=1&amp;Prod=1&amp;id=55539"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ Signs NBA's Deron Williams as Brand Ambassador</span><br><br>
+					Date: April 10, 2015<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+
+  	<hr><br>
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.marketwired.com/press-release/cowboys-safety-jj-wilcox-spends-off-season-training-with-powerhandz-inc-2010095.htm"><img src="../img/marketwired.jpg" alt="Cowboys Safety J.J. Wilcox Spends Off-Season Training With POWERHANDZ"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.marketwired.com/press-release/cowboys-safety-jj-wilcox-spends-off-season-training-with-powerhandz-inc-2010095.htm"><div class="presscopy">
+					<span class="presscopytitle">Cowboys Safety J.J. Wilcox Spends Off-Season Training With POWERHANDZ, Inc.</span><br><br>
+					Date: April 15, 2015<br>
+					Source: ginny@newsandexperts.com<br>
+					Contact: Ginny Grimsley<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+
+  	<hr><br>  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//finance.yahoo.com/news/two-time-olympic-gold-medalist-110000033.html"><img src="../img/yahoofin.jpg" alt="Two-Time Olympic Goad Metalist"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//finance.yahoo.com/news/two-time-olympic-gold-medalist-110000033.html"><div class="presscopy">
+					<span class="presscopytitle">Two-time Olympic Gold Medalist Deron Williams becomes latest Brand Ambassador of POWERHANDZ, Inc.</span><br><br>
+					Date: April 9, 2015<br>
+					Source: ginny@newsandexperts.com<br>
+					Contact: Ginny Grimsley<br>
+
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+
+  	<hr><br>  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="../files/Powerhandz-Christmas.pdf"><img src="../img/pr-kids.jpg" alt="POWERHANNDZ BRINGS CHRISTMAS CHEER"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="../files/Powerhandz-Christmas.pdf"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ “POWER TO GIVE FOUNDATION” TEAMS UP WITH BGCFT TO SPREAD SOME CHRISTMAS CHEER</span><br><br>
+					Date: December 11, 2014<br>
+					Source: Willis &amp; Woy Media Group<br>
+					Contact: Aaron Zack<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+
+  	<hr><br>  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.cbssports.com/mlb/eye-on-baseball/24879871/eye-on-photos-2014-mlb-winter-meetings-trade-show"><img src="../img/cbs-sports.jpg" alt="CBS SPORTS"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.cbssports.com/mlb/eye-on-baseball/24879871/eye-on-photos-2014-mlb-winter-meetings-trade-show"><div class="presscopy">
+					<span class="presscopytitle">Eye on Photos: 2014 MLB Winter Meetings, trade show</span><br><br>
+					Date: December 10, 2014<br>
+					Contact: Matt Snyder<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+
+
+
+  	<hr><br>
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.bizjournals.com/dallas/print-edition/2014/10/24/strategies-how-i-helped-pro-athletes-get-a-better.html"><img src="../img/dallasbus.jpg" alt="SGI Weekly"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.bizjournals.com/dallas/print-edition/2014/10/24/strategies-how-i-helped-pro-athletes-get-a-better.html"><div class="presscopy">
+					<span class="presscopytitle">Strategies: How I Helped pro athletes get a better grip</span><br><br>
+					Date: October 24, 2014<br>
+					Source: Willis &amp; Woy Media Group<br>
+					Contact: Aaron Zack<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+  	<hr><br>
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//powerhandz.com/files/Escobar-Crawford-and-Wilcox-Press-Release.pdf"><img src="../img/oct20.jpg" alt="SGI Weekly"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//powerhandz.com/files/Escobar-Crawford-and-Wilcox-Press-Release.pdf"><div class="presscopy">
+					<span class="presscopytitle">With a 6-1 Record, CRAWFORD, WILCOX and ESCOBAR give some of their training credit to POWERHANDZ for a competitive advantage. </span><br><br>
+					Date: October 20, 2014<br>
+					Source: Willis &amp; Woy Media Group<br>
+					Contact: Aaron Zack<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+  	<hr><br>
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//viewer.zmags.com/publication/f17190bd"><img src="../img/sgi-weeklyreport.jpg" alt="SGI Weekly"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//viewer.zmags.com/publication/f17190bd"><div class="presscopy">
+					<span class="presscopytitle">POW, POWERHANDZ Tighten the Grip on Handware Market </span><br><br>
+					Date: September 15, 2014<br>
+					Source: Maroon PR<br>
+					Site: www.zmags.com<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+
+  	<hr><br>
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.vigilantsports.com/2014/09/09/training-never-stops-paul-george-tries-powerhandz/"><img src="../img/vs-logo.jpg" alt="Vigilant Sports"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.vigilantsports.com/2014/09/09/training-never-stops-paul-george-tries-powerhandz/"><div class="presscopy">
+					<span class="presscopytitle">Training never stops — Paul George tries POWERHANDZ </span><br><br>
+					Date: September 9, 2014<br>
+					Source: Maroon PR<br>
+					Site: www.vigilantsports.com<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+
+  	<hr><br>
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//powerhandz.com/files/Camp-Registration-Release.pdf"><img src="../img/press-powerhandz.jpg" alt="POWERHANDZ Press"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//powerhandz.com/files/Camp-Registration-Release.pdf"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ: Camp Registration Release </span><br><br>
+					Date: September 9, 2014<br>
+					Source: Maroon PR<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	
+  	
+  	<hr><br>
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.sportsonesource.com/news/article_home.asp?Prod=1&amp;section=8&amp;id=52558"><img src="../img/sos.jpg" alt="Sports One Source"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.sportsonesource.com/news/article_home.asp?Prod=1&amp;section=8&amp;id=52558"><div class="presscopy">
+					<span class="presscopytitle">Powerhandz NBA Guards as Brand Ambassadors </span><br><br>
+					Date: August 26, 2014<br>
+					Source: Maroon PR<br>
+					Site: www.sportsonesource.com<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+ 
+ 
+  	<hr><br>
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.wfaa.com/story/entertainment/television/programs/good-morning-texas/2014/08/25/14323246/"><img src="../img/gmt.jpg" alt="Good Morning Texas - WFAA.com"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.wfaa.com/story/entertainment/television/programs/good-morning-texas/2014/08/25/14323246/"><div class="presscopy">
+					<span class="presscopytitle">Check Out Powerhandz Athletic Performance Enhancing Products</span><br><br>
+					Date: August 25, 2014<br>
+					Source: Maroon PR<br>
+					Site: www.wfaa.com<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+  	
+  	
+  	
+  	<hr><br>  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//powerhandz.com/files/POWERHANDZ-Basketball-Press-Release.pdf"><img src="../img/press-powerhandz.jpg" alt="Basketball Press Release"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//powerhandz.com/files/POWERHANDZ-Basketball-Press-Release.pdf"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ, INC. ADDS NBA GUARDS DONALD SLOAN AND RONNIE PRICE, ALONGSIDE PRO BASKETBALL TRAINER, AS OFFICIAL BRAND AMBASSADORS  </span><br><br>
+					Date: August 26, 2014<br>
+					Source: Maroon PR<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	
+  	<hr><br>
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//dallasentertainmentjournal.com/local-business-spotlight-powerhandz-announces-legendary-brand-ambassadors/"><img src="../img/dej.jpg" alt="Dallas Entertainment Journal"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//dallasentertainmentjournal.com/local-business-spotlight-powerhandz-announces-legendary-brand-ambassadors/"><div class="presscopy">
+					<span class="presscopytitle">Local Business Spotlight: PowerHandz announces legendary Brand Ambassadors!  </span><br><br>
+					Date: August 13, 2014<br>
+					Source: Maroon PR<br>
+					Site: www.dallasentertainmentjournal.com<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+
+<hr><br>  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//powerhandz.com/files/Brian-Dawkins-on-ESPN.mp3"><img src="../img/pr4.jpg" alt="EPSN Interview - Brian Dawkins"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//powerhandz.com/files/Brian-Dawkins-on-ESPN.mp3"><div class="presscopy">
+					<span class="presscopytitle">Brian Dawkins chatted with Tim Cowlishaw and Matt Mosley of ESPN Dallas about POWERHANDZ and Power to Give</span><br><br>
+					Date: July 25, 2014<br>
+					Source: Maroon PR<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	  	<hr><br>  	
+  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//powerhandz.com/files/Brian-Dawkins-on-CBS.mp3"><img src="../img/pr3.jpg" alt="CBS Interview - Brian Dawkins"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//powerhandz.com/files/Brian-Dawkins-on-CBS.mp3"><div class="presscopy">
+					<span class="presscopytitle">The Ben &amp; Skin show had a chance to talk to Brian Dawkins about the POWERHANDZ product line, as well as the partnership between Power to Give and the Boys &amp; Girls Club of Greater Fort Worth.</span><br><br>
+					Date: July 25, 2014<br>
+					Source: Maroon PR<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>  	
+  	<div class="row animated fadeInUp">
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//powerhandz.com/files/BGC-Partnership-Release.pdf"><img src="../img/pr2.jpg" alt="BGC Partnership"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//powerhandz.com/files/BGC-Partnership-Release.pdf"><div class="presscopy">
+					<span class="presscopytitle">NFL VETERAN &amp; ESPN ANALYST, BRIAN DAWKINS, HOSTED CLINIC AT BOYS &amp; GIRLS CLUB OF GREATER FORT WORTH 
+ALONGSIDE PARTNER POWERHANDZ, INC. </span><br><br>
+					Date: July 25, 2014<br>
+					Source: Maroon PR<br>
+				</div>
+				</a>
+				
+			</div>
+
+
+
+  	</div>
+  	<br>
+  	<hr><br>  	
+	
+  	<div class="row animated fadeInUp">
+	  		
+	  		<div class="large-4 columns hide-for-small medium-4">
+                 <div class="pressspace">
+     								   
+    						<!-- Portfolio Item -->
+                             	<div class="press-item bottom-shadow">
+  	    	    						<a href="//www.athleticbusiness.com/industry-press-room/powerhandz-inc-enters-sporting-goods-market-with-multi-sport-performance-enhancing-athletic-training-products.html#.U7xlFPQnZ6M.email"><img src="../img/pr1.jpg" alt="Athletic Business"></a>
+                            	</div>
+                            <!-- End Portfolio Item --> 
+                 </div>
+                                      
+			</div>
+	  	
+	  		<div class="large-8 columns small-12 medium-8">
+				<a href="//www.athleticbusiness.com/industry-press-room/powerhandz-inc-enters-sporting-goods-market-with-multi-sport-performance-enhancing-athletic-training-products.html#.U7xlFPQnZ6M.email"><div class="presscopy">
+					<span class="presscopytitle">POWERHANDZ, Inc. Enters Sporting Goods Market</span><br><br>
+					Date: July 8, 2014<br>
+					Source: Maroon PR<br>
+					Site: www.athleticbusiness.com<br>
+				</div>
+				</a>
+				
+			</div>
+  	</div>
+  	<br>
+  	  	<hr>
+<br>
+
+  	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="mediakit"></div>
+  	
+
+
+				
+			</div>
+
+
+<div class="large-12 columns">
+	 	<h2 class="hide-for-small">MEDIA KIT</h2>
+	 	<div class="row"><hr></div><br>
+	 			<a href="//powerhandz.com/resources"><button class="button btnBlack hollow" style="margin-bottom:1em;">Logo Kit</button></a>
+	 			<a href="//powerhandz.com/files/brand.pdf"><button class="button btnBlack hollow" style="margin-bottom:1em;">Branding Guidelines</button></a>
+	 			<a href="//powerhandz.com/files/About-POWERHANDZ.pdf"><button class="button btnBlack hollow" style="margin-bottom:1em;">Product Fact Sheet</button></a>
+	 		
+	 			<a href="#" data-dropdown="drop1" style="margin-bottom:2em;"><button class="button btnBlack hollow" style="margin-bottom:1em;">Biography</button></a>
+    	</div>
+
+
+
+
+          
+        </div>
+      </div>
+
+
+
+
+
+      <!--#include virtual="../programs.shtml" -->
+
+<style>
+.clientsGrid li, .testimonialsGrid li
+{padding: 4px 14px;
+}
+</style>
+
+
+
+   <div class="bgWhite">
+      <div class="row relPosition stretched" >
+         <div class="small-12 medium-4 large-4 columns">
+            <div id="hoverbar">
+            </div>
+            <div class="card-product-hover">
+               <img content src="../img/Anti-Grip-Clear.jpg" >
+               <div class="card-product-hover-icons">
+                  <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-star-o"></i></a>
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa fa-share-alt"></i></a>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.color_main = "111111";
+a2a_config.color_border = "000000";
+a2a_config.color_link_text = "ffffff";
+a2a_config.color_link_text_hover = "fefefe";
+a2a_config.color_bg = "111111";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->                                
+               </div>
+            </div>
+         </div>
+         <div class="small-12 medium-8 large-8 columns">
+            <div class="littleroom">
+               <div class="row">
+                  <div class="small-12 columns">
+                     <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                        <h3 style="padding-left:15px;padding-top:15px;"><strong>Weighted Anti-Grip Training Gloves</strong>
+                           <span style="display:inline;float:right;"><a class="button btnBlack hollow small show-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i>Shop</a></span>
+                           <span style="display:inline;float:right;"><a class="hide-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i></a></span>
+                        </h3>
+                        <li class="accordion-item is-active" data-accordion-item>
+                           <a class="accordion-title">Product Features</a>
+                           <div class="accordion-content" data-tab-content>
+                              <p>POWERHANDZ Anti Grip Weighted Training Gloves features weight strategically placed around flex points on the top side of the glove, stretch fabric and an anti-grip material on the palm side of the glove. The slippery fabric makes it more difficult to catch and maintain control of a ball. Ideal for football and basketball training. Up to 2 LB in weight for each pair based on size.</p>
+                           </div>
+                        </li>
+                        <li class="accordion-item" data-accordion-item>
+                           <a class="accordion-title">Select Your Sport</a>
+                           <div class="accordion-content" data-tab-content>
+                              <ul class="row small-up-2 medium-up-4 large-up-4 clientsGrid">
+								  <a href="//powerhandz.com/basketball/"><li>Basketball</li></a>
+								  <a href="//powerhandz.com/football/"><li>Football</li></a>
+								  <a href="//powerhandz.com/baseball/"><li>Baseball</li></a>
+								  <a href="//powerhandz.com/softball/"><li>Softball</li></a>
+								  <a href="//powerhandz.com/boxing-mma/"><li>Boxing / MMA</li></a>
+								  <a href="//powerhandz.com/golf/"><li>Golf</li></a>
+								  <a href="//powerhandz.com/lifestyle/"><li>Lifestyle</li></a>
+								  
+								  
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <br/>
+
+   <div class="bgWhite">
+      <div class="row relPosition stretched" >
+         <div class="small-12 medium-4 large-4 columns">
+            <div id="hoverbar">
+            </div>
+            <div class="card-product-hover">
+               <img content src="../img/Pure-Grip-Clear.jpg" >
+               <div class="card-product-hover-icons">
+                  <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-star-o"></i></a>
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa fa-share-alt"></i></a>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.color_main = "111111";
+a2a_config.color_border = "000000";
+a2a_config.color_link_text = "ffffff";
+a2a_config.color_link_text_hover = "fefefe";
+a2a_config.color_bg = "111111";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->                                
+               </div>
+            </div>
+         </div>
+         <div class="small-12 medium-8 large-8 columns">
+            <div class="littleroom">
+               <div class="row">
+                  <div class="small-12 columns">
+                     <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                        <h3 style="padding-left:15px;padding-top:15px;"><strong>Weighted Pure-Grip Training Gloves</strong>
+                           <span style="display:inline;float:right;"><a class="button btnBlack hollow small show-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i>Shop</a></span>
+                           <span style="display:inline;float:right;"><a class="hide-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i></a></span>
+                        </h3>
+                        <li class="accordion-item is-active" data-accordion-item>
+                           <a class="accordion-title">Product Features</a>
+                           <div class="accordion-content" data-tab-content>
+                              <p>Created for the ultimate grip, the POWERHANDZ Regular Grip Weighted Training Gloves combines weight strategically placed around flex points on the top side of the glove and sheepskin leather on the palm. This glove would be used for any sport that requires an athlete to handle a bat or stick. Ideal for baseball or any lifestyle sporting activity. Up to 2 LB in weight for each pair based on size.</p>
+                           </div>
+                        </li>
+                        <li class="accordion-item" data-accordion-item>
+                           <a class="accordion-title">Select Your Sport</a>
+                           <div class="accordion-content" data-tab-content>
+                              <ul class="row small-up-2 medium-up-4 large-up-4 clientsGrid">
+								  <a href="//powerhandz.com/basketball/"><li>Basketball</li></a>
+								  <a href="//powerhandz.com/football/"><li>Football</li></a>
+								  <a href="//powerhandz.com/baseball/"><li>Baseball</li></a>
+								  <a href="//powerhandz.com/softball/"><li>Softball</li></a>
+								  <a href="//powerhandz.com/boxing-mma/"><li>Boxing / MMA</li></a>
+								  <a href="//powerhandz.com/golf/"><li>Golf</li></a>
+								  <a href="//powerhandz.com/lifestyle/"><li>Lifestyle</li></a>
+								  
+								  
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <br/>
+
+   <div class="bgWhite">
+      <div class="row relPosition stretched" >
+         <div class="small-12 medium-4 large-4 columns">
+            <div id="hoverbar">
+            </div>
+            <div class="card-product-hover">
+               <img content src="../img/powerarch-clear.jpg" >
+               <div class="card-product-hover-icons">
+                  <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-star-o"></i></a>
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa fa-share-alt"></i></a>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.color_main = "111111";
+a2a_config.color_border = "000000";
+a2a_config.color_link_text = "ffffff";
+a2a_config.color_link_text_hover = "fefefe";
+a2a_config.color_bg = "111111";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->                                
+               </div>
+            </div>
+         </div>
+         <div class="small-12 medium-8 large-8 columns">
+            <div class="littleroom">
+               <div class="row">
+                  <div class="small-12 columns">
+                     <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                        <h3 style="padding-left:15px;padding-top:15px;"><strong>POWERARCH</strong>
+                           <span style="display:inline;float:right;"><a class="button btnBlack hollow small show-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i>Shop</a></span>
+                           <span style="display:inline;float:right;"><a class="hide-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i></a></span>
+                        </h3>
+                        <li class="accordion-item is-active" data-accordion-item>
+                           <a class="accordion-title">Product Features</a>
+                           <div class="accordion-content" data-tab-content>
+                              <p>The POWERARCH is a first of its kind training accessory designed to force a ball handler on the basketball court to stay low with their dribble. Previously, athletes were forced to use chairs or other items not designed for ball handling to work on staying low with their dribble.</p>
+                           </div>
+                        </li>
+                        <li class="accordion-item" data-accordion-item>
+                           <a class="accordion-title">Select Your Sport</a>
+                           <div class="accordion-content" data-tab-content>
+                              <ul class="row small-up-2 medium-up-4 large-up-4 clientsGrid">
+								  <a href="//powerhandz.com/basketball/"><li>Basketball</li></a>
+								  
+								  
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <br/>
+   <div class="bgWhite">
+      <div class="row relPosition stretched" >
+         <div class="small-12 medium-4 large-4 columns">
+            <div id="hoverbar">
+            </div>
+            <div class="card-product-hover">
+               <img content src="../img/popup-clear.jpg" >
+               <div class="card-product-hover-icons">
+                  <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                  <a href="#"><i class="fa fa-star-o"></i></a>
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa fa-share-alt"></i></a>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.color_main = "111111";
+a2a_config.color_border = "000000";
+a2a_config.color_link_text = "ffffff";
+a2a_config.color_link_text_hover = "fefefe";
+a2a_config.color_bg = "111111";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->                                
+               </div>
+            </div>
+         </div>
+         <div class="small-12 medium-8 large-8 columns">
+            <div class="littleroom">
+               <div class="row">
+                  <div class="small-12 columns">
+                     <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                        <h3 style="padding-left:15px;padding-top:15px;"><strong>POPUP DEFENDER</strong>
+                           <span style="display:inline;float:right;"><a class="button btnBlack hollow small show-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i>Shop</a></span>
+                           <span style="display:inline;float:right;"><a class="hide-for-large" href="https://shop.powerhandz.com/"><i class="iconLeft icon-cart"></i></a></span>
+                        </h3>
+                        <li class="accordion-item is-active" data-accordion-item>
+                           <a class="accordion-title">Product Features</a>
+                           <div class="accordion-content" data-tab-content>
+                              <p>POWERHANDZ Pop Up Defender is a compressed, collapsible 3-foot-5 statue that can be used as a defender for basketball, football and soccer. The innovative Pop Up Defender easily collapses and contains storage space inside, making it the perfect choice for coaches and athletes to take with them to simulate real live defenders on the field or court.</p>
+                           </div>
+                        </li>
+                        <li class="accordion-item" data-accordion-item>
+                           <a class="accordion-title">Select Your Sport</a>
+                           <div class="accordion-content" data-tab-content>
+                              <ul class="row small-up-2 medium-up-4 large-up-4 clientsGrid">
+								  <a href="//powerhandz.com/basketball/"><li>Basketball</li></a>
+								  <a href="//powerhandz.com/football/"><li>Football</li></a>								  
+								  
+                              </ul>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <br/>
+
+
+      <!--#include virtual="../testimonials.shtml" -->
+
+      <!-- CTA Section Starts -->
+      <div class="bgColor">
+         <div class="row padding cta">
+            <div class="small-12 medium-10 large-8 small-centered columns">
+               <h4 class="text-center">Are you ready to take your game to the next level?</h4>
+               <div class="row ctaBtns">
+                  <div class="small-8 medium-5 large-4 small-centered columns wow fadeInUp">
+                     <a href="//shop.powerhandz.com" class="button expanded btnBlack">SHOP NOW</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- CTA Section Ends -->
+
+
+
+   
+   
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+    $('#heroSlider').pogoSlider({
+        autoplay: false,
+        pauseOnHover: true,
+        displayProgess: false,
+        preserveTargetSize: false,
+        targetHeight: 4300,
+        responsive: true
+    }).data('plugin_pogoSlider');
+
+});
+
+</script>
+   <!--#include virtual="../stats.shtml" -->
+   <!--#include virtual="../press.shtml" -->
+   <!--#include virtual="../footer.shtml" -->
+   <a href="../#0" class="backTop">Top</a>
+</body>
+</html>

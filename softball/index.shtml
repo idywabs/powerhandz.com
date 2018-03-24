@@ -1,0 +1,396 @@
+<!--#include virtual="../head.shtml" -->
+<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
+<!-- Meta Tags -->
+<meta name="description" content="Professional Sports Training Products" />
+<meta name="author" content="POWERHANDZ" />
+<title>POWERHANDZ / Softball</title>
+</head>
+
+<body class="boxed">
+    <div class="animsition">
+        <div class="large reveal" id="exampleModal0" data-reveal data-reset-on-close="true">
+            <h2>David Ortiz's Secret Training Weapon: POWERHANDZ</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/c1E7L0Si4XA?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="large reveal" id="exampleModal1" data-reveal data-reset-on-close="true">
+            <h2>POWERHANDZ Softball Training with Pro CJ Beatty</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tMzsB62UvTE?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="large reveal" id="exampleModal2" data-reveal data-reset-on-close="true">
+            <h2>Lauren Chamberlain (Orlando Pride)</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/U9iJhSmcnh8?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+
+        <div class="large reveal" id="exampleModal3" data-reveal data-reset-on-close="true">
+            <h2>POWERHANDZ- Train With Purpose</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/6MNZhhbPF9g?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+<!--
+        <div class="large reveal" id="exampleModal4" data-reveal data-reset-on-close="true">
+            <h2>Instructional with Tyler Relph</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Y-aTQuyWDQ&t?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="large reveal" id="exampleModal5" data-reveal data-reset-on-close="true">
+            <h2>Kyrie Irving Combo Drill</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/seaOyvYo06k?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <div class="large reveal" id="exampleModal6" data-reveal data-reset-on-close="true">
+            <h2>Perry Jones Workout</h2>
+            <div class="videoWrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/B0jl7HeeroM?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+-->
+
+        <!--#include virtual="../top-bar.shtml" -->
+
+        <div class="heroWrapper relPosition">
+            <div class="heroSmallBlack relPosition" style="background-image: url('../img/main-hero-img-softball.jpg');background-position: 50% 50%;">
+                <div class="row">
+                    <div class="heroIntro padding horizontalCenter">
+                        <div class="small-10 medium-8 large-6 columns">
+                            <h6>POWERHANDZ Softball Collection</h6>
+                            <div class="divider"></div>
+                            <h1>Join the thousands of athletes who have already started improving their Softball game.</h1>
+                            <div class="ctaBtns">
+                                <a class="button btnWhite hollow" href="https://shop.powerhandz.com/collections/softball">GET POWERHANDZ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hero Banner Ends -->
+        </div>
+        <div class="mainWrapper">
+            <header id="header" class="topbar-sticky-shrink-header"></header>
+            <div data-sticky-container>
+                <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
+                    <div class="top-bar topbar-sticky-shrink show-for-medium">
+                        <div class="top-bar-title ">
+                            <a class="button btnWhite hollow expanded" href="//shop.powerhandz.com/collections/softball"><i class="iconLeft icon-cart"></i>SHOP</a>
+                        </div>
+                        <div class="top-bar-right">
+                            <ul class="menu" style="padding-top:8px;">
+                                <li><a href="#products">Products</a></li>
+                                <li><a href="#works">How It Works</a></li>
+                                <li><a href="#reviews">Reviews</a></li>
+                                <li><a href="#faq">FAQ</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <br />
+                </div>
+            </div>
+            <a name="products"></a>
+            <div class="bgWhite">
+                <div class="row relPosition stretched">
+                    <div class="small-12 medium-6 large-6 columns">
+                        <div id="hoverbar">
+                        </div>
+                        <div class="card-product-hover">
+                            <img content src="../img/Pure-Grip-Clear.jpg">
+                            <div class="card-product-hover-icons">
+                                <a href="https://shop.powerhandz.com/collections/all/products/pure-grip-softball-gloves"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-star-o"></i></a>
+
+
+
+
+<!-- AddToAny BEGIN -->
+<a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa fa-share-alt"></i></a>
+<script>
+var a2a_config = a2a_config || {};
+a2a_config.onclick = 1;
+a2a_config.color_main = "111111";
+a2a_config.color_border = "000000";
+a2a_config.color_link_text = "ffffff";
+a2a_config.color_link_text_hover = "fefefe";
+a2a_config.color_bg = "111111";
+a2a_config.color_arrow = "fff";
+a2a_config.color_arrow_hover = "fff";
+a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
+</script>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-12 medium-6 large-6 columns">
+                        <div class="littleroom">
+                            <div class="row">
+                                <div class="small-12 columns">
+                                    <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                                        <h3 style="padding-left:15px;padding-top:15px;"><strong>Weighted Pure-Grip Gloves</strong>
+                           <span style="display:inline;float:right;"><a class="button btnBlack hollow small show-for-large" href="https://shop.powerhandz.com/collections/all/products/pure-grip-softball-gloves"><i class="iconLeft icon-cart"></i>Shop</a></span>
+                           <span style="display:inline;float:right;"><a class="hide-for-large" href="https://shop.powerhandz.com/collections/all/products/pure-grip-softball-gloves"><i class="iconLeft icon-cart"></i></a></span>
+                        </h3>
+                                        <li class="accordion-item is-active" data-accordion-item>
+                                            <a class="accordion-title">Product Features</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p>POWERHANDZ Pure Grip Weighted Training Gloves have weight distributed across the top side of the gloves with a grip material (similar to baseball batting gloves) on the palm. </p>
+                                                <ul class="iconList">
+                                                    <li><span class="icon-circle-plus coloredText"></span>Resistance increases proprioception</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Resistance develops finger and forearm strength</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Increased finger strength allows for proper control of bat in full swing</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Four-way nylon stretch fabric provides durability and flexibility during movement</li>
+                                                    <li><span class="icon-circle-plus coloredText"></span>Up to 2 LB in weight for each pair based on size</li>
+                                                </ul>
+                                            </div>
+                                        </li>
+<!--
+                                        <li class="accordion-item" data-accordion-item>
+                                            <a class="accordion-title">Specifications</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <p>Up to 2 LB in weight for each pair based on size.</p>
+                                            </div>
+                                        </li>
+-->
+                                        <li class="accordion-item" data-accordion-item>
+                                            <a class="accordion-title">Product Sizing</a>
+                                            <div class="accordion-content" data-tab-content>
+                                                <ul class="row small-up-2 medium-up-4 large-up-4 clientsGrid">
+                                                    <img src="https://powerhandz.com/img/PH-Chart-Glove.png">
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <a name="works"></a>
+
+            <div class="featured-article-side-links">
+                <div class="row collapse">
+                    <!-- big feature -->
+                    <div class="small-9 medium-8 large-6 columns">
+                        <div data-open="exampleModal2">
+                            <div class="featured-article-big baseball0">
+                                <div class="featured-article-tag">
+                                    <!--             <span class="label">News</span> -->
+                                </div>
+                                <div class="featured-article-text" style="padding-left:1em;">
+                                    <p class="featured-article-title">Lauren Chamberlain (Orlando Pride) <span class="author">by POWERHANDZ</span></p>
+                                    <p style="line-height:1em;max-width:500px;padding-bottom:30px;">
+</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- side links -->
+                    <div class="small-3 medium-4 large-2 columns featured-article-links-container">
+                        <div data-open="exampleModal1">
+                            <div class="featured-article-small baseball1">
+                                <div class="featured-article-tag">
+<!--                                     <span class="label"> </span> -->
+                                </div>
+                                <div class="featured-article-text">
+                                    <p class="featured-article-title">POWERHANDZ Baseball Training with Pro CJ Beatty</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-open="exampleModal0">
+                            <div class="featured-article-small baseball2">
+                                <div class="featured-article-tag">
+                                    <!-- 	                                <span class="label"></span> -->
+                                </div>
+                                <div class="featured-article-text">
+                                    <p class="featured-article-title">David Ortiz's Secret Training Weapon</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-open="exampleModal3">
+                            <div class="featured-article-small baseball3">
+                                <div class="featured-article-tag">
+                                    <!-- 	                                <span class="label"></span> -->
+                                </div>
+                                <div class="featured-article-text">
+                                    <p class="featured-article-title">POWERHANDZ- Train With Purpose</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-4 small-12 medium-12 columns">
+                            <div class="large-12 small-12 medium-12 columns">
+                                <br>
+                                <h3><strong>Get Control.</strong></h3>
+                                <p>It doesn’t matter if you are trying to improve your contact-hitting towards the gap or power-hitting to clear the fence—POWERHANDZ is training equipment designed to help you do both. With use of our product both your fingers and forearm strength will increase allowing for increased bat control, power and speed bringing your swing through the strike zone. The weighted resistance provided when taking your cuts is the perfect counter-balance hitters at all levels can use in their development. All of you future Gold Glovers winners may also want to give our product a try to increase the strength and accuracy needed to hose down overconfident baserunners on the diamond. Allow POWERHANDZ to help you train with purpose as you ascend playing the nation’s pastime. </p>
+                                <br>
+                                <a class="button btnBlack hollow" href="https://shop.powerhandz.com/collections/softball"><i class="iconLeft icon-cart"></i>GET POWERHANDZ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br/>
+
+			<a name="reviews"></a>
+            <!-- Testimonials Scroller Start -->
+            <div class="bgWhite">
+                <div class="row padding clearfix">
+                    <div class="small-12 medium-10 large-9 small-centered columns">
+
+                        <!-- Testimonials Scroller -->
+                        <div id="testimonialScroller" class="owl-carousel row">
+
+			              <!-- #2 Testimonial -->
+			              <div class="item small-10 small-centered medium-10 large-11 columns">
+			                <div class="testimonImg">
+			                  <img src="../img/quote-lc.jpg" alt="Lauren Chamberlain Testimonial">
+			                </div>
+			                <div class="testimonContent">
+			                  <p>I always want to have a competitive edge over my opponents, and Powerhandz helps me do just that. My swing feels smooth, powerful, and explosive after training with this incredible tool.</p>
+			                </div>
+			                <div class="testimonMeta">
+			                  Lauren Chamberlain 
+			                  <span>Professional Softball Player</span>
+			                </div>
+			              </div>
+
+			              <!-- #2 Testimonial -->
+			              <div class="item small-10 small-centered medium-10 large-11 columns">
+			                <div class="testimonImg">
+			                  <img src="../img/quote-anderson.jpg" alt="Brian Anderson Testimonial">
+			                </div>
+			                <div class="testimonContent">
+			                  <p>Unlike any other products on the market, POWERHANDZ "Pure Grip" gloves give you the ability to add weight to your bat while taking live batting practice. This product not only increases bat speed but also allows you to use your hand eye coordination.</p>
+			                </div>
+			                <div class="testimonMeta">
+			                  Brian Anderson
+			                  <span>Former MLB White Sox & Red Sox</span>
+			                </div>
+			              </div>
+
+			              <!-- #2 Testimonial -->
+			              <div class="item small-10 small-centered medium-10 large-11 columns">
+			                <div class="testimonImg">
+			                  <img src="../img/quote-ortiz.jpg" alt="David Ortiz Testimonial">
+			                </div>
+			                <div class="testimonContent">
+			                  <p>I’ve used donuts for years but this is a different feel. It feels smoother. The gloves feel like batting gloves and give me that extra bat speed I need at the plate. Different than anything I’ve seen before but a very useful product. I recommend to all baseball players coming up.</p>
+			                </div>
+			                <div class="testimonMeta">
+			                  David Ortiz 
+			                  <span>3X WORLD CHAMPION & 9X ALL STAR</span>
+			                </div>
+			              </div>
+
+
+
+                        </div>
+
+                        <script type="text/javascript">
+                            $(document).on('ready', function() {
+
+                                var owlPost = $("#testimonialScroller");
+
+                                owlPost.owlCarousel({
+                                    pagination: true,
+                                    navigation: true,
+                                    navigationText: ['<span class="icon-angle-left"></span>', '<span class="icon-angle-right"></span>'],
+                                    autoPlay: 5000,
+                                    stopOnHover: true,
+                                    navRewind: false,
+                                    singleItem: true,
+                                    slideSpeed: 1000
+                                });
+
+                            });
+                        </script>
+                        <!-- Testimonial Scroller End -->
+                    </div>
+                </div>
+            </div>
+            <!--#include virtual="../cta.shtml" -->
+                        <a name="faq"></a>
+
+            <div class="column row" id="content">
+                <div class="small-12 medium-12 large-12 columns" data-equalizer-watch>
+                    <div class="padding">
+                        <div class="row">
+                            <div class="small-12 columns">
+                                <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                                    <li class="accordion-item is-active" data-accordion-item>
+                                        <a class="accordion-title">How much do the gloves weigh?</a>
+                                        <div class="accordion-content" data-tab-content>
+                                            <p>Youth-Medium: Weigh Approximately 400 Grams or .88 lbs In Each Glove Large- XXL: Weigh Approximately 453 Grams or 1 lb In Each Glove
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-item" data-accordion-item>
+                                        <a class="accordion-title">How do you wash the gloves?</a>
+                                        <div class="accordion-content" data-tab-content>
+                                            <p>We Suggest Using a Non Toxic Aerosol Spray. Do Not Wash In The Wash Machine.</p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-item" data-accordion-item>
+                                        <a class="accordion-title">Do I have to use the products together?</a>
+                                        <div class="accordion-content" data-tab-content>
+                                            <p>No, The Products Will Provide You With a Great Workout On Their Own However The Combination Of The Two Will Give You Give You Ultimate Degree Of Difficulty While Training.</p>
+                                        </div>
+                                    </li>
+                                    <li class="accordion-item" data-accordion-item>
+                                        <a class="accordion-title">Do the gloves come in a pair?</a>
+                                        <div class="accordion-content" data-tab-content>
+                                            <p>Yes.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--#include virtual="../stats.shtml" -->
+            <!--#include virtual="../press.shtml" -->
+            <!--#include virtual="../footer.shtml" -->
+            <a href="../#0" class="backTop">Top</a>
+</body>
+
+</html>
