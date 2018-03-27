@@ -19,6 +19,10 @@ def about():
 def affiliates():
     return render_template('affiliates.html')
 
+@app.route('/affiliates-form')
+def form_affiliates():
+    return render_template('affiliates-form.html')
+
 @app.route('/baseball')
 def baseball():
     return render_template('baseball.html')
