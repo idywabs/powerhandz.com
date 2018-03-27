@@ -74,5 +74,9 @@ def softball():
 def team():
     return render_template('team.html')
 
+@app.route('/ourtime')
+def our_time():
+    return render_template('ourtime.html')
+
 if __name__ == '__main__':
     app.run()

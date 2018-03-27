@@ -1,20 +1,15 @@
-<!--#include virtual="../head.shtml" -->
-<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
-<!-- Meta Tags -->
-<meta name="description" content="Professional Sports Training Products" />
-<meta name="author" content="POWERHANDZ" />
-<title>POWERHANDZ / Our Time</title>
-</head>
-<body class="boxed">
-   <div class="animsition">
-      <!--#include virtual="../top-bar.shtml" -->
+{% extends 'layouts/base.html' %}
 
-
-
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Our Time | POWERHANDZ{% endblock %}
+{% block content %}
+    <div class="animsition">
+   {% include 'includes/top-bar.html' %}
 <style>
 
 .marketing-site-hero {
-  background: url("../img/ourtime-hero.jpg") top right no-repeat;
+  background: url("https://assets.powerhandz.com/images/ourtime-hero.jpg") top right no-repeat;
   height: 60vh;
   background-size: cover;
   display: -webkit-flex;
@@ -60,7 +55,7 @@
     <h1>IT'S OURTIME</h1>
     <div class="divider"></div>
     <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">EMPOWERING WOMEN TO BREAK OUR OWN GLASS CEILINGS</p>
-    <a href="//powerhandz.com/about" class="button btnWhite hollow">ABOUT POWERHANDZ</a>
+    <a href="/about" class="button btnWhite hollow">ABOUT POWERHANDZ</a>
   </div>
 </div>
 
@@ -91,7 +86,7 @@
           <div class="teamBoxed" data-equalizer-watch="" style="height: 600px;">
 
             <div>
-              <img src="../img/ourtime-2.jpg" alt="">
+              <img src="https://assets.powerhandz.com/images/ourtime-2.jpg" alt="">
             </div>
 
             <div class="memberBio">
@@ -116,7 +111,7 @@
           <div class="teamBoxed" data-equalizer-watch="" style="height: 600px;">
 
             <div>
-              <img src="../img/ourtime-1.jpg" alt="">
+              <img src="https://assets.powerhandz.com/images/ourtime-1.jpg" alt="">
             </div>
 
             <div class="memberBio">
@@ -141,7 +136,7 @@
           <div class="teamBoxed" data-equalizer-watch="" style="height: 600px;">
 
             <div>
-              <img src="../img/ourtime-3.jpg" alt="">
+              <img src="https://assets.powerhandz.com/images/ourtime-3.jpg" alt="">
             </div>
 
             <div class="memberBio">
@@ -160,14 +155,8 @@
 
         </div>
       </div>
-
-
-      <!--#include virtual="../programs.shtml" -->
-      <!--#include virtual="../cta-ourtime.shtml" -->
-
-
-
-
+   {% include 'includes/programs.html' %}
+   {% include 'includes/cta-ourtime.html' %}
 <style>
 .clientsGrid li, .testimonialsGrid li
 {padding: 4px 14px;
@@ -192,8 +181,5 @@ $(document).ready(function () {
 });
 
 </script>
-   <!--#include virtual="../press.shtml" -->
-   <!--#include virtual="../footer.shtml" -->
-   <a href="../#0" class="backTop">Top</a>
-</body>
-</html>
+   {% include 'includes/press.html' %}
+{% endblock %}

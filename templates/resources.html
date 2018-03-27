@@ -1,20 +1,15 @@
-<!--#include virtual="../head.shtml" -->
-<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
-<!-- Meta Tags -->
-<meta name="description" content="Professional Sports Training Products" />
-<meta name="author" content="POWERHANDZ" />
-<title>POWERHANDZ / Resources</title>
-</head>
-<body class="boxed">
+{% extends 'layouts/base.html' %}
+
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Resources | POWERHANDZ{% endblock %}
+{% block content %}
    <div class="animsition">
-      <!--#include virtual="../top-bar.shtml" -->
-
-
-
+   {% include 'includes/top-bar.html' %}
 <style>
 
 .marketing-site-hero {
-  background: url("../img/about-hero.jpg") top right no-repeat;
+  background: url("https://assets.powerhandz.com/images/about-hero.jpg") top right no-repeat;
   height: 60vh;
   background-size: cover;
   display: -webkit-flex;
@@ -60,7 +55,7 @@
     <h1>POWERHANDZ Assets</h1>
     <div class="divider"></div>
     <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">Do you need something else that's not available below? Please contact us so that we can get you what you need.</p>
-    <a href="//powerhandz.com/contact" class="button btnWhite hollow">Contact Us</a>
+    <a href="/contact" class="button btnWhite hollow">Contact Us</a>
   </div>
 </div>
 
@@ -89,17 +84,17 @@
 	            <div class="large-3 columns small-6 medium-6">
 	                <div class="pressspace">
 	                    <div class="press-item">
-	                        <img src="../img/POWERHANDZ-Vertical-Logo-Dark.jpg" alt="POWERHANDZ Logo">
+	                        <img src="https://assets.powerhandz.com/images/POWERHANDZ-Vertical-Logo-Dark.jpg" alt="POWERHANDZ Logo">
 	                    </div>
 	                </div>
 	                <div class="row">
 	                    <div class="large-12 columns">
 	                        <br>
-	                        <a href="logos/POWERHANDZ-Vertical-Logo-Dark.png">
+	                        <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Vertical-Logo-Dark.png">
 	                            <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
 	                        </a>
 	
-	                        <a href="logos/POWERHANDZ-Vertical-Logo-Dark.eps">
+	                        <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Vertical-Logo-Dark.eps">
 	                            <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
 	                        </a>
 	                    </div>
@@ -108,17 +103,17 @@
 	            <div class="large-3 columns small-6 medium-6">
 	                <div class="pressspace">
 	                    <div class="press-item">
-	                        <img src="../img/POWERHANDZ-Vertical-Logo-Light.jpg" alt="POWERHANDZ Logo">
+	                        <img src="https://assets.powerhandz.com/images/POWERHANDZ-Vertical-Logo-Light.jpg" alt="POWERHANDZ Logo">
 	                    </div>
 	                </div>
 	                <div class="row">
 	                    <div class="large-12 columns">
 	                        <br>
-	                        <a href="logos/POWERHANDZ-Vertical-Logo-Light.png">
+	                        <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Vertical-Logo-Light.png">
 	                            <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
 	                        </a>
 	
-	                        <a href="logos/POWERHANDZ-Vertical-Logo-Light.eps">
+	                        <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Vertical-Logo-Light.eps">
 	                            <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
 	                        </a>
 	                    </div>
@@ -127,17 +122,17 @@
 	            <div class="large-3 columns small-6 medium-6">
 	                <div class="pressspace">
 	                    <div class="press-item">
-	                        <img src="../img/POWERHANDZ-Vertical-Logo-Tagline-Dark.jpg" alt="POWERHANDZ Logo">
+	                        <img src="https://assets.powerhandz.com/images/POWERHANDZ-Vertical-Logo-Tagline-Dark.jpg" alt="POWERHANDZ Logo">
 	                    </div>
 	                </div>
 	                <div class="row">
 	                    <div class="large-12 columns">
 	                        <br>
-	                        <a href="logos/POWERHANDZ-Vertical-Logo-Tagline-Dark.png">
+	                        <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Vertical-Logo-Tagline-Dark.png">
 	                            <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
 	                        </a>
 	
-	                        <a href="logos/POWERHANDZ-Vertical-Logo-Tagline-Dark.eps">
+	                        <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Vertical-Logo-Tagline-Dark.eps">
 	                            <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
 	                        </a>
 	                    </div>
@@ -146,17 +141,17 @@
 	            <div class="large-3 columns small-6 medium-6">
 	                <div class="pressspace">
 	                    <div class="press-item">
-	                        <img src="../img/POWERHANDZ-Vertical-Logo-Tagline-Light.jpg" alt="POWERHANDZ Logo">
+	                        <img src="https://assets.powerhandz.com/images/POWERHANDZ-Vertical-Logo-Tagline-Light.jpg" alt="POWERHANDZ Logo">
 	                    </div>
 	                </div>
 	                <div class="row">
 	                    <div class="large-12 columns">
 	                        <br>
-	                        <a href="logos/POWERHANDZ-Vertical-Logo-Tagline-Light.png">
+	                        <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Vertical-Logo-Tagline-Light.png">
 	                            <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
 	                        </a>
 	
-	                        <a href="logos/POWERHANDZ-Vertical-Logo-Tagline-Light.eps">
+	                        <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Vertical-Logo-Tagline-Light.eps">
 	                            <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
 	                        </a>
 	                    </div>
@@ -184,17 +179,17 @@
                 <div class="large-3 columns small-6 medium-6">
                     <div class="pressspace">
                         <div class="press-item">
-                            <img src="../img/POWERHANDZ-Horizontal-Logo-Dark.jpg" alt="POWERHANDZ Logo">
+                            <img src="https://assets.powerhandz.com/images/POWERHANDZ-Horizontal-Logo-Dark.jpg" alt="POWERHANDZ Logo">
                         </div>
                     </div>
                     <div class="row">
                         <div class="large-12 columns">
                             <br>
-                            <a href="logos/POWERHANDZ-Horizontal-Logo-Dark.png">
+                            <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Horizontal-Logo-Dark.png">
                                 <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
                             </a>
 
-                            <a href="logos/POWERHANDZ-Horizontal-Logo-Dark.eps">
+                            <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Horizontal-Logo-Dark.eps">
                                 <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
                             </a>
                         </div>
@@ -203,17 +198,17 @@
                 <div class="large-3 columns small-6 medium-6">
                     <div class="pressspace">
                         <div class="press-item">
-                            <img src="../img/POWERHANDZ-Horizontal-Logo-Light.jpg" alt="POWERHANDZ Logo">
+                            <img src="https://assets.powerhandz.com/images/POWERHANDZ-Horizontal-Logo-Light.jpg" alt="POWERHANDZ Logo">
                         </div>
                     </div>
                     <div class="row">
                         <div class="large-12 columns">
                             <br>
-                            <a href="logos/POWERHANDZ-Horizontal-Logo-Light.png">
+                            <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Horizontal-Logo-Light.png">
                                 <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
                             </a>
 
-                            <a href="logos/POWERHANDZ-Horizontal-Logo-Light.eps">
+                            <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Horizontal-Logo-Light.eps">
                                 <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
                             </a>
                         </div>
@@ -222,17 +217,17 @@
                 <div class="large-3 columns small-6 medium-6">
                     <div class="pressspace">
                         <div class="press-item">
-                            <img src="../img/POWERHANDZ-Horizontal-Logo-Tagline-Dark.jpg" alt="POWERHANDZ Logo">
+                            <img src="https://assets.powerhandz.com/images/POWERHANDZ-Horizontal-Logo-Tagline-Dark.jpg" alt="POWERHANDZ Logo">
                         </div>
                     </div>
                     <div class="row">
                         <div class="large-12 columns">
                             <br>
-                            <a href="logos/POWERHANDZ-Horizontal-Logo-Tagline-Dark.png">
+                            <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Horizontal-Logo-Tagline-Dark.png">
                                 <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
                             </a>
 
-                            <a href="logos/POWERHANDZ-Horizontal-Logo-Tagline-Dark.eps">
+                            <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Horizontal-Logo-Tagline-Dark.eps">
                                 <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
                             </a>
                         </div>
@@ -241,17 +236,17 @@
                 <div class="large-3 columns small-6 medium-6">
                     <div class="pressspace">
                         <div class="press-item">
-                            <img src="../img/POWERHANDZ-Horizontal-Logo-Tagline-Light.jpg" alt="POWERHANDZ Logo">
+                            <img src="https://assets.powerhandz.com/images/POWERHANDZ-Horizontal-Logo-Tagline-Light.jpg" alt="POWERHANDZ Logo">
                         </div>
                     </div>
                     <div class="row">
                         <div class="large-12 columns">
                             <br>
-                            <a href="logos/POWERHANDZ-Horizontal-Logo-Tagline-Light.png">
+                            <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Horizontal-Logo-Tagline-Light.png">
                                 <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
                             </a>
 
-                            <a href="logos/POWERHANDZ-Horizontal-Logo-Tagline-Light.eps">
+                            <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Horizontal-Logo-Tagline-Light.eps">
                                 <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
                             </a>
                         </div>
@@ -281,17 +276,17 @@
                     <div class="large-3 columns small-6 medium-6">
                         <div class="pressspace">
                             <div class="press-item">
-                                <img src="../img/POWERHANDZ-Flame-Dark.jpg" alt="POWERHANDZ Logo">
+                                <img src="https://assets.powerhandz.com/images/POWERHANDZ-Flame-Dark.jpg" alt="POWERHANDZ Logo">
                             </div>
                         </div>
                         <div class="row">
                             <div class="large-12 columns">
                                 <br>
-                                <a href="logos/POWERHANDZ-Flame-Logo-Dark.png">
+                                <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Flame-Logo-Dark.png">
                                     <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
                                 </a>
 
-                                <a href="logos/POWERHANDZ-Flame-Logo-Dark.eps">
+                                <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Flame-Logo-Dark.eps">
                                     <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
                                 </a>
                             </div>
@@ -300,17 +295,17 @@
                     <div class="large-3 columns small-6 medium-6">
                         <div class="pressspace">
                             <div class="press-item">
-                                <img src="../img/POWERHANDZ-Flame-Light.jpg" alt="POWERHANDZ Logo">
+                                <img src="https://assets.powerhandz.com/images/POWERHANDZ-Flame-Light.jpg" alt="POWERHANDZ Logo">
                             </div>
                         </div>
                         <div class="row">
                             <div class="large-12 columns">
                                 <br>
-                                <a href="logos/POWERHANDZ-Flame-Logo-Light.png">
+                                <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Flame-Logo-Light.png">
                                     <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
                                 </a>
 
-                                <a href="logos/POWERHANDZ-Flame-Logo-Light.eps">
+                                <a href="https://assets.powerhandz.com/files/logos/POWERHANDZ-Flame-Logo-Light.eps">
                                     <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
                                 </a>
                             </div>
@@ -345,17 +340,17 @@
                         <div class="large-3 columns small-6 medium-6">
                             <div class="pressspace">
                                 <div class="press-item">
-                                    <img src="logos/POWER-TO-GIVE-LIGHT.jpg" alt="POWERHANDZ Logo">
+                                    <img src="https://assets.powerhandz.com/files/logos/POWER-TO-GIVE-LIGHT.jpg" alt="POWERHANDZ Logo">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="large-12 columns">
                                     <br>
-                                    <a href="logos/POWER-TO-GIVE-LIGHT.png">
+                                    <a href="https://assets.powerhandz.com/files/logos/POWER-TO-GIVE-LIGHT.png">
                                         <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
                                     </a>
 
-                                    <a href="logos/POWER-TO-GIVE-LIGHT.eps">
+                                    <a href="https://assets.powerhandz.com/files/logos/POWER-TO-GIVE-LIGHT.eps">
                                         <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
                                     </a>
                                 </div>
@@ -364,17 +359,17 @@
                         <div class="large-3 columns small-6 medium-6">
                             <div class="pressspace">
                                 <div class="press-item">
-                                    <img src="logos/POWER-TO-GIVE-DARK.jpg" alt="POWERHANDZ Logo">
+                                    <img src="https://assets.powerhandz.com/files/logos/POWER-TO-GIVE-DARK.jpg" alt="POWERHANDZ Logo">
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="large-12 columns">
                                     <br>
-                                    <a href="logos/POWER-TO-GIVE-DARK.png">
+                                    <a href="https://assets.powerhandz.com/files/logos/POWER-TO-GIVE-DARK.png">
                                         <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;PNG</button>
                                     </a>
 
-                                    <a href="logos/POWER-TO-GIVE-DARK.eps">
+                                    <a href="https://assets.powerhandz.com/files/logos/POWER-TO-GIVE-DARK.eps">
                                         <button class="button btnBlack hollow" style="font-size:0.75em;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;&nbsp;EPS</button>
                                     </a>
                                 </div>
@@ -404,12 +399,12 @@
                 <hr>
             </div>
             <div class="large-3 columns">
-                <a href="//powerhandz.com/files/brand.pdf">
+                <a href="https://assets.powerhandz.com/files/brand.pdf">
                     <button class="button btnBlack hollow expand" style="margin-bottom:1em;">Branding Guidelines</button>
                 </a>
             </div>
             <div class="large-3 columns">
-                <a href="//powerhandz.com/files/About-POWERHANDZ.pdf">
+                <a href="https://assets.powerhandz.com/files/About-POWERHANDZ.pdf">
                     <button class="button btnBlack hollow expand" style="margin-bottom:1em;">Product Fact Sheet</button>
                 </a>
             </div>
@@ -420,30 +415,17 @@
             </div>
             <div style="margin-left:8em;margin-top:8em!important;">
                 <ul id="drop1" class="f-dropdown" data-dropdown-content="" style="position: absolute; top: 140px; left: -99999px;">
-                    <li><a href="//powerhandz.com/files/darnell.pdf">Darnell Jones</a></li>
-                    <li><a href="//powerhandz.com/files/danyel.pdf">Danyel Surrency Jones</a></li>
+                    <li><a href="https://assets.powerhandz.com/files/darnell.pdf">Darnell Jones</a></li>
+                    <li><a href="https://assets.powerhandz.com/files/danyel.pdf">Danyel Surrency Jones</a></li>
                 </ul>
             </div>
         </div>
     </div>
 
 
-
-
-
-
-
-        
-                  
         </div>
       </div>
-
-
-
-
-
-      <!--#include virtual="../programs.shtml" -->
-
+   {% include 'includes/programs.html' %}
 <style>
 .clientsGrid li, .testimonialsGrid li
 {padding: 4px 14px;
@@ -451,8 +433,6 @@
 </style>
 
 
-   
-   
 <script type="text/javascript">
 
 $(document).ready(function () {
@@ -469,8 +449,5 @@ $(document).ready(function () {
 });
 
 </script>
-   <!--#include virtual="../press.shtml" -->
-   <!--#include virtual="../footer.shtml" -->
-   <a href="../#0" class="backTop">Top</a>
-</body>
-</html>
+   {% include 'includes/press.html' %}
+{% endblock %}
