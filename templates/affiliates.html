@@ -1,20 +1,14 @@
-<!--#include virtual="../head.shtml" -->
-<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
-<!-- Meta Tags -->
-<meta name="description" content="Professional Sports Training Products" />
-<meta name="author" content="POWERHANDZ" />
-<title>POWERHANDZ / Affiliates</title>
-</head>
-<body class="boxed">
-   <div class="animsition">
-      <!--#include virtual="../top-bar.shtml" -->
+{% extends 'layouts/base.html' %}
 
-
-
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Affiliates | POWERHANDZ{% endblock %}
+{% block content %}
+   {% include 'includes/top-bar.html' %}
 <style>
 
 .marketing-site-hero {
-  background: url("../img/affiliates-hero.jpg") top right no-repeat;
+  background: url("https://assets.powerhandz.com/images/affiliates-hero.jpg") top right no-repeat;
   height: 60vh;
   background-size: cover;
   display: -webkit-flex;
@@ -110,30 +104,16 @@ Any current or former pro-athletes, celebrities, coaches, trainers, retailers or
 </ul><br>
 
 <a href="http://powerhandz.com/shop/affiliates"> <button style="float:center;margin-left:auto;margin-right:auto;" class="button round small">Become a POWERHANDZ Affiliate</button></a>
-				
-				
-				
 				<br>
 		</div>
-  	</div>          
+  	</div>
         </div>
       </div>
-
-
-
-
-
-      <!--#include virtual="../programs.shtml" -->
-
+   {% include 'includes/programs.html' %}
 <style>
 .clientsGrid li, .testimonialsGrid li
 {padding: 4px 14px;
 }
 </style>
-
-
-   <!--#include virtual="../press.shtml" -->
-   <!--#include virtual="../footer.shtml" -->
-   <a href="../#0" class="backTop">Top</a>
-</body>
-</html>
+   {% include 'includes/press.html' %}
+{% endblock %}

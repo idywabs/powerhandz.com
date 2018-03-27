@@ -1,20 +1,14 @@
-<!--#include virtual="../head.shtml" -->
-<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
-<!-- Meta Tags -->
-<meta name="description" content="Professional Sports Training Products" />
-<meta name="author" content="POWERHANDZ" />
-<title>POWERHANDZ / About</title>
-</head>
-<body class="boxed">
-   <div class="animsition">
-      <!--#include virtual="../top-bar.shtml" -->
+{% extends 'layouts/base.html' %}
 
-
-
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Events | POWERHANDZ{% endblock %}
+{% block content %}
+   {% include 'includes/top-bar.html' %}
 <style>
 
 .marketing-site-hero {
-  background: url("../img/about-hero.jpg") top right no-repeat;
+  background: url("https://assets.powerhandz.com/images/about-hero.jpg") top right no-repeat;
   height: 60vh;
   background-size: cover;
   display: -webkit-flex;
@@ -50,8 +44,6 @@
   margin-bottom: 0;
 }
 
-
-
 </style>
 
    <div class="heroWrapper relPosition">
@@ -60,19 +52,11 @@
     <h1>POWERHANDZ EVENTS</h1>
     <div class="divider"></div>
     <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">Check out all of our events coming up. We host and attend events all around the country. Any questions - contact us below.</p>
-    <a href="//powerhandz.com/contact" class="button btnWhite hollow">Contact Us</a>
+    <a href="https://powerhandz.com/contact" class="button btnWhite hollow">Contact Us</a>
   </div>
 </div>
 
    </div>
-
-
-
-
-
-
-
-
 
 <style>
 .clientsGrid li, .testimonialsGrid li
@@ -80,16 +64,11 @@
 }
 </style>
 
-
-
    <div class="bgWhite">
 <iframe src="http://www.eventbrite.com/o/powerhandz-8636333093" style="border: 0; width: 100%!important; margin-top:-60px;margin-bottom:0px;bottom:0px;height:auto;min-height:900px;" seamless="seamless">Your browser doesn't support iFrames.</iframe>
-
-
    </div>
 
-      <!--#include virtual="../testimonials.shtml" -->
-
+   {% include 'includes/testimonials.html' %}
       <!-- CTA Section Starts -->
       <div class="bgColor">
          <div class="row padding cta">
@@ -97,7 +76,7 @@
                <h4 class="text-center">Are you ready to take your game to the next level?</h4>
                <div class="row ctaBtns">
                   <div class="small-8 medium-5 large-4 small-centered columns wow fadeInUp">
-                     <a href="//shop.powerhandz.com" class="button expanded btnBlack">SHOP NOW</a>
+                     <a href="https://shop.powerhandz.com" class="button expanded btnBlack">SHOP NOW</a>
                   </div>
                </div>
             </div>
@@ -105,10 +84,6 @@
       </div>
       <!-- CTA Section Ends -->
 
-
-
-   
-   
 <script type="text/javascript">
 
 $(document).ready(function () {
@@ -123,11 +98,7 @@ $(document).ready(function () {
     }).data('plugin_pogoSlider');
 
 });
-
 </script>
-   <!--#include virtual="../stats.shtml" -->
-   <!--#include virtual="../press.shtml" -->
-   <!--#include virtual="../footer.shtml" -->
-   <a href="../#0" class="backTop">Top</a>
-</body>
-</html>
+   {% include 'includes/stats.html' %}
+   {% include 'includes/press.html' %}
+{% endblock %}

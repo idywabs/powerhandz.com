@@ -1,12 +1,9 @@
-<!--#include virtual="../head.shtml" -->
-<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
-<!-- Meta Tags -->
-<meta name="description" content="Professional Sports Training Products" />
-<meta name="author" content="POWERHANDZ" />
-<title>POWERHANDZ / Golf</title>
-</head>
+{% extends 'layouts/base.html' %}
 
-<body class="boxed">
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Golf | POWERHANDZ{% endblock %}
+{% block content %}
     <div class="animsition">
         <div class="large reveal" id="exampleModal0" data-reveal data-reset-on-close="true">
             <h2>POWERHANDZ Golf Instructional Video</h2>
@@ -48,42 +45,10 @@
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-<!--
-        <div class="large reveal" id="exampleModal4" data-reveal data-reset-on-close="true">
-            <h2>Instructional with Tyler Relph</h2>
-            <div class="videoWrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Y-aTQuyWDQ&t?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
 
-        <div class="large reveal" id="exampleModal5" data-reveal data-reset-on-close="true">
-            <h2>Kyrie Irving Combo Drill</h2>
-            <div class="videoWrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/seaOyvYo06k?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
-        <div class="large reveal" id="exampleModal6" data-reveal data-reset-on-close="true">
-            <h2>Perry Jones Workout</h2>
-            <div class="videoWrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/B0jl7HeeroM?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
--->
-
-        <!--#include virtual="../top-bar.shtml" -->
-
+   {% include 'includes/top-bar.html' %}
         <div class="heroWrapper relPosition">
-            <div class="heroSmallBlack relPosition" style="background-image: url('../img/golf-hero.jpg');background-position: 50% 50%;">
+            <div class="heroSmallBlack relPosition" style="background-image: url('https://assets.powerhandz.com/images/golf-hero.jpg');background-position: 50% 50%;">
                 <div class="row">
                     <div class="heroIntro padding horizontalCenter">
                         <div class="small-10 medium-8 large-6 columns">
@@ -106,7 +71,7 @@
                 <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
                     <div class="top-bar topbar-sticky-shrink show-for-medium">
                         <div class="top-bar-title ">
-                            <a class="button btnWhite hollow expanded" href="//shop.powerhandz.com/collections/golf"><i class="iconLeft icon-cart"></i>SHOP</a>
+                            <a class="button btnWhite hollow expanded" href="https://shop.powerhandz.com/collections/golf"><i class="iconLeft icon-cart"></i>SHOP</a>
                         </div>
                         <a name="works"></a>
                         <div class="top-bar-right">
@@ -187,14 +152,14 @@
             </div>
             <br/>
             <a name="products"></a>
-            <!--#include virtual="../cta.shtml" -->
+   {% include 'includes/cta.html' %}
             <div class="bgWhite">
                 <div class="row relPosition stretched">
                     <div class="small-12 medium-6 large-6 columns">
                         <div id="hoverbar">
                         </div>
                         <div class="card-product-hover">
-                            <img content src="../img/Pure-Grip-Clear.jpg">
+                            <img content src="https://assets.powerhandz.com/images/Pure-Grip-Clear.jpg">
                             <div class="card-product-hover-icons">
                                 <a href="https://shop.powerhandz.com/collections/all/products/pure-grip-golf-gloves"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-star-o"></i></a>
@@ -253,7 +218,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                                             <a class="accordion-title">Product Sizing</a>
                                             <div class="accordion-content" data-tab-content>
                                                 <ul class="row small-up-2 medium-up-4 large-up-4 clientsGrid">
-                                                    <img src="https://powerhandz.com/img/PH-Chart-Glove.png">
+                                                    <img src="https://assets.powerhandz.com/images/PH-Chart-Glove.png">
                                                 </ul>
                                             </div>
                                         </li>
@@ -277,7 +242,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
 			              <!-- #2 Testimonial -->
 			              <div class="item small-10 small-centered medium-10 large-11 columns">
 			                <div class="testimonImg">
-			                  <img src="../img/quote-pat.jpg" alt="Pat O’Brien Testimonial">
+			                  <img src="https://assets.powerhandz.com/images/quote-pat.jpg" alt="Pat O’Brien Testimonial">
 			                </div>
 			                <div class="testimonContent">
 			                  <p>The POWERHANDZ Pure Grip Golf Glove is the best training product on the market that will allow you to develop the finger strength necessary to control the golf club properly. </p>
@@ -291,7 +256,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
 			              <!-- #2 Testimonial -->
 			              <div class="item small-10 small-centered medium-10 large-11 columns">
 			                <div class="testimonImg">
-			                  <img src="../img/quote-nicole.jpg" alt="Nicole Hage Testimonial">
+			                  <img src="https://assets.powerhandz.com/images/quote-nicole.jpg" alt="Nicole Hage Testimonial">
 			                </div>
 			                <div class="testimonContent">
 			                  <p>Your finger strength is most important in golf because your hands control your technique and swing speed. POWERHANDZ is a great training tool to help you improve these critical elements of game.</p>
@@ -367,10 +332,6 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                 </div>
             </div>
 
-            <!--#include virtual="../stats.shtml" -->
-            <!--#include virtual="../press.shtml" -->
-            <!--#include virtual="../footer.shtml" -->
-            <a href="../#0" class="backTop">Top</a>
-</body>
-
-</html>
+   {% include 'includes/stats.html' %}
+   {% include 'includes/press.html' %}
+{% endblock %}

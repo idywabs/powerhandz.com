@@ -1,12 +1,9 @@
-<!--#include virtual="../head.shtml" -->
-<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
-<!-- Meta Tags -->
-<meta name="description" content="Professional Sports Training Products" />
-<meta name="author" content="POWERHANDZ" />
-<title>POWERHANDZ / Football</title>
-</head>
+{% extends 'layouts/base.html' %}
 
-<body class="boxed">
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Football | POWERHANDZ{% endblock %}
+{% block content %}
     <div class="animsition">
         <div class="large reveal" id="exampleModal0" data-reveal data-reset-on-close="true">
             <h2>POWERHANDZ Football Instructional</h2>
@@ -78,10 +75,9 @@
             </button>
         </div>
 
-        <!--#include virtual="../top-bar.shtml" -->
-
+   {% include 'includes/top-bar.html' %}
         <div class="heroWrapper relPosition">
-            <div class="heroSmallBlack relPosition" style="background-image: url('../img/football-hero.jpg');background-position: 50% 50%;">
+            <div class="heroSmallBlack relPosition" style="background-image: url('https://assets.powerhandz.com/images/football-hero.jpg');background-position: 50% 50%;">
                 <div class="row">
                     <div class="heroIntro padding horizontalCenter">
                         <div class="small-10 medium-8 large-6 columns">
@@ -104,7 +100,7 @@
                 <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
                     <div class="top-bar topbar-sticky-shrink show-for-medium">
                         <div class="top-bar-title ">
-                            <a class="button btnWhite hollow expanded" href="//shop.powerhandz.com/collections/football"><i class="iconLeft icon-cart"></i>SHOP</a>
+                            <a class="button btnWhite hollow expanded" href="https://shop.powerhandz.com/collections/football"><i class="iconLeft icon-cart"></i>SHOP</a>
                         </div>
                         <div class="top-bar-right">
                             <ul class="menu" style="padding-top:8px;">
@@ -127,13 +123,10 @@
                         <div id="hoverbar">
                         </div>
                         <div class="card-product-hover">
-                            <img content src="../img/Anti-Grip-Clear.jpg">
+                            <img content src="https://assets.powerhandz.com/images/Anti-Grip-Clear.jpg">
                             <div class="card-product-hover-icons">
                                 <a href="https://shop.powerhandz.com/collections/all/products/anti-grip-football-gloves"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-star-o"></i></a>
-
-
-
 
 <!-- AddToAny BEGIN -->
 <a class="a2a_dd" href="https://www.addtoany.com/share"><i class="fa fa-share-alt"></i></a>
@@ -150,8 +143,8 @@ a2a_config.color_arrow_hover = "fff";
 a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
 </script>
 <script async src="https://static.addtoany.com/menu/page.js"></script>
-<!-- AddToAny END -->                                
-                                
+<!-- AddToAny END -->
+
                             </div>
                         </div>
                     </div>
@@ -177,19 +170,11 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                                                 </ul>
                                             </div>
                                         </li>
-<!--
-                                        <li class="accordion-item" data-accordion-item>
-                                            <a class="accordion-title">Specifications</a>
-                                            <div class="accordion-content" data-tab-content>
-                                                <p>.</p>
-                                            </div>
-                                        </li>
--->
                                         <li class="accordion-item" data-accordion-item>
                                             <a class="accordion-title">Product Sizing</a>
                                             <div class="accordion-content" data-tab-content>
                                                 <ul class="row small-up-2 medium-up-4 large-up-4 clientsGrid">
-                                                    <img src="https://powerhandz.com/img/PH-Chart-Glove.png">
+                                                    <img src="https://assets.powerhandz.com/images/PH-Chart-Glove.png">
                                                 </ul>
                                             </div>
                                         </li>
@@ -201,14 +186,11 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                 </div>
             </div>
             <br/>
-            
-            
-            
             <div class="bgWhite">
                 <div class="row relPosition stretched">
                     <div class="small-12 medium-6 large-6 columns">
                         <div class="card-product-hover">
-                            <img src="../img/popup-clear.jpg">
+                            <img src="https://assets.powerhandz.com/images/popup-clear.jpg">
                             <div class="card-product-hover-icons">
                                 <a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-star-o"></i></a>
@@ -239,14 +221,6 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                                                 </ul>
                                             </div>
                                         </li>
-<!--
-                                        <li class="accordion-item" data-accordion-item>
-                                            <a class="accordion-title">Specifications</a>
-                                            <div class="accordion-content" data-tab-content>
-                                                <p>Collapsible 3'—5" Statue</p>
-                                            </div>
-                                        </li>
--->
                                     </ul>
                                 </div>
                             </div>
@@ -306,34 +280,6 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                                 </div>
                             </div>
                         </div>
-  <!--                      <div data-open="exampleModal4">
-                            <div class="featured-article-small football4">
-                                <div class="featured-article-tag">
-                                </div>
-                                <div class="featured-article-text">
-                                    <p class="featured-article-title">Instructional with Tyler Relph</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-open="exampleModal5">
-                            <div class="featured-article-small football5">
-                                <div class="featured-article-tag">
-                                </div>
-                                <div class="featured-article-text">
-                                    <p class="featured-article-title">Kyrie Irving Combo Drill</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div data-open="exampleModal6">
-                            <div class="featured-article-small football6">
-                                <div class="featured-article-tag">
-                                </div>
-                                <div class="featured-article-text">
-                                    <p class="featured-article-title">Perry Jones Workout</p>
-                                </div>
-                            </div>
-                        </div>
--->
                     </div>
                     <div class="row">
                         <div class="large-4 small-12 medium-12 columns">
@@ -348,8 +294,6 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                     </div>
                 </div>
             </div>
-
-
                                 <a name="reviews"></a>
 
             <!-- Testimonials Scroller Start -->
@@ -363,7 +307,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
               <!-- #3 Testimonial -->
               <div class="item small-10 small-centered medium-10 large-11 columns">
                 <div class="testimonImg">
-                  <img src="../img/quote-wilcox.jpg" alt="JJ Wilcox Testimonial">
+                  <img src="https://assets.powerhandz.com/images/quote-wilcox.jpg" alt="JJ Wilcox Testimonial">
                 </div>
                 <div class="testimonContent">
                   <p>The last thing you want to do is drop balls or fumble. Why not use the POWERHANDZ slick ball wrap when you train in order to increase concentration and dexterity for game time.</p>
@@ -377,7 +321,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
               <!-- #3 Testimonial -->
               <div class="item small-10 small-centered medium-10 large-11 columns">
                 <div class="testimonImg">
-                  <img src="../img/quote-dawkins.jpg" alt="Brian Dawkins Testimonial">
+                  <img src="https://assets.powerhandz.com/images/quote-dawkins.jpg" alt="Brian Dawkins Testimonial">
                 </div>
                 <div class="testimonContent">
                   <p>Certain things aren’t in your control. Your work ethic and what you choose to do to take your skills to the next level are. POWERHANDZ products will assist you in developing those skills and revealing the true potential that lies within.</p>
@@ -390,7 +334,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
               <!-- #3 Testimonial -->
               <div class="item small-10 small-centered medium-10 large-11 columns">
                 <div class="testimonImg">
-                  <img src="../img/quote-brown.jpg" alt="Tim Brown">
+                  <img src="https://assets.powerhandz.com/images/quote-brown.jpg" alt="Tim Brown">
                 </div>
                 <div class="testimonContent">
                   <p>Your natural abilities will only take you so far. It’s hard work, both at practice and on your own, that helps you become the greatest player you can be,” said Brown. “I am excited to team up with POWERHANDZ and spread the word about their great products.  Playing receiver for 27 years, including 17 in the NFL, I can see how this product could have made me better. I look forward to seeing this great teaching tool impact athletes lives.</p>
@@ -400,9 +344,6 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                   <span>Former NFL Professional</span>
                 </div>
               </div>
-
-
-
 
                         </div>
 
@@ -428,7 +369,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                     </div>
                 </div>
             </div>
-            <!--#include virtual="../cta.shtml" -->
+   {% include 'includes/cta.html' %}
                         <a name="faq"></a>
 
             <div class="column row" id="content">
@@ -468,10 +409,6 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                     </div>
                 </div>
             </div>
-            <!--#include virtual="../stats.shtml" -->
-            <!--#include virtual="../press.shtml" -->
-            <!--#include virtual="../footer.shtml" -->
-            <a href="../#0" class="backTop">Top</a>
-</body>
-
-</html>
+   {% include 'includes/stats.html' %}
+   {% include 'includes/press.html' %}
+{% endblock %}

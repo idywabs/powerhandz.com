@@ -1,12 +1,9 @@
-<!--#include virtual="../head.shtml" -->
-<!-- each page will have it's own title and description and data but resources are pulled from head file above-->
-<!-- Meta Tags -->
-<meta name="description" content="Professional Sports Training Products" />
-<meta name="author" content="POWERHANDZ" />
-<title>POWERHANDZ / Softball</title>
-</head>
+{% extends 'layouts/base.html' %}
 
-<body class="boxed">
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Softball | POWERHANDZ{% endblock %}
+{% block content %}
     <div class="animsition">
         <div class="large reveal" id="exampleModal0" data-reveal data-reset-on-close="true">
             <h2>David Ortiz's Secret Training Weapon: POWERHANDZ</h2>
@@ -48,42 +45,9 @@
                 <span aria-hidden="true">&times;</span>
             </button>
         </div>
-<!--
-        <div class="large reveal" id="exampleModal4" data-reveal data-reset-on-close="true">
-            <h2>Instructional with Tyler Relph</h2>
-            <div class="videoWrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0Y-aTQuyWDQ&t?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
-        <div class="large reveal" id="exampleModal5" data-reveal data-reset-on-close="true">
-            <h2>Kyrie Irving Combo Drill</h2>
-            <div class="videoWrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/seaOyvYo06k?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-
-        <div class="large reveal" id="exampleModal6" data-reveal data-reset-on-close="true">
-            <h2>Perry Jones Workout</h2>
-            <div class="videoWrapper">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/B0jl7HeeroM?rel=0&amp;showinfo=0?autoplay=1" frameborder="0" allowfullscreen></iframe>
-            </div>
-            <button class="close-button" data-close aria-label="Close modal" style="background:transparent;" type="button">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
--->
-
-        <!--#include virtual="../top-bar.shtml" -->
-
+   {% include 'includes/top-bar.html' %}
         <div class="heroWrapper relPosition">
-            <div class="heroSmallBlack relPosition" style="background-image: url('../img/main-hero-img-softball.jpg');background-position: 50% 50%;">
+            <div class="heroSmallBlack relPosition" style="background-image: url('https://assets.powerhandz.com/images/main-hero-img-softball.jpg');background-position: 50% 50%;">
                 <div class="row">
                     <div class="heroIntro padding horizontalCenter">
                         <div class="small-10 medium-8 large-6 columns">
@@ -106,7 +70,7 @@
                 <div data-sticky data-margin-top='0' data-top-anchor="header:bottom" data-btm-anchor="content:bottom">
                     <div class="top-bar topbar-sticky-shrink show-for-medium">
                         <div class="top-bar-title ">
-                            <a class="button btnWhite hollow expanded" href="//shop.powerhandz.com/collections/softball"><i class="iconLeft icon-cart"></i>SHOP</a>
+                            <a class="button btnWhite hollow expanded" href="https://shop.powerhandz.com/collections/softball"><i class="iconLeft icon-cart"></i>SHOP</a>
                         </div>
                         <div class="top-bar-right">
                             <ul class="menu" style="padding-top:8px;">
@@ -128,7 +92,7 @@
                         <div id="hoverbar">
                         </div>
                         <div class="card-product-hover">
-                            <img content src="../img/Pure-Grip-Clear.jpg">
+                            <img content src="https://assets.powerhandz.com/images/Pure-Grip-Clear.jpg">
                             <div class="card-product-hover-icons">
                                 <a href="https://shop.powerhandz.com/collections/all/products/pure-grip-softball-gloves"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-star-o"></i></a>
@@ -190,7 +154,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                                             <a class="accordion-title">Product Sizing</a>
                                             <div class="accordion-content" data-tab-content>
                                                 <ul class="row small-up-2 medium-up-4 large-up-4 clientsGrid">
-                                                    <img src="https://powerhandz.com/img/PH-Chart-Glove.png">
+                                                    <img src="https://assets.powerhandz.com/images/PH-Chart-Glove.png">
                                                 </ul>
                                             </div>
                                         </li>
@@ -281,7 +245,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
 			              <!-- #2 Testimonial -->
 			              <div class="item small-10 small-centered medium-10 large-11 columns">
 			                <div class="testimonImg">
-			                  <img src="../img/quote-lc.jpg" alt="Lauren Chamberlain Testimonial">
+			                  <img src="https://assets.powerhandz.com/images/quote-lc.jpg" alt="Lauren Chamberlain Testimonial">
 			                </div>
 			                <div class="testimonContent">
 			                  <p>I always want to have a competitive edge over my opponents, and Powerhandz helps me do just that. My swing feels smooth, powerful, and explosive after training with this incredible tool.</p>
@@ -295,7 +259,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
 			              <!-- #2 Testimonial -->
 			              <div class="item small-10 small-centered medium-10 large-11 columns">
 			                <div class="testimonImg">
-			                  <img src="../img/quote-anderson.jpg" alt="Brian Anderson Testimonial">
+			                  <img src="https://assets.powerhandz.com/images/quote-anderson.jpg" alt="Brian Anderson Testimonial">
 			                </div>
 			                <div class="testimonContent">
 			                  <p>Unlike any other products on the market, POWERHANDZ "Pure Grip" gloves give you the ability to add weight to your bat while taking live batting practice. This product not only increases bat speed but also allows you to use your hand eye coordination.</p>
@@ -309,7 +273,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
 			              <!-- #2 Testimonial -->
 			              <div class="item small-10 small-centered medium-10 large-11 columns">
 			                <div class="testimonImg">
-			                  <img src="../img/quote-ortiz.jpg" alt="David Ortiz Testimonial">
+			                  <img src="https://assets.powerhandz.com/images/quote-ortiz.jpg" alt="David Ortiz Testimonial">
 			                </div>
 			                <div class="testimonContent">
 			                  <p>I’ve used donuts for years but this is a different feel. It feels smoother. The gloves feel like batting gloves and give me that extra bat speed I need at the plate. Different than anything I’ve seen before but a very useful product. I recommend to all baseball players coming up.</p>
@@ -346,7 +310,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                     </div>
                 </div>
             </div>
-            <!--#include virtual="../cta.shtml" -->
+   {% include 'includes/cta.html' %}
                         <a name="faq"></a>
 
             <div class="column row" id="content">
@@ -386,11 +350,6 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                     </div>
                 </div>
             </div>
-
-            <!--#include virtual="../stats.shtml" -->
-            <!--#include virtual="../press.shtml" -->
-            <!--#include virtual="../footer.shtml" -->
-            <a href="../#0" class="backTop">Top</a>
-</body>
-
-</html>
+   {% include 'includes/stats.html' %}
+   {% include 'includes/press.html' %}
+{% endblock %}
