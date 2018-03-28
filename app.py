@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 app.url_map.strict_slashes = False
@@ -30,6 +30,11 @@ def baseball():
 @app.route('/basketball')
 def basketball():
     return render_template('basketball.html')
+
+@app.route('/blog', defaults={'path': ''})
+@app.route('/blog/<path:path>')
+def blog(path):
+    return redirect('https://blog.powerhandz.com/' + path, 301)
 
 @app.route('/boxing-mma')
 def boxing_mma():
@@ -83,4 +88,4 @@ def our_time():
     return render_template('ourtime.html')
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=True)
