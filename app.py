@@ -1,6 +1,6 @@
-from flask import Flask, render_template, redirect, send_from_directory
+from flask import Flask, render_template, redirect, request, send_from_directory
 
-app = Flask(__name__, instance_relative_config=True)
+app = Flask(__name__, instance_relative_config=True, static_folder='static')
 app.url_map.strict_slashes = False
 app.config.from_object('config')
 app.config.from_pyfile('config.py')
@@ -70,6 +70,10 @@ def contact():
 def events():
     return render_template('events.html')
 
+@app.route('/fitness')
+def fitness():
+    return render_template('fitness.html')
+
 @app.route('/football')
 def football():
     return render_template('football.html')
@@ -84,7 +88,7 @@ def golf():
 
 @app.route('/lifestyle')
 def lifestyle():
-    return render_template('lifestyle.html')
+    return redirect('/fitness', 301)
 
 @app.route('/media')
 def media():
@@ -101,6 +105,12 @@ def press():
 @app.route('/resources')
 def resources():
     return render_template('resources.html')
+
+@app.route('/robots.txt')
+@app.route('/sitemap.xml')
+def static_files():
+    return send_from_directory(app.static_folder, request.path[1:])
+
 @app.route('/softball')
 def softball():
     return render_template('softball.html')
