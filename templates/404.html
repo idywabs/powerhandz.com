@@ -6,13 +6,13 @@
 
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300,700,400' rel='stylesheet' type='text/css'>
 
-	<link rel="stylesheet" href="https://assets.powerhandz.com/css/reset.css"> <!-- CSS reset -->
-	<link rel="stylesheet" href="https://assets.powerhandz.com/css/404.style.css"> <!-- Resource style -->
-   	
+	<link rel="stylesheet" href="{{ config.asset_base_url }}/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="{{ config.asset_base_url }}/css/404.style.css"> <!-- Resource style -->
+
 	<title>Page Not Found | POWERHANDZ</title>
 	<style>
- 	
-	video#bgvid { 
+
+	video#bgvid {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -24,15 +24,15 @@
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
     background: url() no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
  	</style>
-	
+
 </head>
 <body style="background-color: #111111;">
 	<video autoplay loop id="bgvid">
-      <source src="https://assets.powerhandz.com/videos/powerhandz-demo.webm" type="video/webm">
-      <source src="https://assets.powerhandz.com/videos/powerhandz-demo.mp4" type="video/mp4">
+      <source src="{{ config.asset_base_url }}/videos/powerhandz-demo.webm" type="video/webm">
+      <source src="{{ config.asset_base_url }}/videos/powerhandz-demo.mp4" type="video/mp4">
 	</video>
 	<div style="padding-top: 20%;text-align: center;margin-left: auto;margin-right: auto;width: 20em;">
  	 	<p style="font-size:4em; color:#ffffff!important;">404 ERROR</p>

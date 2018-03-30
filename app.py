@@ -1,7 +1,29 @@
-from flask import Flask, render_template, redirect
+from flask import Flask, render_template, redirect, send_from_directory
 
-app = Flask(__name__)
+app = Flask(__name__, instance_relative_config=True)
 app.url_map.strict_slashes = False
+app.config.from_object('config')
+app.config.from_pyfile('config.py')
+
+if app.config['ENVIRONMENT'] == 'development':
+    @app.route('/css/<path:path>')
+    def css(path):
+            return send_from_directory('assets/css', path)
+    @app.route('/files/<path:path>')
+    def files(path):
+            return send_from_directory('assets/files', path)
+    @app.route('/fonts/<path:path>')
+    def fonts(path):
+            return send_from_directory('assets/fonts', path)
+    @app.route('/images/<path:path>')
+    def images(path):
+            return send_from_directory('assets/images', path)
+    @app.route('/js/<path:path>')
+    def js(path):
+            return send_from_directory('assets/js', path)
+    @app.route('/videos/<path:path>')
+    def videos(path):
+            return send_from_directory('assets/videos', path)
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -64,6 +86,10 @@ def golf():
 def lifestyle():
     return render_template('lifestyle.html')
 
+@app.route('/media')
+def media():
+    return render_template('media.html')
+
 @app.route('/ourtime')
 def ourtime():
     return render_template('ourtime.html')
@@ -88,4 +114,4 @@ def our_time():
     return render_template('ourtime.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

@@ -57,7 +57,7 @@
         </div>
    {% include 'includes/top-bar.html' %}
         <div class="heroWrapper relPosition">
-            <div class="heroSmallBlack relPosition" style="background-image: url('https://assets.powerhandz.com/images/spearman-hero.jpg');background-position: 50% 50%;">
+            <div class="heroSmallBlack relPosition" style="background-image: url('{{ config.asset_base_url }}/images/spearman-hero.jpg');background-position: 50% 50%;">
                 <div class="row">
                     <div class="heroIntro padding horizontalCenter">
                         <div class="small-10 medium-8 large-6 columns">
@@ -103,7 +103,7 @@
                         <div id="hoverbar">
                         </div>
                         <div class="card-product-hover">
-                            <img content src="https://assets.powerhandz.com/images/Pure-Grip-Clear.jpg">
+                            <img content src="{{ config.asset_base_url }}/images/Pure-Grip-Clear.jpg">
                             <div class="card-product-hover-icons">
                                 <a href="https://shop.powerhandz.com/collections/lifestyle/products/pure-grip-lifestyle-gloves"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a>
                                 <a href="#"><i class="fa fa-star-o"></i></a>
@@ -126,8 +126,8 @@ a2a_config.color_arrow_hover = "fff";
 a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
 </script>
 <script async src="https://static.addtoany.com/menu/page.js"></script>
-<!-- AddToAny END -->                                
-                                
+<!-- AddToAny END -->
+
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                                             <a class="accordion-title">Product Sizing</a>
                                             <div class="accordion-content" data-tab-content>
                                                 <ul class="row small-up-2 medium-up-4 large-up-4 clientsGrid">
-                                                    <img src="https://powerhandz.chttps://assets.powerhandz.com/images/PH-Chart-Glove.png">
+                                                    <img src="https://powerhandz.c{{ config.asset_base_url }}/images/PH-Chart-Glove.png">
                                                 </ul>
                                             </div>
                                         </li>
@@ -175,7 +175,7 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
                 </div>
             </div><br>
                         <a name="works"></a>
-            
+
             <div class="featured-article-side-links">
                 <div class="row collapse">
                     <!-- big feature -->
@@ -262,13 +262,13 @@ a2a_config.prioritize = ["facebook", "twitter", "google_plus", "email"];
 			              <!-- #2 Testimonial -->
 			              <div class="item small-10 small-centered medium-10 large-11 columns">
 			                <div class="testimonImg">
-			                  <img src="https://assets.powerhandz.com/images/quote-ward.jpg" alt="Lauren Chamberlain Testimonial">
+			                  <img src="{{ config.asset_base_url }}/images/quote-ward.jpg" alt="Lauren Chamberlain Testimonial">
 			                </div>
 			                <div class="testimonContent">
 			                  <p>Boxing requires discipline, focus and precision while training. If you want to take your training and skills to the next level, POWERHANDZ is by far the best product out there.</p>
 			                </div>
 			                <div class="testimonMeta">
-			                  Andre Ward 
+			                  Andre Ward
 			                  <span>LIGHT HEAVYWEIGHT CHAMPION</span>
 			                </div>
 			              </div>
