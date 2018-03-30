@@ -124,7 +124,7 @@ def golf():
 
 @app.route('/lifestyle')
 def lifestyle():
-    return redirect('/fitness', 301)
+    return redirect(app.config['SITE_URL'] + '/fitness', 301)
 
 @app.route('/media')
 def media():
@@ -132,7 +132,7 @@ def media():
 
 @app.route('/ourtime', defaults={'path': ''})
 def redirect_ourtime(path):
-    return redirect('/our-time' + path, 301)
+    return redirect(app.config['SITE_URL'] + '/our-time' + path, 301)
 
 @app.route('/our-time')
 def our_time():
@@ -140,7 +140,7 @@ def our_time():
 
 @app.route('/powertogive', defaults={'path': ''})
 def redirect_powertogive(path):
-    return redirect('/power-to-give' + path, 301)
+    return redirect(app.config['SITE_URL'] + '/power-to-give' + path, 301)
 
 @app.route('/power-to-give')
 def power_to_give():
