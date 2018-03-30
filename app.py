@@ -1,29 +1,57 @@
 from flask import Flask, render_template, redirect, request, send_from_directory
+from forms import ContactForm
 
 app = Flask(__name__, instance_relative_config=True, static_folder='static')
 app.url_map.strict_slashes = False
 app.config.from_object('config')
 app.config.from_pyfile('config.py')
 
-if app.config['ENVIRONMENT'] == 'development':
+if app.config['ENVIRONMENT'] == 'production' or \
+   app.config['ENVIRONMENT'] == 'staging':
+    @app.route('/css/<path:path>')
+    def redirect_css(path):
+        return redirect(app.config['ASSET_BASE_URL'] + '/css/' + path, 301)
+    @app.route('/files/<path:path>')
+    def redirect_files(path):
+        return redirect(app.config['ASSET_BASE_URL'] + '/files/' + path, 301)
+    @app.route('/fonts/<path:path>')
+    def redirect_fonts(path):
+        return redirect(app.config['ASSET_BASE_URL'] + '/fonts/' + path, 301)
+    @app.route('/images/<path:path>')
+    def redirect_images(path):
+        return redirect(app.config['ASSET_BASE_URL'] + '/images/' + path, 301)
+    @app.route('/img/<path:path>')
+    def redirect_img(path):
+        return redirect(app.config['ASSET_BASE_URL'] + '/images/' + path, 301)
+    @app.route('/js/<path:path>')
+    def redirect_js(path):
+        return redirect(app.config['ASSET_BASE_URL'] + '/js/' + path, 301)
+    @app.route('/vid/<path:path>')
+    def redirect_vid(path):
+        return redirect(app.config['ASSET_BASE_URL'] + '/videos/' + path, 301)
+    @app.route('/videos/<path:path>')
+    def redirect_videos(path):
+        return redirect(app.config['ASSET_BASE_URL'] + '/videos/' + path, 301)
+
+elif app.config['ENVIRONMENT'] == 'development':
     @app.route('/css/<path:path>')
     def css(path):
-            return send_from_directory('assets/css', path)
+        return send_from_directory('assets/css', path)
     @app.route('/files/<path:path>')
     def files(path):
-            return send_from_directory('assets/files', path)
+        return send_from_directory('assets/files', path)
     @app.route('/fonts/<path:path>')
     def fonts(path):
-            return send_from_directory('assets/fonts', path)
+        return send_from_directory('assets/fonts', path)
     @app.route('/images/<path:path>')
     def images(path):
-            return send_from_directory('assets/images', path)
+        return send_from_directory('assets/images', path)
     @app.route('/js/<path:path>')
     def js(path):
-            return send_from_directory('assets/js', path)
+        return send_from_directory('assets/js', path)
     @app.route('/videos/<path:path>')
     def videos(path):
-            return send_from_directory('assets/videos', path)
+        return send_from_directory('assets/videos', path)
 
 @app.errorhandler(404)
 def page_not_found(e):
@@ -55,16 +83,24 @@ def basketball():
 
 @app.route('/blog', defaults={'path': ''})
 @app.route('/blog/<path:path>')
-def blog(path):
+def redirect_blog(path):
     return redirect('https://blog.powerhandz.com/' + path, 301)
 
 @app.route('/boxing-mma')
 def boxing_mma():
     return render_template('boxing-mma.html')
 
-@app.route('/contact')
+@app.route('/contact', methods=['GET', 'POST'])
 def contact():
-    return render_template('contact.html')
+    form = ContactForm
+    if request.method == 'POST':
+      if form.validate() == False:
+        flash('All fields are required.')
+        return render_template('contact.html', form=form)
+      else:
+        return 'Form posted.'
+    elif request.method == 'GET':
+    	return render_template('contact.html', form=form)
 
 @app.route('/events')
 def events():
@@ -94,9 +130,21 @@ def lifestyle():
 def media():
     return render_template('media.html')
 
-@app.route('/ourtime')
-def ourtime():
-    return render_template('ourtime.html')
+@app.route('/ourtime', defaults={'path': ''})
+def redirect_ourtime(path):
+    return redirect('/our-time' + path, 301)
+
+@app.route('/our-time')
+def our_time():
+    return render_template('our-time.html')
+
+@app.route('/powertogive', defaults={'path': ''})
+def redirect_powertogive(path):
+    return redirect('/power-to-give' + path, 301)
+
+@app.route('/power-to-give')
+def power_to_give():
+    return render_template('power-to-give.html')
 
 @app.route('/press')
 def press():
@@ -118,10 +166,6 @@ def softball():
 @app.route('/team')
 def team():
     return render_template('team.html')
-
-@app.route('/ourtime')
-def our_time():
-    return render_template('ourtime.html')
 
 if __name__ == '__main__':
     app.run()
