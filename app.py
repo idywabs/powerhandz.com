@@ -159,6 +159,14 @@ def resources():
 def static_files():
     return send_from_directory(app.static_folder, request.path[1:])
 
+@app.route('/shop')
+def redirect_shop():
+    return redirect('https://shop.powerhandz.com/', 301)
+
+@app.route('/shop/<path:path>')
+def redirect_secure(path):
+    return redirect('http://secure.powerhandz.com/' + path, 302)
+
 @app.route('/softball')
 def softball():
     return render_template('softball.html')
