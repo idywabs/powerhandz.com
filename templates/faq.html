@@ -1,0 +1,159 @@
+{% extends 'layouts/base.html' %}
+
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}FAQ | POWERHANDZ{% endblock %}
+{% block content %}
+   {% include 'includes/top-bar.html' %}
+<style>
+
+.marketing-site-hero {
+  background: url({{ config.ASSET_BASE_URL }}/images/about-hero.jpg) top right no-repeat;
+  height: 60vh;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  max-width: 75rem;
+  margin-left:0px!important;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.marketing-site-hero-content h1 {
+  font-size: 32px;
+  color: #ffffff!important;
+}
+
+.marketing-site-hero-content .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+</style>
+
+   <div class="heroWrapper relPosition">
+        <div class="marketing-site-hero">
+          <div class="marketing-site-hero-content">
+            <h1>Frequently Asked Questions</h1>
+            <div class="divider"></div>
+            <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">Our products are used and endorsed by skills trainers, youth athletes and the world’s most elite professional athletes.</p>
+            <a href="https://shop.powerhandz.com" class="button btnWhite hollow">SHOP NOW</a>
+          </div>
+        </div>
+   </div>
+
+    <div class="column row" id="content">
+        <div class="small-12 medium-12 large-12 columns" data-equalizer-watch>
+            <div class="padding">
+                <div class="row">
+                    <div class="small-12 columns">
+                        <ul class="accordion no-bullet" data-accordion data-allow-all-closed="true">
+                            <li class="accordion-item is-active" data-accordion-item>
+                                <a class="accordion-title">Do the gloves come in a pair?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>Yes.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">How much do the gloves weigh?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>Youth-Medium: Weigh approximately 400 grams or .88 lbs in each glove Large-XXL: Weigh approximately 453 grams or 1 lb in each glove</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">How do you wash the gloves?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>We suggest using a non-toxic aerosol spray. Do not wash in the washing machine.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">Do I have to use the products together?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>No, the products will provide you with a great workout on their own; however, the combination of the two will give you give you ultimate degree Of difficulty while training.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">How long does international shipping take?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>6-10 business days.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">Is the slick wrap removable?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>Yes.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">How long does it take to process the order and ship?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>It normally takes 24 hours to process the order and then 2-3 business days to ship domestically.  </p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">Do you ship outside of the U.S.?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>Yes, this method of shipping normally takes 10 business days; however, rush shipping is available.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">I never received an order confirmation or shipping notification, what should I do?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>Check your spam folder, if you still do not see it, email us at <a href="mailto:info@powerhandz.com">info@powerhandz.com</a>.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">How do I know what size to order?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>Please refer to the sizing chart under each product description>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">What is your return/exchange policy?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p></p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">How does a pre-order work?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>Pre-ordering allows you to reserve our product early and it will ship to you on the first date available. Stay updated by following @powerhandz on Twitter and Instagram, checking out the Events tab on our website and signing up to receive POWERHANDZ emails.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">How do I place a pre-order?</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>If POWERHANDZ are available for pre-order, you’ll see an gold “Add to Cart” button on the product page. Select your size and quantity (if applicable) and click “Add to Cart”. The product(s) will be added to your cart, and you can proceed to checkout as normal. Note: Products in your cart are not reserved. You must complete checkout to guarantee your order. During checkout, you will be prompted to enter your payment information.</p>
+                                    <p>It normally takes 24 hours to process the order and then 2-3 business days to ship USPS Priority Domestically and it can take anywhere from 6-10 business days (or more depending on the Customs process in your Country) to arrive Internationally. Be on the lookout for a separate email with your tracking information from USPS once it has left our Order Fulfillment Center. Please note: It may take up to 24 hours for USPS to update your shipping information. Please let us know if we can be of further assistance.</p>
+                                </div>
+                            </li>
+                            <li class="accordion-item" data-accordion-item>
+                                <a class="accordion-title">Out of Stock Item: Not ordered during Pre-Order</a>
+                                <div class="accordion-content" data-tab-content>
+                                    <p>It normally takes 24 hours to process the order and then 2-3 business days to ship USPS Priority Domestically and it can take anywhere from 6-10 business days (or more depending on the Customs process in your Country) to arrive Internationally. Be on the lookout for a separate email with your tracking information from USPS once it has left our Order Fulfillment Center. Please note: It may take up to 24 hours for USPS to update your shipping information.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   {% include 'includes/stats.html' %}
+   {% include 'includes/press.html' %}
+{% endblock %}

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="{{ config.ASSET_BASE_URL }}/css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="{{ config.ASSET_BASE_URL }}/css/404.style.css"> <!-- Resource style -->
 
-	<title>Page Not Found | POWERHANDZ</title>
+    <title>{{ error_message }} | POWERHANDZ</title>
 	<style>
 
 	video#bgvid {
@@ -34,12 +34,13 @@
       <source src="{{ config.ASSET_BASE_URL }}/videos/powerhandz-demo.webm" type="video/webm">
       <source src="{{ config.ASSET_BASE_URL }}/videos/powerhandz-demo.mp4" type="video/mp4">
 	</video>
-	<div style="padding-top: 20%;text-align: center;margin-left: auto;margin-right: auto;width: 20em;">
- 	 	<p style="font-size:4em; color:#ffffff!important;">404 ERROR</p>
-		<p style="padding-top:1em;padding-bottom:2em;font-size:1em; color:#ffffff!important;">The page you're looking for does not exist.</p>
+	<div style="padding-top: 20%;text-align: center;margin-left: auto;margin-right: auto;width: 90%;">
+      <p style="font-size:4em; color:#ffffff!important;">{{ error_code }}</p>
+      <p style="font-size:4em; color:#ffffff!important;">{{ error_message }}</p>
+      <p style="padding-top:1em;padding-bottom:2em;font-size:1em; color:#ffffff!important;">{{ error_description }}</p>
 		<div class="action-wrapper">
-			<a href="/" class="cd-btn main-action" style="background-color: #bf9b41;">Go Home</a>
-			<a href="https://shop.powerhandz.com" class="cd-btn" style="background-color: #ffffff;color: #111111;">Go to Shop</a>
+			<a href="/" class="cd-btn main-action" style="background-color: #bf9b41;">Home</a>
+			<a href="https://shop.powerhandz.com" class="cd-btn" style="background-color: #ffffff;color: #111111;">Shop</a>
 		</div>
 
 	</div>

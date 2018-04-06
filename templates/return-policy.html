@@ -1,0 +1,73 @@
+{% extends 'layouts/base.html' %}
+
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Return Policy | POWERHANDZ{% endblock %}
+{% block content %}
+   {% include 'includes/top-bar.html' %}
+<style>
+
+.marketing-site-hero {
+  background: url({{ config.ASSET_BASE_URL }}/images/about-hero.jpg) top right no-repeat;
+  height: 60vh;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  max-width: 75rem;
+  margin-left:0px!important;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.marketing-site-hero-content h1 {
+  font-size: 32px;
+  color: #ffffff!important;
+}
+
+.marketing-site-hero-content .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+</style>
+
+   <div class="heroWrapper relPosition">
+        <div class="marketing-site-hero">
+          <div class="marketing-site-hero-content">
+            <h1>Return Policy</h1>
+            <div class="divider"></div>
+            <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">Our products are used and endorsed by skills trainers, youth athletes and the world’s most elite professional athletes.</p>
+            <a href="https://shop.powerhandz.com" class="button btnWhite hollow">SHOP NOW</a>
+          </div>
+        </div>
+   </div>
+
+    <div class="column row" id="content">
+        <div class="small-12 medium-12 large-12 columns" data-equalizer-watch>
+            <div class="padding">
+                <p>Please follow these instructions very carefully.</p>
+                <p>POWERHANDZ Inc, will accept exchanges on products with tags still intact and or on defective items within the 30 day warranty period, which starts when the customer receives his or her merchandise. Customer is responsible for the cost of shipping. Please provide a payment method on the form below.</p>
+                <p>To Return or Exchange an item please fill out the form <a href="{{ url_for('returns') }}">here</a>. Upon completing the return/exchange form you will receive an email confirmation from a Powerhandz Customer Service team member. If we are responsible for the shipping, you will receive a prepaid label via email. Please include a copy of this form with your return or exchange.</p>
+                <p>POWERHANDZ Inc, Will Charge A 20% Restocking Fee For All Unworn Items With Tags Intact. In Order to Receive a Refund, Products Must Also Be Accompanied With Proof Of Purchase (Receipt or Order Number). Opened Packages, Worn Items Or Items Not Accompanied With A Proof Of Purchase Will Receive No Credit. POWERHANDZ Inc, Will Not Be Responsible For Shipping Charges On Returns And Or Exchanges.</p>
+                <p>To Return or Exchange an item please fill out the form <a href="{{ url_for('returns') }}">here</a>.</p>
+            </div>
+        </div>
+    </div>
+   {% include 'includes/stats.html' %}
+   {% include 'includes/press.html' %}
+{% endblock %}

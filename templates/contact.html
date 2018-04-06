@@ -49,19 +49,16 @@
 
 </style>
 
-   <div class="heroWrapper relPosition">
-<div class="marketing-site-hero">
-  <div class="marketing-site-hero-content">
-    <h1>Contact Us</h1>
-    <div class="divider"></div>
-    <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">We would love the opportunity to speak with you about your training goals. Please leave a note below, and we'll get back with you shortly.</p>
-    <a href="/about" class="button btnWhite hollow">About POWERHANDZ</a>
-  </div>
-</div>
-
-   </div>
-
-
+    <div class="heroWrapper relPosition">
+        <div class="marketing-site-hero">
+          <div class="marketing-site-hero-content">
+            <h1>Contact Us</h1>
+            <div class="divider"></div>
+            <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">We would love the opportunity to speak with you about your training goals. Please leave a note below, and we'll get back with you shortly.</p>
+            <a href="/about" class="button btnWhite hollow">About POWERHANDZ</a>
+          </div>
+        </div>
+    </div>
 
       <!-- Intro -->
 
@@ -79,67 +76,49 @@
               </ul>
         </div>
 
-
-
         </div>
           <div class="small-12 medium-8 large-8 columns">
-			  <div class="padding">
+              <div class="padding">
               <h5>Leave A Message</h5>
               <div class="divider"></div>
-            <div id="contact" class="">
-                <!-- <div id="form-messages"></div> -->
+                <div id="contact">
 
-              <form data-abide="4fon9f-abide" novalidate="" id="contactForm" class="relPosition" name="contactForm" action="http://34.230.17.218/mailer.php" method="post">
+                {% if success %}
 
-                <div data-abide-error="" class="alert callout" style="display: none;">
-                  <p><i class="icon-caution"></i> There was an error in submitting your form. Please email us at info@powerhandz.com with the information required below.</p>
+                <div style="background: green; color: white; padding: 10px; margin:0; margin-bottom: 25px;">
+                    Thank you for your message. We'll get back to you shortly.
                 </div>
+                {% endif %}
 
-                <div class="row">
-                  <div class="large-6 columns">
-                    <label for="formName"></label>
-                    <input type="text" id="formName" name="formName" placeholder="Full Name *" required="" pattern="[a-zA-Z\s]" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAfBJREFUWAntVk1OwkAUZkoDKza4Utm61iP0AqyIDXahN2BjwiHYGU+gizap4QDuegWN7lyCbMSlCQjU7yO0TOlAi6GwgJc0fT/fzPfmzet0crmD7HsFBAvQbrcrw+Gw5fu+AfOYvgylJ4TwCoVCs1ardYTruqfj8fgV5OUMSVVT93VdP9dAzpVvm5wJHZFbg2LQ2pEYOlZ/oiDvwNcsFoseY4PBwMCrhaeCJyKWZU37KOJcYdi27QdhcuuBIb073BvTNL8ln4NeeR6NRi/wxZKQcGurQs5oNhqLshzVTMBewW/LMU3TTNlO0ieTiStjYhUIyi6DAp0xbEdgTt+LE0aCKQw24U4llsCs4ZRJrYopB6RwqnpA1YQ5NGFZ1YQ41Z5S8IQQdP5laEBRJcD4Vj5DEsW2gE6s6g3d/YP/g+BDnT7GNi2qCjTwGd6riBzHaaCEd3Js01vwCPIbmWBRx1nwAN/1ov+/drgFWIlfKpVukyYihtgkXNp4mABK+1GtVr+SBhJDbBIubVw+Cd/TDgKO2DPiN3YUo6y/nDCNEIsqTKH1en2tcwA9FKEItyDi3aIh8Gl1sRrVnSDzNFDJT1bAy5xpOYGn5fP5JuL95ZjMIn1ya7j5dPGfv0A5eAnpZUY3n5jXcoec5J67D9q+VuAPM47D3XaSeL4AAAAASUVORK5CYII=&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: pointer;">
-                    <small class="form-error">Please fill in your name.</small>
-                  </div>
+                {% if form.errors %}
 
-                  <div class="large-6 columns">
-                    <label for="formMail"></label>
-                    <input type="text" id="formMail" name="formMail" placeholder="Valid Email *" required="" pattern="email">
-                    <small class="form-error">Enter a valid email address.</small>
-                  </div>
+                <ul class="errors" style="list-style-type: none; padding: 0; margin:0; margin-bottom: 25px;">
+                {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+                    {% for error in field_errors %}
+                        <li style="background: #dc3545; color: white; padding: 10px; margin-bottom: 5px;">{{ error }}</li>
+                    {% endfor %}
+                {% endfor %}
+                </ul>
+                {% endif %}
+
+                  <form action="{{ url_for('contact') }}" method=post>
+                    {{ form.hidden_tag() }}
+
+                    {{ form.name }}
+
+                    {{ form.email }}
+
+                    {{ form.copmany }}
+
+                    {{ form.website }}
+
+                    {{ form.message }}
+
+                    {{ form.submit(class_="button btnBlack float-right") }}
+                  </form>
+
                 </div>
-
-                <div class="row">
-                  <div class="large-6 columns">
-                    <label for="formCompany"></label>
-                    <input type="text" id="formCompany" name="formCompany" placeholder="Company / Organisation">
-                    <small class="form-error">Enter the name of your company</small>
-                  </div>
-                  <div class="large-6 columns">
-                    <label for="formWebsite"></label>
-                    <input type="text" id="formWebsite" name="formWebsite" placeholder="Website" pattern="url">
-                  </div>
-                </div>
-
-                <div class="row">
-                  <div class="large-12 columns textarea">
-                    <label for="formMessage"></label>
-                    <textarea id="formMessage" name="formMessage" placeholder="Your Message *" required=""></textarea>
-                    <small class="form-error">You must say something</small>
-                  </div>
-                </div>
-
-                <input type="text" style="display: none;" placeholder="Valid Email *" required="" pattern="email">
-
-                <div class="row">
-                  <div class="small-12 columns">
-                    <button type="submit" name="formSubmit" id="formSubmit" class="button btnBlack float-right">Submit</button>
-                  </div>
-                </div>
-
-              </form>
             </div>
-			  </div>
           </div>
         </div>
       </div>
