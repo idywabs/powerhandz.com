@@ -1,0 +1,171 @@
+{% extends 'layouts/base.html' %}
+
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Affiliate Application | POWERHANDZ{% endblock %}
+{% block content %}
+    <style>
+    .marketing-site-hero {
+      background: url("{{ config.ASSET_BASE_URL }}/images/about-hero.jpg") top right no-repeat;
+      height: 60vh;
+      background-size: cover;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+
+    @media screen and (min-width: 40em) {
+      .marketing-site-hero {
+        background-position: center center;
+      }
+    }
+
+    .marketing-site-hero-content {
+      max-width: 75rem;
+      margin-left:0px!important;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .marketing-site-hero-content h1 {
+      font-size: 32px;
+      color: #ffffff!important;
+    }
+
+    .marketing-site-hero-content .button.round {
+      border-radius: 5000px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    </style>
+
+    <div class="animsition">
+    {% include 'includes/top-bar.html' %}
+
+    <div class="heroWrapper relPosition">
+      <div class="marketing-site-hero">
+        <div class="marketing-site-hero-content">
+          <h1>Apply to Be an Affiliate</h1>
+          <div class="divider"></div>
+          <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">We would love the opportunity to work with you. Please leave a note below, and we'll get back with you shortly.</p>
+          <a href="/about" class="button btnWhite hollow">About POWERHANDZ</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgWhite">
+      <div class="row padding clearfix">
+        <div class="small-12 medium-12 large-12 columns">
+          <div id="contact" class="">
+            {% if success %}
+            <div style="background: green; color: white; padding: 10px; margin:0; margin-bottom: 25px;">
+              Thank you for your application. We'll get back to you shortly.
+            </div>
+            {% endif %}
+
+            {% if form.errors %}
+            <ul class="errors" style="list-style-type: none; padding: 0; margin:0; margin-bottom: 25px;">
+            {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+            {% for error in field_errors %}
+              <li style="background: #dc3545; color: white; padding: 10px; margin-bottom: 5px;">{{ error }}</li>
+            {% endfor %}
+            {% endfor %}
+            </ul>
+            {% endif %}
+
+            <form action="{{ url_for('affiliate_application') }}" method="post">
+              {{ form.hidden_tag() }}
+
+              {{ form.name }}
+
+              {{ form.email }}
+
+              {{ form.company }}
+
+              {{ form.website }}
+
+              <div class="row">
+                <div class="large-6 columns">
+                  {{ form.facebook }}
+                </div>
+
+                <div class="large-6 columns">
+                  {{ form.instagram }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-6 columns">
+                  {{ form.twitter }}
+                </div>
+
+                <div class="large-6 columns">
+                  {{ form.youtube }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-4 columns">
+                  {{ form.provides_training.label }}
+                  {% for subfield in form.provides_training %}
+                    {{ subfield }} {{ subfield.label }}
+                  {% endfor %}
+                </div>
+                <div class="large-4 columns">
+                  {{ form.hosts_yearly_clinics.label }}
+                  {% for subfield in form.hosts_yearly_clinics %}
+                    {{ subfield }} {{ subfield.label }}
+                  {% endfor %}
+                </div>
+                <div class="large-4 columns">
+                  {{ form.provides_video_content.label }}
+                  {% for subfield in form.provides_video_content %}
+                    {{ subfield }} {{ subfield.label }}
+                  {% endfor %}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-4 columns">
+                  {{ form.trains_professional_athletes.label }}
+                  {% for subfield in form.trains_professional_athletes %}
+                    {{ subfield }} {{ subfield.label }}
+                  {% endfor %}
+                </div>
+                <div class="large-4 columns">
+                  {{ form.sells_merchandise.label }}
+                  {% for subfield in form.sells_merchandise %}
+                    {{ subfield }} {{ subfield.label }}
+                  {% endfor %}
+                </div>
+                <div class="large-4 columns">
+                  {{ form.has_blog.label }}
+                  {% for subfield in form.has_blog %}
+                    {{ subfield }} {{ subfield.label }}
+                  {% endfor %}
+                </div>
+              </div>
+
+
+
+
+
+              {{ form.submit(class_="button btnBlack") }}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include 'includes/programs.html' %}
+    <style>
+    .clientsGrid li, .testimonialsGrid li
+    {padding: 4px 14px;
+    }
+    </style>
+    {% include 'includes/press.html' %}
+    </div>
+{% endblock %}

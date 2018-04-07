@@ -1,6 +1,7 @@
 from flask import Flask, render_template, redirect, request, send_from_directory, flash
-from forms import ContactForm
+from forms import AffiliateApplication, ContactForm
 from flask_mail import Message, Mail
+from pprint import pprint
 
 app = Flask(__name__, instance_relative_config=True, static_folder='static')
 app.url_map.strict_slashes = False
@@ -24,9 +25,27 @@ def about():
 def affiliates():
     return render_template('affiliates.html')
 
-@app.route('/affiliates-form')
-def form_affiliates():
-    return render_template('affiliates-form.html')
+@app.route('/affiliate-application', methods=['GET', 'POST'])
+def affiliate_application():
+    form = AffiliateApplication()
+    if request.method == 'POST':
+        if form.validate():
+            msg = Message(
+                    'POWERHANDZ Affiliate Application',
+                    sender=form.email.data,
+                    recipients=[app.config['AFFILIATE_APPLICATION_RECIPIENT']])
+            msg.body = 'This message was automatically generated from %s.\n\n'\
+                    % (app.config['SITE_URL'] + request.path)
+            for field in form:
+                if field.type not in ['CSRFTokenField', 'SubmitField']:
+                    msg.body += '%s: %s\n' % (field.label.text, field.data)
+            mail.send(msg)
+            return render_template('affiliate-application.html', form=form, success=True)
+        else:
+            flash('All fields are required.')
+            return render_template('affiliate-application.html', form=form)
+    elif request.method == 'GET':
+        return render_template('affiliate-application.html', form=form)
 
 @app.route('/baseball')
 def baseball():
@@ -44,22 +63,22 @@ def boxing_mma():
 def contact():
     form = ContactForm()
     if request.method == 'POST':
-      if form.validate():
-        msg = Message('POWERHANDZ Contact Form', sender=form.email.data, recipients=[app.config['CONTACT_FORM_RECIPIENT']])
-        msg.body = """
-        This is message was automatically generated from """ + app.config['SITE_URL'] + request.path + """
-
-        From: %s
-        Email: <%s>
-        Website: %s
-        Message: %s
-        """ % (form.name.data, form.email.data, form.website.data, form.message.data)
-        mail.send(msg)
-        return render_template('contact.html', form=form, success=True)
-      else:
-        flash('All fields are required.')
-        return render_template('contact.html', form=form)
-    elif request.method == 'GET':
+        if form.validate():
+            msg = Message(
+                    'POWERHANDZ Contact Form',
+                    sender=form.email.data,
+                    recipients=[app.config['CONTACT_FORM_RECIPIENT']])
+            msg.body = 'This message was automatically generated from %s.\n\n'\
+                    % (app.config['SITE_URL'] + request.path)
+            for field in form:
+                if field.type not in ['CSRFTokenField', 'SubmitField']:
+                    msg.body += '%s: %s\n' % (field.label.text, field.data)
+            mail.send(msg)
+            return render_template('contact.html', form=form, success=True)
+        else:
+            flash('All fields are required.')
+            return render_template('contact.html', form=form)
+    else:
         return render_template('contact.html', form=form)
 
 @app.route('/events')
@@ -119,6 +138,10 @@ def team():
     return render_template('team.html')
 
 # Redirects
+
+@app.route('/affiliates-form')
+def redirect_affiliates_form():
+    return redirect(app.config['SITE_URL'] + '/affiliate-application', 301)
 
 @app.route('/blog', defaults={'path': ''})
 @app.route('/blog/<path:path>')
@@ -215,36 +238,39 @@ elif app.config['ENVIRONMENT'] == 'development':
 
 @app.errorhandler(403)
 def page_not_found(e):
-    return render_template('error.html',\
-            error_code='403',\
-            error_message='Page Forbidden',\
-            error_details='You do not have permission to access this URL.'\
+    return render_template(
+            'error.html',
+            error_code='403',
+            error_message='Page Forbidden',
+            error_details='You do not have permission to access this URL.'
             ), 403
 
 @app.errorhandler(404)
 def page_not_found(e):
-    return render_template('error.html',\
-            error_code='404',\
-            error_message='Page Not Found',\
-            error_details='The requested URL was not found on this server.'\
+    return render_template(
+            'error.html',
+            error_code='404',
+            error_message='Page Not Found',
+            error_details='The requested URL was not found on this server.'
             ), 404
 
 @app.errorhandler(410)
 def page_not_found(e):
-    return render_template('error.html',\
-            error_code='410',\
-            error_message='Link No Longer Available',\
-            error_details='We\'re sorry. The link you clicked on is no longer available'\
+    return render_template(
+            'error.html',
+            error_code='410',
+            error_message='Link No Longer Available',
+            error_details='We\'re sorry. The link you clicked on is no longer available'
             ), 410
 
 @app.errorhandler(500)
 def page_not_found(e):
-    return render_template('error.html',\
-            error_code='500',\
-            error_message='Internal Server Error',\
-            error_details='There was an error. Please try again later.'\
+    return render_template(
+            'error.html',
+            error_code='500',
+            error_message='Internal Server Error',
+            error_details='There was an error. Please try again later.'
             ), 500
-
 
 if __name__ == '__main__':
     app.run()
