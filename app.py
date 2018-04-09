@@ -1,7 +1,9 @@
 from flask import Flask, render_template, redirect, request, send_from_directory, flash
 from forms import AffiliateApplication, ContactForm
 from flask_mail import Message, Mail
-from pprint import pprint
+from datetime import datetime
+
+# Initialization
 
 app = Flask(__name__, instance_relative_config=True, static_folder='static')
 app.url_map.strict_slashes = False
@@ -10,6 +12,10 @@ app.config.from_pyfile('config.py')
 
 mail = Mail()
 mail.init_app(app)
+
+@app.context_processor
+def inject_now():
+    return {'now': datetime.utcnow()}
 
 # Pages
 
@@ -166,7 +172,7 @@ def redirect_shop():
 
 @app.route('/shop/product/return-shipping')
 def redirect_return_shipping():
-    return redirect('http://secure.powerhandz.com/product/return-shipping', 302)
+    return redirect(app.config['SITE_URL'] + '/return-shipping', 301)
 
 @app.route('/shop/return-exchange-policy')
 def redirect_return_policy():
@@ -179,6 +185,10 @@ def redirect_shop_returns():
 @app.route('/returns')
 def returns():
     return redirect('http://secure.powerhandz.com/returns', 302)
+
+@app.route('/return-shipping')
+def return_shipping():
+    return redirect('http://secure.powerhandz.com/product/return-shipping/', 302)
 
 # Static Files
 
