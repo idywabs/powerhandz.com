@@ -1,74 +1,12 @@
 # -*- coding: utf-8 -*-
 from flask_wtf import FlaskForm as Form
-from wtforms import FormField, HiddenField, IntegerField, TextField, TextAreaField, RadioField, SelectField, SubmitField, validators
+from wtforms import BooleanField, FileField, FormField, HiddenField, IntegerField, TextField, TextAreaField, RadioField, SelectField, SelectMultipleField, SubmitField, validators
 from wtforms.validators import Email, InputRequired, Optional, URL, ValidationError
 
 class AddressForm(Form):
-    country = SelectField(
-            'Country',
-            [
-                InputRequired('Please select a country.'),
-            ],
-            choices= [
-                    'Afghanistan', 'Aland Islands', 'Albania', 'Algeria', 'American Samoa',
-                    'Andorra', 'Angola', 'Anguilla', 'Antarctica', 'Antigua and Barbuda',
-                    'Argentina', 'Armenia', 'Aruba', 'Australia', 'Austria', 'Azerbaijan',
-                    'Bahamas, The', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus',
-                    'Belgium', 'Belize', 'Benin', 'Bermuda', 'Bhutan', 'Bolivia',
-                    'Bonaire, Saint Eustatius and Saba', 'Bosnia and Herzegovina',
-                    'Botswana', 'Bouvet Island', 'Brazil', 'British Indian Ocean Territory',
-                    'Brunei Darussalam', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cambodia',
-                    'Cameroon', 'Canada', 'Cape Verde', 'Cayman Islands',
-                    'Central African Republic', 'Chad', 'Chile', 'China',
-                    'Christmas Island', 'Cocos (Keeling) Islands', 'Colombia', 'Comoros',
-                    'Congo', 'Congo, The Democratic Republic of the', 'Cook Islands',
-                    'Costa Rica', 'Cote D\'ivoire', 'Croatia', 'Curaçao', 'Cyprus',
-                    'Czech Republic', 'Denmark', 'Djibouti', 'Dominica',
-                    'Dominican Republic', 'Ecuador', 'Egypt', 'El Salvador',
-                    'Equatorial Guinea', 'Eritrea', 'Estonia', 'Ethiopia',
-                    'Falkland Islands (Malvinas)', 'Faroe Islands', 'Fiji', 'Finland',
-                    'France', 'French Guiana', 'French Polynesia',
-                    'French Southern Territories', 'Gabon', 'Gambia, The', 'Georgia',
-                    'Germany', 'Ghana', 'Gibraltar', 'Greece', 'Greenland', 'Grenada',
-                    'Guadeloupe', 'Guam', 'Guatemala', 'Guernsey', 'Guinea',
-                    'Guinea-Bissau', 'Guyana', 'Haiti',
-                    'Heard Island and the McDonald Islands', 'Holy See', 'Honduras',
-                    'Hong Kong', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iraq',
-                    'Ireland', 'Isle of Man', 'Israel', 'Italy', 'Jamaica', 'Japan',
-                    'Jersey', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati',
-                    'Korea, Republic of', 'Kosovo', 'Kuwait', 'Kyrgyzstan',
-                    'Lao People\'s Democratic Republic', 'Latvia', 'Lebanon', 'Lesotho',
-                    'Liberia', 'Libya', 'Liechtenstein', 'Lithuania', 'Luxembourg', 'Macao',
-                    'Macedonia, The Former Yugoslav Republic of', 'Madagascar', 'Malawi',
-                    'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands',
-                    'Martinique', 'Mauritania', 'Mauritius', 'Mayotte', 'Mexico',
-                    'Micronesia, Federated States of', 'Moldova, Republic of', 'Monaco',
-                    'Mongolia', 'Montenegro', 'Montserrat', 'Morocco', 'Mozambique',
-                    'Myanmar', 'Namibia', 'Nauru', 'Nepal', 'Netherlands',
-                    'Netherlands Antilles', 'New Caledonia', 'New Zealand', 'Nicaragua',
-                    'Niger', 'Nigeria', 'Niue', 'Norfolk Island',
-                    'Northern Mariana Islands', 'Norway', 'Oman', 'Pakistan', 'Palau',
-                    'Palestinian Territories', 'Panama', 'Papua New Guinea', 'Paraguay',
-                    'Peru', 'Philippines', 'Pitcairn', 'Poland', 'Portugal', 'Puerto Rico',
-                    'Qatar', 'Reunion', 'Romania', 'Russian Federation', 'Rwanda',
-                    'Saint Barthelemy', 'Saint Helena, Ascension and Tristan da Cunha',
-                    'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Martin',
-                    'Saint Pierre and Miquelon', 'Saint Vincent and the Grenadines',
-                    'Samoa', 'San Marino', 'Sao Tome and Principe', 'Saudi Arabia',
-                    'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore',
-                    'Sint Maarten', 'Slovakia', 'Slovenia', 'Solomon Islands', 'Somalia',
-                    'South Africa', 'South Georgia and the South Sandwich Islands', 'Spain',
-                    'Sri Lanka', 'Suriname', 'Svalbard and Jan Mayen', 'Swaziland',
-                    'Sweden', 'Switzerland', 'Taiwan', 'Tajikistan',
-                    'Tanzania, United Republic of', 'Thailand', 'Timor-leste', 'Togo',
-                    'Tokelau', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey',
-                    'Turkmenistan', 'Turks and Caicos Islands', 'Tuvalu', 'Uganda',
-                    'Ukraine', 'United Arab Emirates', 'United Kingdom',
-                    'United States Minor Outlying Islands', 'Uruguay', 'Uzbekistan',
-                    'Vanuatu', 'Venezuela', 'Vietnam', 'Virgin Islands, British',
-                    'Virgin Islands, U.S.', 'Wallis and Futuna', 'Western Sahara', 'Yemen',
-                    'Zambia', 'Zimbabwe'],
-            render_kw={'placeholder': 'Address *'})
+    class Meta:
+        csrf = False
+
     address_line_1 = TextField(
             'Street Address',
             [
@@ -96,7 +34,257 @@ class AddressForm(Form):
                 InputRequired('Please enter your zip code.'),
             ],
             render_kw={'placeholder': 'Zip Code *'})
-
+    country = SelectField(
+            'Country',
+            [
+                InputRequired('Please select a country.'),
+            ],
+            choices=[
+                    (u'Afghanistan', u'Afghanistan'),
+                    (u'Aland Islands', u'Aland Islands'),
+                    (u'Albania', u'Albania'),
+                    (u'Algeria', u'Algeria'),
+                    (u'American Samoa', u'American Samoa'),
+                    (u'Andorra', u'Andorra'),
+                    (u'Angola', u'Angola'),
+                    (u'Anguilla', u'Anguilla'),
+                    (u'Antarctica', u'Antarctica'),
+                    (u'Antigua and Barbuda', u'Antigua and Barbuda'),
+                    (u'Argentina', u'Argentina'),
+                    (u'Armenia', u'Armenia'),
+                    (u'Aruba', u'Aruba'),
+                    (u'Australia', u'Australia'),
+                    (u'Austria', u'Austria'),
+                    (u'Azerbaijan', u'Azerbaijan'),
+                    (u'Bahamas, uThe', 'Bahamas, The'),
+                    (u'Bahrain', u'Bahrain'),
+                    (u'Bangladesh', u'Bangladesh'),
+                    (u'Barbados', u'Barbados'),
+                    (u'Belarus', u'Belarus'),
+                    (u'Belgium', u'Belgium'),
+                    (u'Belize', u'Belize'),
+                    (u'Benin', u'Benin'),
+                    (u'Bermuda', u'Bermuda'),
+                    (u'Bhutan', u'Bhutan'),
+                    (u'Bolivia', u'Bolivia'),
+                    (u'Bonaire, uSaint Eustatius and Saba', 'Bonaire, Saint Eustatius and Saba'),
+                    (u'Bosnia and Herzegovina', u'Bosnia and Herzegovina'),
+                    (u'Botswana', u'Botswana'),
+                    (u'Bouvet Island', u'Bouvet Island'),
+                    (u'Brazil', u'Brazil'),
+                    (u'British Indian Ocean Territory', u'British Indian Ocean Territory'),
+                    (u'Brunei Darussalam', u'Brunei Darussalam'),
+                    (u'Bulgaria', u'Bulgaria'),
+                    (u'Burkina Faso', u'Burkina Faso'),
+                    (u'Burundi', u'Burundi'),
+                    (u'Cambodia', u'Cambodia'),
+                    (u'Cameroon', u'Cameroon'),
+                    (u'Canada', u'Canada'),
+                    (u'Cape Verde', u'Cape Verde'),
+                    (u'Cayman Islands', u'Cayman Islands'),
+                    (u'Central African Republic', u'Central African Republic'),
+                    (u'Chad', u'Chad'),
+                    (u'Chile', u'Chile'),
+                    (u'China', u'China'),
+                    (u'Christmas Island', u'Christmas Island'),
+                    (u'Cocos (Keeling) Islands', u'Cocos (Keeling) Islands'),
+                    (u'Colombia', u'Colombia'),
+                    (u'Comoros', u'Comoros'),
+                    (u'Congo', u'Congo'),
+                    (u'Congo, uThe Democratic Republic of the', 'Congo, The Democratic Republic of the'),
+                    (u'Cook Islands', u'Cook Islands'),
+                    (u'Costa Rica', u'Costa Rica'),
+                    (u'Cote D\'ivoire', u'Cote D\'ivoire'),
+                    (u'Croatia', u'Croatia'),
+                    (u'Curaçao', u'Curaçao'),
+                    (u'Cyprus', u'Cyprus'),
+                    (u'Czech Republic', u'Czech Republic'),
+                    (u'Denmark', u'Denmark'),
+                    (u'Djibouti', u'Djibouti'),
+                    (u'Dominica', u'Dominica'),
+                    (u'Dominican Republic', u'Dominican Republic'),
+                    (u'Ecuador', u'Ecuador'),
+                    (u'Egypt', u'Egypt'),
+                    (u'El Salvador', u'El Salvador'),
+                    (u'Equatorial Guinea', u'Equatorial Guinea'),
+                    (u'Eritrea', u'Eritrea'),
+                    (u'Estonia', u'Estonia'),
+                    (u'Ethiopia', u'Ethiopia'),
+                    (u'Falkland Islands (Malvinas)', u'Falkland Islands (Malvinas)'),
+                    (u'Faroe Islands', u'Faroe Islands'),
+                    (u'Fiji', u'Fiji'),
+                    (u'Finland', u'Finland'),
+                    (u'France', u'France'),
+                    (u'French Guiana', u'French Guiana'),
+                    (u'French Polynesia', u'French Polynesia'),
+                    (u'French Southern Territories', u'French Southern Territories'),
+                    (u'Gabon', u'Gabon'),
+                    (u'Gambia, uThe', 'Gambia, The'),
+                    (u'Georgia', u'Georgia'),
+                    (u'Germany', u'Germany'),
+                    (u'Ghana', u'Ghana'),
+                    (u'Gibraltar', u'Gibraltar'),
+                    (u'Greece', u'Greece'),
+                    (u'Greenland', u'Greenland'),
+                    (u'Grenada', u'Grenada'),
+                    (u'Guadeloupe', u'Guadeloupe'),
+                    (u'Guam', u'Guam'),
+                    (u'Guatemala', u'Guatemala'),
+                    (u'Guernsey', u'Guernsey'),
+                    (u'Guinea', u'Guinea'),
+                    (u'Guinea-Bissau', u'Guinea-Bissau'),
+                    (u'Guyana', u'Guyana'),
+                    (u'Haiti', u'Haiti'),
+                    (u'Heard Island and the McDonald Islands', u'Heard Island and the McDonald Islands'),
+                    (u'Holy See', u'Holy See'),
+                    (u'Honduras', u'Honduras'),
+                    (u'Hong Kong', u'Hong Kong'),
+                    (u'Hungary', u'Hungary'),
+                    (u'Iceland', u'Iceland'),
+                    (u'India', u'India'),
+                    (u'Indonesia', u'Indonesia'),
+                    (u'Iraq', u'Iraq'),
+                    (u'Ireland', u'Ireland'),
+                    (u'Isle of Man', u'Isle of Man'),
+                    (u'Israel', u'Israel'),
+                    (u'Italy', u'Italy'),
+                    (u'Jamaica', u'Jamaica'),
+                    (u'Japan', u'Japan'),
+                    (u'Jersey', u'Jersey'),
+                    (u'Jordan', u'Jordan'),
+                    (u'Kazakhstan', u'Kazakhstan'),
+                    (u'Kenya', u'Kenya'),
+                    (u'Kiribati', u'Kiribati'),
+                    (u'Korea, uRepublic of', 'Korea, Republic of'),
+                    (u'Kosovo', u'Kosovo'),
+                    (u'Kuwait', u'Kuwait'),
+                    (u'Kyrgyzstan', u'Kyrgyzstan'),
+                    (u'Lao People\'s Democratic Republic', u'Lao People\'s Democratic Republic'),
+                    (u'Latvia', u'Latvia'),
+                    (u'Lebanon', u'Lebanon'),
+                    (u'Lesotho', u'Lesotho'),
+                    (u'Liberia', u'Liberia'),
+                    (u'Libya', u'Libya'),
+                    (u'Liechtenstein', u'Liechtenstein'),
+                    (u'Lithuania', u'Lithuania'),
+                    (u'Luxembourg', u'Luxembourg'),
+                    (u'Macao', u'Macao'),
+                    (u'Macedonia, uThe Former Yugoslav Republic of', 'Macedonia, The Former Yugoslav Republic of'),
+                    (u'Madagascar', u'Madagascar'),
+                    (u'Malawi', u'Malawi'),
+                    (u'Malaysia', u'Malaysia'),
+                    (u'Maldives', u'Maldives'),
+                    (u'Mali', u'Mali'),
+                    (u'Malta', u'Malta'),
+                    (u'Marshall Islands', u'Marshall Islands'),
+                    (u'Martinique', u'Martinique'),
+                    (u'Mauritania', u'Mauritania'),
+                    (u'Mauritius', u'Mauritius'),
+                    (u'Mayotte', u'Mayotte'),
+                    (u'Mexico', u'Mexico'),
+                    (u'Micronesia, uFederated States of', 'Micronesia, Federated States of'),
+                    (u'Moldova, uRepublic of', 'Moldova, Republic of'),
+                    (u'Monaco', u'Monaco'),
+                    (u'Mongolia', u'Mongolia'),
+                    (u'Montenegro', u'Montenegro'),
+                    (u'Montserrat', u'Montserrat'),
+                    (u'Morocco', u'Morocco'),
+                    (u'Mozambique', u'Mozambique'),
+                    (u'Myanmar', u'Myanmar'),
+                    (u'Namibia', u'Namibia'),
+                    (u'Nauru', u'Nauru'),
+                    (u'Nepal', u'Nepal'),
+                    (u'Netherlands', u'Netherlands'),
+                    (u'Netherlands Antilles', u'Netherlands Antilles'),
+                    (u'New Caledonia', u'New Caledonia'),
+                    (u'New Zealand', u'New Zealand'),
+                    (u'Nicaragua', u'Nicaragua'),
+                    (u'Niger', u'Niger'),
+                    (u'Nigeria', u'Nigeria'),
+                    (u'Niue', u'Niue'),
+                    (u'Norfolk Island', u'Norfolk Island'),
+                    (u'Northern Mariana Islands', u'Northern Mariana Islands'),
+                    (u'Norway', u'Norway'),
+                    (u'Oman', u'Oman'),
+                    (u'Pakistan', u'Pakistan'),
+                    (u'Palau', u'Palau'),
+                    (u'Palestinian Territories', u'Palestinian Territories'),
+                    (u'Panama', u'Panama'),
+                    (u'Papua New Guinea', u'Papua New Guinea'),
+                    (u'Paraguay', u'Paraguay'),
+                    (u'Peru', u'Peru'),
+                    (u'Philippines', u'Philippines'),
+                    (u'Pitcairn', u'Pitcairn'),
+                    (u'Poland', u'Poland'),
+                    (u'Portugal', u'Portugal'),
+                    (u'Puerto Rico', u'Puerto Rico'),
+                    (u'Qatar', u'Qatar'),
+                    (u'Reunion', u'Reunion'),
+                    (u'Romania', u'Romania'),
+                    (u'Russian Federation', u'Russian Federation'),
+                    (u'Rwanda', u'Rwanda'),
+                    (u'Saint Barthelemy', u'Saint Barthelemy'),
+                    (u'Saint Helena, uAscension and Tristan da Cunha', 'Saint Helena, Ascension and Tristan da Cunha'),
+                    (u'Saint Kitts and Nevis', u'Saint Kitts and Nevis'),
+                    (u'Saint Lucia', u'Saint Lucia'),
+                    (u'Saint Martin', u'Saint Martin'),
+                    (u'Saint Pierre and Miquelon', u'Saint Pierre and Miquelon'),
+                    (u'Saint Vincent and the Grenadines', u'Saint Vincent and the Grenadines'),
+                    (u'Samoa', u'Samoa'),
+                    (u'San Marino', u'San Marino'),
+                    (u'Sao Tome and Principe', u'Sao Tome and Principe'),
+                    (u'Saudi Arabia', u'Saudi Arabia'),
+                    (u'Senegal', u'Senegal'),
+                    (u'Serbia', u'Serbia'),
+                    (u'Seychelles', u'Seychelles'),
+                    (u'Sierra Leone', u'Sierra Leone'),
+                    (u'Singapore', u'Singapore'),
+                    (u'Sint Maarten', u'Sint Maarten'),
+                    (u'Slovakia', u'Slovakia'),
+                    (u'Slovenia', u'Slovenia'),
+                    (u'Solomon Islands', u'Solomon Islands'),
+                    (u'Somalia', u'Somalia'),
+                    (u'South Africa', u'South Africa'),
+                    (u'South Georgia and the South Sandwich Islands', u'South Georgia and the South Sandwich Islands'),
+                    (u'Spain', u'Spain'),
+                    (u'Sri Lanka', u'Sri Lanka'),
+                    (u'Suriname', u'Suriname'),
+                    (u'Svalbard and Jan Mayen', u'Svalbard and Jan Mayen'),
+                    (u'Swaziland', u'Swaziland'),
+                    (u'Sweden', u'Sweden'),
+                    (u'Switzerland', u'Switzerland'),
+                    (u'Taiwan', u'Taiwan'),
+                    (u'Tajikistan', u'Tajikistan'),
+                    (u'Tanzania, uUnited Republic of', 'Tanzania, United Republic of'),
+                    (u'Thailand', u'Thailand'),
+                    (u'Timor-leste', u'Timor-leste'),
+                    (u'Togo', u'Togo'),
+                    (u'Tokelau', u'Tokelau'),
+                    (u'Tonga', u'Tonga'),
+                    (u'Trinidad and Tobago', u'Trinidad and Tobago'),
+                    (u'Tunisia', u'Tunisia'),
+                    (u'Turkey', u'Turkey'),
+                    (u'Turkmenistan', u'Turkmenistan'),
+                    (u'Turks and Caicos Islands', u'Turks and Caicos Islands'),
+                    (u'Tuvalu', u'Tuvalu'),
+                    (u'Uganda', u'Uganda'),
+                    (u'Ukraine', u'Ukraine'),
+                    (u'United Arab Emirates', u'United Arab Emirates'),
+                    (u'United Kingdom', u'United Kingdom'),
+                    (u'United States Minor Outlying Islands', u'United States Minor Outlying Islands'),
+                    (u'Uruguay', u'Uruguay'),
+                    (u'Uzbekistan', u'Uzbekistan'),
+                    (u'Vanuatu', u'Vanuatu'),
+                    (u'Venezuela', u'Venezuela'),
+                    (u'Vietnam', u'Vietnam'),
+                    (u'Virgin Islands, uBritish', 'Virgin Islands, British'),
+                    (u'Virgin Islands, uU.S.', 'Virgin Islands, U.S.'),
+                    (u'Wallis and Futuna', u'Wallis and Futuna'),
+                    (u'Western Sahara', u'Western Sahara'),
+                    (u'Yemen', u'Yemen'),
+                    (u'Zambia', u'Zambia'),
+                    (u'Zimbabwe', u'Zimbabwe')],
+            render_kw={'placeholder': 'Address *'})
 
 class AffiliateApplication(Form):
     name = TextField(
@@ -166,8 +354,7 @@ class AffiliateApplication(Form):
             ],
             choices=[
                 ('yes', 'Yes'),
-                ('no', 'No')
-            ])
+                ('no', 'No')])
     provides_video_content = RadioField(
             'Do you provide video content for social media platforms? *',
             [
@@ -175,8 +362,7 @@ class AffiliateApplication(Form):
             ],
             choices=[
                 ('yes', 'Yes'),
-                ('no', 'No')
-            ])
+                ('no', 'No')])
     trains_professional_athletes  = RadioField(
             'Do you train professional athletes? *',
             [
@@ -184,8 +370,7 @@ class AffiliateApplication(Form):
             ],
             choices=[
                 ('yes', 'Yes'),
-                ('no', 'No')
-            ])
+                ('no', 'No')])
     sells_merchandise = RadioField(
             'Do you currently sell merchandise on your website? *',
             [
@@ -193,8 +378,7 @@ class AffiliateApplication(Form):
             ],
             choices=[
                 ('yes', 'Yes'),
-                ('no', 'No')
-            ])
+                ('no', 'No')])
     has_blog = RadioField(
             'Do you have a blog or newsletter database? *',
             [
@@ -202,8 +386,7 @@ class AffiliateApplication(Form):
             ],
             choices=[
                 ('yes', 'Yes'),
-                ('no', 'No')
-            ])
+                ('no', 'No')])
     submit = SubmitField('Apply')
 
 class ContactForm(Form):
@@ -240,13 +423,13 @@ class ContactForm(Form):
 
 class ReturnForm(Form):
     first_name = TextField(
-            'First Name',
+            'First name',
             [
                 InputRequired('Please enter your first name.')
             ],
             render_kw={'placeholder': 'First Name *'})
     last_name = TextField(
-            'Last Name',
+            'Last name',
             [
                 InputRequired('Please enter your last name.')
             ],
@@ -259,18 +442,27 @@ class ReturnForm(Form):
             ],
             render_kw={'placeholder': 'Email Address *'})
     phone_number = TextField(
-            'Phone Number',
+            'Phone number',
             [
                 InputRequired('Please enter your email address.'),
-                Email('Please enter a valid email address.')
             ],
             render_kw={'placeholder': 'Phone Number *'})
     order_number = IntegerField(
-            'Order Number',
+            'Order number',
             [
                 InputRequired('Please enter your order number.')
             ],
             render_kw={'placeholder': 'Order Number *'})
     address = FormField(AddressForm)
+    is_damaged = BooleanField('Damaged')
+    is_wrong_size = BooleanField('Wrong size')
+    is_wrong_quantity = BooleanField('Received multiple')
+    is_no_exchange = BooleanField('Return without exchange')
+    product_image = FileField(
+            'Product Image (If Damaged):',
+            render_kw={'multiple': True})
+    additional_notes = TextAreaField(
+            'Additional notes',
+            render_kw={'placeholder': 'Additional Notes'})
     submit = SubmitField('Send')
 

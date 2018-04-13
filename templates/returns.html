@@ -1,0 +1,176 @@
+{% extends 'layouts/base.html' %}
+
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Returns | POWERHANDZ{% endblock %}
+{% block content %}
+    <style>
+    .marketing-site-hero {
+      background: url("{{ config.ASSET_BASE_URL }}/images/about-hero.jpg") top right no-repeat;
+      height: 60vh;
+      background-size: cover;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+
+    @media screen and (min-width: 40em) {
+      .marketing-site-hero {
+        background-position: center center;
+      }
+    }
+
+    .marketing-site-hero-content {
+      max-width: 75rem;
+      margin-left:0px!important;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .marketing-site-hero-content h1 {
+      font-size: 32px;
+      color: #ffffff!important;
+    }
+
+    .marketing-site-hero-content .button.round {
+      border-radius: 5000px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    </style>
+
+    <div class="animsition">
+    {% include 'includes/top-bar.html' %}
+
+    <div class="heroWrapper relPosition">
+      <div class="marketing-site-hero">
+        <div class="marketing-site-hero-content">
+          <h1>Submit a Return</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgWhite">
+      <div class="row padding clearfix">
+        <div class="small-12 medium-12 large-12 columns">
+          <div id="contact" class="">
+            {% if success %}
+            <div style="background: green; color: white; padding: 10px; margin:0; margin-bottom: 25px;">
+              Thank you for your submission. We'll get back to you shortly.
+            </div>
+            {% endif %}
+
+            {% if form.errors %}
+            <ul class="errors" style="list-style-type: none; padding: 0; margin:0; margin-bottom: 25px;">
+            {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+            {% for error in field_errors %}
+              <li style="background: #dc3545; color: white; padding: 10px; margin-bottom: 5px;">{{ error }}</li>
+            {% endfor %}
+            {% endfor %}
+            </ul>
+            {% endif %}
+
+            <p>If you have returns, please send them to:</p>
+
+            <p>
+            Fulfillment Center<br>
+            Attention: POWERHANDZ Returns/Exchanges<br>
+            11212 Indian Trail<br>
+            Dallas, Texas 75229<br><br>
+            </p>
+
+            <form action="{{ url_for('returns') }}" method="post" enctype="multipart/form-data">
+              {{ form.csrf_token }}
+
+              <div class="row">
+                <div class="large-6 columns">
+                  {{ form.first_name }}
+                </div>
+                <div class="large-6 columns">
+                  {{ form.last_name }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-6 columns">
+                  {{ form.email }}
+                </div>
+                <div class="large-6 columns">
+                  {{ form.phone_number }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  {{ form.order_number }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  {{ form.address.address_line_1 }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  {{ form.address.address_line_2 }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-3 columns">
+                  {{ form.address.city }}
+                </div>
+                <div class="large-3 columns">
+                  {{ form.address.state }}
+                </div>
+                <div class="large-3 columns">
+                  {{ form.address.zip_code }}
+                </div>
+                <div class="large-3 columns">
+                  {{ form.address.country }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <p>Select all that apply:</p>
+                  {{ form.is_damaged }} {{ form.is_damaged.label }}<br>
+                  {{ form.is_wrong_size }} {{ form.is_wrong_size.label }}<br>
+                  {{ form.is_wrong_quantity }} {{ form.is_wrong_quantity.label }}<br>
+                  {{ form.is_no_exchange }} {{ form.is_no_exchange.label }}<br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  {{ form.product_image }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  {{ form.additional_notes }}
+                </div>
+              </div>
+
+              {{ form.submit(class_="button btnBlack") }}
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include 'includes/programs.html' %}
+    <style>
+    .clientsGrid li, .testimonialsGrid li
+    {padding: 4px 14px;
+    }
+    </style>
+    {% include 'includes/press.html' %}
+    </div>
+{% endblock %}

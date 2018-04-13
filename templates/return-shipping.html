@@ -1,0 +1,175 @@
+{% extends 'layouts/base.html' %}
+
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Return Shipping | POWERHANDZ{% endblock %}
+{% block content %}
+    <style>
+    .marketing-site-hero {
+      background: url("{{ config.ASSET_BASE_URL }}/images/about-hero.jpg") top right no-repeat;
+      height: 60vh;
+      background-size: cover;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+
+    @media screen and (min-width: 40em) {
+      .marketing-site-hero {
+        background-position: center center;
+      }
+    }
+
+    .marketing-site-hero-content {
+      max-width: 75rem;
+      margin-left:0px!important;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    .marketing-site-hero-content h1 {
+      font-size: 32px;
+      color: #ffffff!important;
+    }
+
+    .marketing-site-hero-content .button.round {
+      border-radius: 5000px;
+      text-transform: uppercase;
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+    </style>
+
+    <div class="animsition">
+    {% include 'includes/top-bar.html' %}
+
+    <div class="heroWrapper relPosition">
+      <div class="marketing-site-hero">
+        <div class="marketing-site-hero-content">
+          <h1>Submit a Return</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="bgWhite">
+      <div class="row padding clearfix">
+        <div class="small-12 medium-12 large-12 columns">
+          <div id="contact" class="">
+            <script src="https://js.stripe.com/v3/"></script>
+<style>
+.StripeElement {
+  background-color: white;
+  height: 40px;
+  padding: 10px 12px;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+  border-color: #fa755a;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+</style>
+            <form action="{{ url_for('return_shipping') }}" method="post" id="payment-form">
+              <div class="form-row">
+                <label for="card-element">
+                  Credit or debit card
+                </label>
+                <div class="row">
+                  <div class="large-8 column">
+                    <div id="card-element"></div>
+                  </div>
+                  <div class="large-4 column">
+                    <input type="submit" name="submit" id="submit" value="Pay $10" class="btn btn-black">
+                  </div>
+                </div>
+
+                <div id="card-errors" role="alert"></div>
+              </div>
+                <br>
+            </form>
+<script>
+// Create a Stripe client.
+var stripe = Stripe('pk_test_6pRNASCoBOKtIshFeQd4XMUh');
+
+// Create an instance of Elements.
+var elements = stripe.elements();
+
+// Custom styling can be passed to options when creating an Element.
+// (Note that this demo uses a wider set of styles than the guide below.)
+var style = {
+  base: {
+    color: '#32325d',
+    lineHeight: '18px',
+    fontFamily: '"Helvetica Neue", Helvetica, sans-serif',
+    fontSmoothing: 'antialiased',
+    fontSize: '16px',
+    '::placeholder': {
+      color: '#aab7c4'
+    }
+  },
+  invalid: {
+    color: '#fa755a',
+    iconColor: '#fa755a'
+  }
+};
+
+// Create an instance of the card Element.
+var card = elements.create('card', {style: style});
+
+// Add an instance of the card Element into the `card-element` <div>.
+card.mount('#card-element');
+
+// Handle real-time validation errors from the card Element.
+card.addEventListener('change', function(event) {
+  var displayError = document.getElementById('card-errors');
+  if (event.error) {
+    displayError.textContent = event.error.message;
+  } else {
+    displayError.textContent = '';
+  }
+});
+
+// Handle form submission.
+var form = document.getElementById('payment-form');
+form.addEventListener('submit', function(event) {
+  event.preventDefault();
+
+  stripe.createToken(card).then(function(result) {
+    if (result.error) {
+      // Inform the user if there was an error.
+      var errorElement = document.getElementById('card-errors');
+      errorElement.textContent = result.error.message;
+    } else {
+      // Send the token to your server.
+      stripeTokenHandler(result.token);
+    }
+  });
+});
+</script>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% include 'includes/programs.html' %}
+    <style>
+    .clientsGrid li, .testimonialsGrid li
+    {padding: 4px 14px;
+    }
+    </style>
+    {% include 'includes/press.html' %}
+    </div>
+{% endblock %}

@@ -1,0 +1,75 @@
+{% extends 'layouts/base.html' %}
+
+{% block meta_description %}Join thousands of football players, from youth to professional, who are improving their game with POWERHANDZ weighted football gloves and football training equipment: Weighted anti-grip football gloves for receivers and defensive backs and POWERHANDZ Pop Up Defenders.{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Football Training Drills | POWERHANDZ{% endblock %}
+{% block content %}
+  {% include 'includes/top-bar.html' %}
+  <div class="heroWrapper relPosition">
+    <div class="heroSmallBlack relPosition" style="background-image: url('{{ config.ASSET_BASE_URL }}/images/football-hero.jpg');background-position: 50% 50%;">
+      <div class="row">
+        <div class="heroIntro padding horizontalCenter">
+          <div class="small-10 medium-8 large-6 columns">
+            <h1>TRAIN LIKE A PRO</h1>
+            <div class="divider"></div>
+            <h6>Get your POWERHANDZ gloves and perform the workouts below with them on to help take your game to the next level.</h6>
+            <div class="ctaBtns">
+              <a class="button btnWhite hollow" href="https://shop.powerhandz.com/collections/football">GET POWERHANDZ</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-10 large-centered">
+      <h2><a href="https://shop.powerhandz.com/collections/football">Use code NFL18 at checkout for a 10% off your purchase at shop.powerhandz.com</a></h2>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-10 large-centered">
+      <h2>Football Training Videos</h2>
+      <h3>Powered by POWERHANDZ</h3>
+      <div class="row">
+        <div class="small-12 large-6 large-centered">
+          <h3></h3>
+          <h4></h4>
+          <p></p>
+        </div>
+        <div class="small-12 large-6 large-centered">
+          <h3></h3>
+          <h4></h4>
+          <p></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="small-12 large-6 large-centered">
+          <h3></h3>
+          <h4></h4>
+          <p></p>
+        </div>
+        <div class="small-12 large-6 large-centered">
+          <h3></h3>
+          <h4></h4>
+          <p></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="small-12 large-10 large-centered">
+      <form action="{{ url_for('football_training') }}" method="post">
+        {{ form.name }}
+        {{ form.email }}
+        {{ form.zip_code }}
+        {{ form.submit }}
+      </form>
+    </div>
+  </div>
+
+  {% include 'includes/stats.html' %}
+  {% include 'includes/press.html' %}
+{% endblock %}

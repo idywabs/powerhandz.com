@@ -1,7 +1,8 @@
 from flask import Flask, render_template, redirect, request, send_from_directory, flash
-from forms import AffiliateApplication, ContactForm
-from flask_mail import Message, Mail
+from forms import AffiliateApplication, ContactForm, ReturnForm
+from flask_mail import Attachment, Message, Mail
 from datetime import datetime
+from werkzeug.utils import secure_filename
 
 # Initialization
 
@@ -103,9 +104,14 @@ def fitness():
 def football():
     return render_template('football.html')
 
-@app.route('/future')
-def future():
-    return render_template('future.html')
+@app.route('/football-training', methods=['GET', 'POST'])
+def football_training():
+    form = ContactForm()
+    return render_template('football-training.html', form=form)
+
+@app.route('/handz-of-the-future')
+def handz_of_the_future():
+    return render_template('handz-of-the-future.html')
 
 @app.route('/golf')
 def golf():
@@ -135,6 +141,48 @@ def resources():
 def return_policy():
     return render_template('return-policy.html');
 
+@app.route('/returns', methods=['GET', 'POST'])
+def returns():
+    form = ReturnForm()
+    if request.method == 'POST':
+        if form.validate():
+            msg = Message(
+                    'POWERHANDZ Return Form',
+                    sender=app.config['RETURN_FORM_SENDER'],
+                    recipients=[app.config['RETURN_FORM_RECIPIENT']])
+            msg.body = 'This message was automatically generated from %s.\n\n'\
+                    % (app.config['SITE_URL'] + request.path)
+            for field in form:
+                if field.type not in [
+                        'CSRFTokenField',
+                        'FileField',
+                        'FormField',
+                        'SubmitField']:
+                    msg.body += '%s: %s\n' % (field.label.text, field.data)
+                elif field.type == 'FormField':
+                    for subfield in field:
+                        msg.body += '%s: %s\n' % (subfield.label.text, subfield.data)
+                elif field.type == 'FileField':
+                    for file_object in request.files.getlist(field.name):
+                        msg.attach(
+                                secure_filename(file_object.filename),
+                                file_object.headers['Content-Type'],
+                                file_object.read())
+            mail.send(msg)
+            return render_template('returns.html', form=form, success=True)
+        else:
+            flash('All fields are required.')
+            return render_template('returns.html', form=form)
+    elif request.method == 'GET':
+        return render_template('returns.html', form=form)
+
+#@app.route('/return-shipping', methods=['GET', 'POST'])
+#def return_shipping():
+#    if request.method == 'POST':
+#        return render_template('return-shipping.html')
+#    else:
+#        return render_template('return-shipping.html')
+
 @app.route('/softball')
 def softball():
     return render_template('softball.html')
@@ -142,6 +190,10 @@ def softball():
 @app.route('/team')
 def team():
     return render_template('team.html')
+
+@app.route('/voices-of-greatness')
+def voices_of_greatness():
+    return render_template('voices-of-greatness.html')
 
 # Redirects
 
@@ -154,6 +206,10 @@ def redirect_affiliates_form():
 def redirect_blog(path):
     return redirect('https://blog.powerhandz.com/' + path, 301)
 
+@app.route('/future')
+def redirect_future():
+    return redirect(app.config['SITE_URL'] + '/handz-of-the-future', 301)
+
 @app.route('/lifestyle')
 def lifestyle():
     return redirect(app.config['SITE_URL'] + '/fitness', 301)
@@ -165,6 +221,10 @@ def redirect_ourtime():
 @app.route('/powertogive')
 def redirect_powertogive():
     return redirect(app.config['SITE_URL'] + '/power-to-give', 301)
+
+@app.route('/return-shipping')
+def return_shipping():
+    return redirect('https://secure.powerhandz.com/product/return-shipping', 302)
 
 @app.route('/shop')
 def redirect_shop():
@@ -182,13 +242,9 @@ def redirect_return_policy():
 def redirect_shop_returns():
     return redirect(app.config['SITE_URL'] + '/returns', 301)
 
-@app.route('/returns')
-def returns():
-    return redirect('http://secure.powerhandz.com/returns', 302)
-
-@app.route('/return-shipping')
-def return_shipping():
-    return redirect('http://secure.powerhandz.com/product/return-shipping/', 302)
+@app.route('/voices')
+def redirect_voices():
+    return redirect(app.config['SITE_URL'] + '/voices-of-greatness', 301)
 
 # Static Files
 
