@@ -1,0 +1,310 @@
+{% extends 'layouts/base.html' %}
+
+{% block meta_description %}Professional Sports Training Products{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Power to Give | POWERHANDZ{% endblock %}
+{% block content %}
+    <div class="animsition">
+   {% include 'includes/top-bar.html' %}
+<style>
+
+.marketing-site-hero {
+  background: url("{{ config.ASSET_BASE_URL }}/images/ourtime-hero.jpg") top right no-repeat;
+  height: 60vh;
+  background-size: cover;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-hero {
+    background-position: center center;
+  }
+}
+
+.marketing-site-hero-content {
+  max-width: 75rem;
+  margin-left:0px!important;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.marketing-site-hero-content h1 {
+  font-size: 32px;
+  color: #ffffff!important;
+}
+
+.marketing-site-hero-content .button.round {
+  border-radius: 5000px;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.tabs dd>a {
+    display: inline-block;
+    background: #131313;
+    color: #fff;
+    border: 1px solid #111;
+    padding-top: .5rem;
+    padding-right: .5rem;
+    padding-bottom: .5625rem;
+    padding-left: .5rem;
+    margin-left: 0px!important;
+    margin-bottom: 0.2em!important;
+    margin-right: 0px!important;
+    line-height: 1em!important;
+    font-family: 'Open Sans',Helvetica,Arial,sans-serif;
+    font-size: 1.2em!important;
+    -webkit-border-radius:2px!important;
+    border-radius: 2px!important;
+    min-width: 100%!important;
+
+    }
+.content {
+    background-color: #eeeeee!important;
+    border: solid 1px #dedede;
+    width: 100%!important;
+    margin: 0px!important;
+    padding: 1.5em!important;
+}
+.content p {
+    line-height: 1.3em!important;
+    padding-bottom: 0.6em!important;
+}
+
+.ptgdonate {
+    background-color: #111111;
+    background: url({{ config.ASSET_BASE_URL }}/images/ptgdonate.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding:3em 1em 3.5em 1em!important;
+}
+.onlytwenty {
+    width: 20%!important;
+}
+
+.clientsGrid li, .testimonialsGrid li
+{padding: 4px 14px;
+}
+
+</style>
+
+<div class="heroWrapper relPosition">
+  <div class="marketing-site-hero">
+    <div class="marketing-site-hero-content">
+      <h1>POWER TO GIVE</h1>
+      <div class="divider"></div>
+      <p style="color:#ffffff;padding:0.1em 0em 1.2em 0em;max-width:450px;" class="subheader">We carry out our vision through programs that enhance academics and athletics success and provide life skills and leadership training which promote the core values of community service.</p>
+      <a href="/contact" class="button btnWhite hollow">Contact Us</a>
+    </div>
+  </div>
+</div>
+
+<div class="bgWhite">
+  <div class="row padding clearfix">
+    <div class="small-12 medium-10 large-8 small-centered columns">
+      <h5 class="text-center">Our Mission</h5>
+      <div class="dividerCenter"></div>
+      <h3 class="text-center">To develop targeted programs for youth in underserved communities that increase a commitment to athletic and academic excellence.</h3>
+    </div>
+  </div>
+</div>
+
+<div class="bgWhite">
+  <div class="row relPosition stretched" style="padding-bottom: 50px;">
+
+    <div class="small-12 medium-12 large-6 columns">
+      <div class="padding" data-equalizer-watch="" style="height: 640px;">
+        <div class="row">
+          <div class="small-12 columns">
+            <h3>Who We Are</h3>
+            <div class="divider"></div>
+            <p>POWER TO GIVE Foundation supports youth athletes growing up with dreams of becoming confident and successful individuals that are positively affecting the quality of life in their community. Through our programs, we seek to increase the awareness of the undisputed impact that athletic, education and career development training programs have on academic and athletic success; as well as overall stability of the communities we serve. A portion of every dollar that POWERHANDZ Inc. receives for its products are donated to POWER TO GIVE initiatives with a mission to develop targeted programs for youth in underserved communities that increase a commitment to athletic and academic excellence.</p>
+            <p>Our programs expose youth to high quality athletic, education and career development programming. These services are used to train, educate and inspire youth in a planned path to education and athletic excellence. Together we will strive to take steps to expand the Power To Give’s reach and influence as the impact on our future leaders is increasing generationally.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="small-12 medium-12 large-6 columns noPadding">
+        <div class="splitImg padding" data-equalizer-watch="" style="background-image: url({{ config.ASSET_BASE_URL }}/images/ptg-image1.jpg); height: 640px;">
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="large-12 columns" style="padding-top: 50px; padding-bottom: 50px;">
+    <div class="putinmiddle">
+      <div class="expand show-for-large large-12 medium-2 small-12 columns">
+        <dl class="tabs" data-tab="" style="text-align: center">
+          <dd style="display:inline!important;"><a style="padding:9px 20px;display:inline!important;width:200px!important;" href="#panel2-1">Power To Fight</a></dd>
+          <dd style="display:inline;"><a style="padding:9px 20px;display:inline!important;width:200px!important;" href="#panel2-2">Boys and Girls Club</a></dd>
+          <dd style="display:inline;" class="active"><a style="padding:9px 20px;display:inline!important;width:200px!important;" href="#panel2-3">The Holiday Giving</a></dd>
+        </dl><br>
+      </div>
+    </div>
+
+    <div class="hide-for-large medium-2 small-12 columns">
+      <dl class="tabs vertical" data-tab="">
+        <dd class="active"><a href="#panel2-1">Power To Fight</a></dd>
+        <dd><a href="#panel2-2">Boys and Girls Club</a></dd>
+        <dd><a href="#panel2-3">The Holiday Giving</a></dd>
+      </dl>
+    </div>
+
+    <div class="large-12 medium-10 small-12 columns">
+      <div class="tabs-content">
+        <div class="content animated fadeInUp" id="panel2-1">
+          <div class="row">
+
+            <div class="large-6 medium-12 small-12 columns">
+              <img src="{{ config.ASSET_BASE_URL }}/images/Power-to-Fight.jpg" alt="Power to Fight">
+            </div>
+
+            <div class="large-6 medium-12 small-12 columns">
+              <p>With the POWER TO FIGHT initiative, we strive to inspire and encourage athletes who have been impacted by varying illnesses and diseases to fight for their lives and not be defined by their illness.</p>
+              <p>After learning of the fight of a local hero, the POWER TO GIVE Board voted unanimously to have the first POWER TO FIGHT campaign fight breast cancer.</p>
+              <p>In the spirit of FIGHT, our inaugural campaign centered on fighting Breast Cancer during Breast Cancer Awareness Month. In conjunction with POWERHANDZ Athletic Goods Company, the National Breast Cancer Foundation, and Michelle Zada (a former professional dancer with the Dallas Black Dance Theater who was diagnosed with Stage 4 Breast Cancer in May of 2015), we were able to team up and raise money to help Ms. Zada and FIGHT cancer. Fortunately, through our partner’s generosity, we were able to arrange that a percentage of the POWERHANDZ product sales during breast cancer awareness month (October 2015) would be donated to the National Breast Cancer Foundation and Ms. Zada.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="content animated fadeInUp" id="panel2-2">
+          <div class="row">
+
+            <div class="large-6 medium-12 small-12 columns">
+              <img src="{{ config.ASSET_BASE_URL }}/images/Boys-and-Girls-Club.jpg" alt="Power to Give">
+            </div>
+
+            <div class="large-6 medium-12 small-12 columns">
+              <p>POWER TO GIVE partnered with the Boys &amp; Girls Clubs of Greater Fort Worth for an initiative which will impact the Panther Club who service youth ages 6-24 years of age.</p>
+              <p>Through our continued collaboration, POWER TO GIVE provides enriching programs for youth from disadvantaged circumstances to develop the qualities needed to become responsible citizens. The first of many projects include building and equipping the club with the resources needed to launch their very own youth basketball program. The program will help youth toward a positive future full of confidence, motivation, creativity, teamwork, leadership, and valuable life principles.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="content animated fadeInUp active" id="panel2-3">
+          <div class="row">
+            <div class="large-6 medium-12 small-12 columns">
+              <img src="{{ config.ASSET_BASE_URL }}/images/Holiday.jpg" alt="POWERHANDZ Holiday">
+            </div>
+
+            <div class="large-6 medium-12 small-12 columns">
+              <p>Power to Give Partners with The Panther Club of Fort Worth, a service organization, made up of young professionals, raising money for Boys &amp; Girls Clubs, to host their annual “Christmas for Kids” party for children from The Boys &amp; Girls Clubs. This popular Program is held in December, and consists of the Boys and Girls Club (Panther Club members), Power To Give, donors, and friends who will sponsor a Boys &amp; Girls Clubs youth for Christmas. At the event, the kids will receive gifts which they have requested yet their families may not be able to provide or afford.</p>
+              <p>On thinight the Panther Club members, The Power To Give Foundation, donors, and friends of the Boys and Girls Clubs will do more than hand out gifts, we will interact with the children and provide them with a wonderful evening of Santa Clause, Presents, Food, and Fun. It will truly get you in the spirit!</p>
+              <p>For more information, please contact the POWER TO GIVE FOUNDATION.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row stretched" data-equalizer="fr9bcz-equalizer" data-resize="dwmhtx-eq" data-mutate="b2mlyd-eq" data-events="mutate">
+
+  <div class="small-12 medium-12 large-4 columns noPadding">
+    <div class="teamBoxed" data-equalizer-watch="" style="height: 615px;">
+      <div>
+        <img src="{{ config.ASSET_BASE_URL }}/images/DanyelJonesBio.jpg" alt="">
+      </div>
+      <div class="memberBio">
+        <h6>DANYEL SURRENCY-JONES</h6>
+        <span class="smallText">Founder, Board Chair and President</span>
+        <div class="dividerBlack"></div>
+        <div class="socialIcons">
+          <ul class="inline-list">
+            <li><a href="https://twitter.com/POWERHANDZ"><span class="icon-twitter"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="small-12 medium-12 large-4 columns noPadding">
+    <div class="teamBoxed" data-equalizer-watch="" style="height: 615px;">
+      <div>
+        <img src="{{ config.ASSET_BASE_URL }}/images/DarnellJonesBio.jpg" alt="">
+      </div>
+      <div class="memberBio">
+        <h6>Darnell Jones</h6>
+        <span class="smallText">Founder, Board Director and Treasurer</span>
+        <div class="dividerBlack"></div>
+        <div class="socialIcons">
+          <ul class="inline-list">
+            <li><a href="https://twitter.com/POWERHANDZ"><span class="icon-twitter"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="small-12 medium-12 large-4 columns noPadding">
+    <div class="teamBoxed" data-equalizer-watch="" style="height: 615px;">
+      <div>
+        <img src="{{ config.ASSET_BASE_URL }}/images/fred-brown-image.jpg" alt="">
+      </div>
+      <div class="memberBio">
+        <h6>Fred Brown</h6>
+        <span class="smallText">Vice Chair and Secretary</span>
+        <div class="dividerBlack"></div>
+        <div class="socialIcons">
+          <ul class="inline-list">
+            <li><a href="https://twitter.com/POWERHANDZ"><span class="icon-twitter"></span></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+{% include 'includes/programs.html' %}
+{% include 'includes/testimonials.html' %}
+
+<!-- CTA Section Starts -->
+<div class="bgColor">
+  <div class="row padding cta">
+    <div class="small-12 medium-10 large-8 small-centered columns">
+      <h4 class="text-center">Are you ready to take your game to the next level?</h4>
+      <div class="row ctaBtns">
+        <div class="small-8 medium-5 large-4 small-centered columns wow fadeInUp">
+          <a href="https://shop.powerhandz.com" class="button expanded btnBlack">SHOP NOW</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CTA Section Ends -->
+
+<script type="text/javascript">
+
+$(document).ready(function () {
+
+    $('#heroSlider').pogoSlider({
+        autoplay: false,
+        pauseOnHover: true,
+        displayProgess: false,
+        preserveTargetSize: false,
+        targetHeight: 4300,
+        responsive: true
+    }).data('plugin_pogoSlider');
+
+});
+
+
+</script>
+{% include 'includes/press.html' %}
+{% endblock %}
