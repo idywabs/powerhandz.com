@@ -38,7 +38,7 @@ def affiliate_application():
     if request.method == 'POST':
         if form.validate():
             msg = Message(
-                    'POWERHANDZ Affiliate Application',
+                    'POWERHANDZ Affiliate Application ' + str(datetime.utcnow()) + ' UTC',
                     sender=form.email.data,
                     recipients=[app.config['AFFILIATE_APPLICATION_RECIPIENT']])
             msg.body = 'This message was automatically generated from %s.\n\n'\
@@ -72,7 +72,7 @@ def contact():
     if request.method == 'POST':
         if form.validate():
             msg = Message(
-                    'POWERHANDZ Contact Form',
+                    'POWERHANDZ Contact Form ' + str(datetime.utcnow()) + ' UTC',
                     sender=form.email.data,
                     recipients=[app.config['CONTACT_FORM_RECIPIENT']])
             msg.body = 'This message was automatically generated from %s.\n\n'\
@@ -147,7 +147,7 @@ def returns():
     if request.method == 'POST':
         if form.validate():
             msg = Message(
-                    'POWERHANDZ Return Form',
+                    'POWERHANDZ Return Request ' + str(datetime.utcnow()) + ' UTC',
                     sender=app.config['RETURN_FORM_SENDER'],
                     recipients=[app.config['RETURN_FORM_RECIPIENT']])
             msg.body = 'This message was automatically generated from %s.\n\n'\
@@ -176,12 +176,12 @@ def returns():
     elif request.method == 'GET':
         return render_template('returns.html', form=form)
 
-#@app.route('/return-shipping', methods=['GET', 'POST'])
-#def return_shipping():
-#    if request.method == 'POST':
-#        return render_template('return-shipping.html')
-#    else:
-#        return render_template('return-shipping.html')
+@app.route('/return-shipping', methods=['GET', 'POST'])
+def return_shipping():
+    if request.method == 'POST':
+        return render_template('return-shipping.html')
+    else:
+        return render_template('return-shipping.html')
 
 @app.route('/softball')
 def softball():
@@ -222,9 +222,9 @@ def redirect_ourtime():
 def redirect_powertogive():
     return redirect(app.config['SITE_URL'] + '/power-to-give', 301)
 
-@app.route('/return-shipping')
-def return_shipping():
-    return redirect('https://secure.powerhandz.com/product/return-shipping', 302)
+# @app.route('/return-shipping')
+# def return_shipping():
+#     return redirect('https://secure.powerhandz.com/product/return-shipping', 302)
 
 @app.route('/shop')
 def redirect_shop():
