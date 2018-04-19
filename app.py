@@ -3,6 +3,7 @@ from forms import AffiliateApplication, ContactForm, ReturnForm
 from flask_mail import Attachment, Message, Mail
 from datetime import datetime
 from werkzeug.utils import secure_filename
+import stripe
 
 # Initialization
 
@@ -13,6 +14,8 @@ app.config.from_pyfile('config.py')
 
 mail = Mail()
 mail.init_app(app)
+
+stripe.api_key = app.config['STRIPE_SECRET_KEY']
 
 @app.context_processor
 def inject_now():
@@ -178,10 +181,44 @@ def returns():
 
 @app.route('/return-shipping', methods=['GET', 'POST'])
 def return_shipping():
-    if request.method == 'POST':
+    if request.method == 'GET':
         return render_template('return-shipping.html')
     else:
-        return render_template('return-shipping.html')
+        amount = 1000
+        error = None
+
+        try:
+            charge = stripe.Charge.create(
+                amount=amount,
+                currency='usd',
+                description='POWERHANDZ Restocking Fee',
+                source=request.form['stripeToken']
+            )
+
+            return render_template('return-shipping.html', success=True)
+        except stripe.error.CardError, e:
+            error = e.json_body['error']['message']
+            pass
+        except stripe.error.RateLimitError, e:
+            error = e.json_body['error']['message']
+            pass
+        except stripe.error.InvalidRequestError, e:
+            error = e.json_body['error']['message']
+            pass
+        except stripe.error.AuthenticationError, e:
+            error = e.json_body['error']['message']
+            pass
+        except stripe.error.APIConnectionError, e:
+            error = e.json_body['error']['message']
+            pass
+        except stripe.error.StripeError, e:
+            error = e.json_body['error']['message']
+            pass
+        except Exception, e:
+            error = e.json_body['error']['message']
+            pass
+
+        return render_template('return-shipping.html', success=False, error=error)
 
 @app.route('/softball')
 def softball():
