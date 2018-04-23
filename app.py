@@ -38,11 +38,13 @@ def affiliates():
 @app.route('/affiliate-application', methods=['GET', 'POST'])
 def affiliate_application():
     form = AffiliateApplication()
-    if request.method == 'POST':
+    if request.method == 'GET':
+        return render_template('affiliate-application.html', form=form)
+    else:
         if form.validate():
             msg = Message(
                     'POWERHANDZ Affiliate Application ' + str(datetime.utcnow()) + ' UTC',
-                    sender=form.email.data,
+                    sender=app.config['DEFAULT_SENDER_ADDRESS'],
                     recipients=[app.config['AFFILIATE_APPLICATION_RECIPIENT']])
             msg.body = 'This message was automatically generated from %s.\n\n'\
                     % (app.config['SITE_URL'] + request.path)
@@ -54,8 +56,6 @@ def affiliate_application():
         else:
             flash('All fields are required.')
             return render_template('affiliate-application.html', form=form)
-    elif request.method == 'GET':
-        return render_template('affiliate-application.html', form=form)
 
 @app.route('/baseball')
 def baseball():
@@ -72,11 +72,13 @@ def boxing_mma():
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
     form = ContactForm()
-    if request.method == 'POST':
+    if request.method == 'GET':
+        return render_template('contact.html', form=form)
+    else:
         if form.validate():
             msg = Message(
                     'POWERHANDZ Contact Form ' + str(datetime.utcnow()) + ' UTC',
-                    sender=form.email.data,
+                    sender=app.config['DEFAULT_SENDER_ADDRESS'],
                     recipients=[app.config['CONTACT_FORM_RECIPIENT']])
             msg.body = 'This message was automatically generated from %s.\n\n'\
                     % (app.config['SITE_URL'] + request.path)
@@ -88,8 +90,6 @@ def contact():
         else:
             flash('All fields are required.')
             return render_template('contact.html', form=form)
-    else:
-        return render_template('contact.html', form=form)
 
 @app.route('/events')
 def events():
@@ -147,11 +147,13 @@ def return_policy():
 @app.route('/returns', methods=['GET', 'POST'])
 def returns():
     form = ReturnForm()
-    if request.method == 'POST':
+    if request.method == 'GET':
+        return render_template('returns.html', form=form)
+    else:
         if form.validate():
             msg = Message(
                     'POWERHANDZ Return Request ' + str(datetime.utcnow()) + ' UTC',
-                    sender=app.config['RETURN_FORM_SENDER'],
+                    sender=app.config['DEFAULT_SENDER_ADDRESS'],
                     recipients=[app.config['RETURN_FORM_RECIPIENT']])
             msg.body = 'This message was automatically generated from %s.\n\n'\
                     % (app.config['SITE_URL'] + request.path)
@@ -176,49 +178,105 @@ def returns():
         else:
             flash('All fields are required.')
             return render_template('returns.html', form=form)
-    elif request.method == 'GET':
-        return render_template('returns.html', form=form)
 
 @app.route('/return-shipping', methods=['GET', 'POST'])
 def return_shipping():
+    form = ReturnForm(prefix="returns")
     if request.method == 'GET':
-        return render_template('return-shipping.html')
+        return render_template('return-shipping.html', form=form)
     else:
-        amount = 1000
         error = None
 
-        try:
-            charge = stripe.Charge.create(
-                amount=amount,
-                currency='usd',
-                description='POWERHANDZ Restocking Fee',
-                source=request.form['stripeToken']
-            )
+        if form.validate():
+            amount = 1000
+            notify = False
 
-            return render_template('return-shipping.html', success=True)
-        except stripe.error.CardError, e:
-            error = e.json_body['error']['message']
-            pass
-        except stripe.error.RateLimitError, e:
-            error = e.json_body['error']['message']
-            pass
-        except stripe.error.InvalidRequestError, e:
-            error = e.json_body['error']['message']
-            pass
-        except stripe.error.AuthenticationError, e:
-            error = e.json_body['error']['message']
-            pass
-        except stripe.error.APIConnectionError, e:
-            error = e.json_body['error']['message']
-            pass
-        except stripe.error.StripeError, e:
-            error = e.json_body['error']['message']
-            pass
-        except Exception, e:
-            error = e.json_body['error']['message']
-            pass
+            try:
+                charge = stripe.Charge.create(
+                    amount=amount,
+                    currency='usd',
+                    description='POWERHANDZ Restocking Fee',
+                    source=request.form['stripeToken']
+                )
 
-        return render_template('return-shipping.html', success=False, error=error)
+                msg = Message(
+                        'POWERHANDZ Return Request ' + str(datetime.utcnow()) + ' UTC',
+                        sender=app.config['DEFAULT_SENDER_ADDRESS'],
+                        recipients=[app.config['RETURN_FORM_RECIPIENT']])
+                msg.body = 'This message was automatically generated from %s.\n\n'\
+                        % (app.config['SITE_URL'] + request.path)
+                for field in form:
+                    if field.type not in [
+                            'CSRFTokenField',
+                            'FileField',
+                            'FormField',
+                            'SubmitField']:
+                        msg.body += '%s: %s\n' % (field.label.text, field.data)
+                    elif field.type == 'FormField':
+                        for subfield in field:
+                            msg.body += '%s: %s\n' % (subfield.label.text, subfield.data)
+                    elif field.type == 'FileField':
+                        for file_object in request.files.getlist(field.name):
+                            msg.attach(
+                                    secure_filename(file_object.filename),
+                                    file_object.headers['Content-Type'],
+                                    file_object.read())
+                msg.body += '\nSuccessful charge: %s' % charge.id
+                mail.send(msg)
+
+                return render_template('return-shipping.html', form=form, success=True)
+            except stripe.error.CardError, e:
+                error = e.json_body['error']['message']
+                pass
+            except stripe.error.RateLimitError, e:
+                error = e.json_body['error']['message']
+                pass
+            except stripe.error.InvalidRequestError, e:
+                error = e.json_body['error']['message']
+                pass
+            except stripe.error.AuthenticationError, e:
+                error = e.json_body['error']['message']
+                pass
+            except stripe.error.APIConnectionError, e:
+                error = e.json_body['error']['message']
+                notify = True
+                pass
+            except stripe.error.StripeError, e:
+                error = e.json_body['error']['message']
+                notify = True
+                pass
+            except Exception, e:
+                error = 'There was an unexpected error. Please try again later.'
+                notify = True
+                raise
+
+            if notify:
+                msg = Message(
+                        'Error: POWERHANDZ Return Request',
+                        sender=app.config['DEFAULT_SENDER_ADDRESS'],
+                        recipients=[app.config['DEFAULT_ERROR_NOTIFICATION_ADDRESS']])
+                msg.body = 'This message was automatically generated from %s.\n\n'\
+                        % (app.config['SITE_URL'] + request.path)
+                msg.body += 'Error Message: %s\n\n' % error
+                for field in form:
+                    if field.type not in [
+                            'CSRFTokenField',
+                            'FileField',
+                            'FormField',
+                            'SubmitField']:
+                        msg.body += '%s: %s\n' % (field.label.text, field.data)
+                    elif field.type == 'FormField':
+                        for subfield in field:
+                            msg.body += '%s: %s\n' % (subfield.label.text, subfield.data)
+                    elif field.type == 'FileField':
+                        for file_object in request.files.getlist(field.name):
+                            msg.attach(
+                                    secure_filename(file_object.filename),
+                                    file_object.headers['Content-Type'],
+                                    file_object.read())
+                mail.send(msg)
+
+        return render_template('return-shipping.html', form=form, success=False, error=error)
 
 @app.route('/softball')
 def softball():
@@ -258,10 +316,6 @@ def redirect_ourtime():
 @app.route('/powertogive')
 def redirect_powertogive():
     return redirect(app.config['SITE_URL'] + '/power-to-give', 301)
-
-# @app.route('/return-shipping')
-# def return_shipping():
-#     return redirect('https://secure.powerhandz.com/product/return-shipping', 302)
 
 @app.route('/shop')
 def redirect_shop():

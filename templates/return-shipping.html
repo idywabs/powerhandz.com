@@ -65,14 +65,14 @@
       background-color: #fefde5 !important;
     }
 
-    .stripe-error {
+    .box-error {
       color: white;
       padding: 10px;
       background: #dc3545;
       margin-bottom: 25px;
     }
 
-    .stripe-success {
+    .box-success {
       color: white;
       padding: 10px;
       background: green;
@@ -96,29 +96,129 @@
         <div class="small-12 medium-12 large-12 columns">
           <div id="contact" class="">
             {% if error %}
-              <div class="stripe-error">{{ error }}</div>
+              <div class="box-error">{{ error }}</div>
             {% endif %}
+
             {% if success %}
-              <div class="stripe-success">Your card was successfully charged!</div>
+              <div class="box-success">Thank you for your submission. Your card was successfully charged!</div>
+            {% endif %}
+
+            {% if form.errors %}
+                <ul class="errors" style="list-style-type: none; padding: 0; margin:0; margin-bottom: 25px;">
+                {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+                    {% if field_errors is mapping %}
+                        {% for subfield_name, subfield_errors in field_errors|dictsort if subfield_errors %}
+                            {% for error in subfield_errors %}
+                                <li class="box-error">{{ error }}</li>
+                            {% endfor %}
+                        {% endfor %}
+                    {% else %}
+                        {% for error in field_errors %}
+                            <li class="box-error">{{ error }}</li>
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+                </ul>
             {% endif %}
             <script src="https://js.stripe.com/v3/"></script>
-            <form action="{{ url_for('return_shipping') }}" method="post" id="payment-form">
+            <p>If you have returns, please send them to:</p>
+
+            <p>
+            Fulfillment Center<br>
+            Attention: POWERHANDZ Returns/Exchanges<br>
+            11212 Indian Trail<br>
+            Dallas, Texas 75229<br><br>
+            </p>
+
+            <form action="{{ url_for('return_shipping') }}" id="payment-form" method="post" enctype="multipart/form-data">
+              {{ form.csrf_token }}
+
+              <div class="row">
+                <div class="large-6 columns">
+                  {{ form.first_name }}
+                </div>
+                <div class="large-6 columns">
+                  {{ form.last_name }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-6 columns">
+                  {{ form.email }}
+                </div>
+                <div class="large-6 columns">
+                  {{ form.phone_number }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  {{ form.order_number }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  {{ form.address.address_line_1 }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  {{ form.address.address_line_2 }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-3 columns">
+                  {{ form.address.city }}
+                </div>
+                <div class="large-3 columns">
+                  {{ form.address.state }}
+                </div>
+                <div class="large-3 columns">
+                  {{ form.address.zip_code }}
+                </div>
+                <div class="large-3 columns">
+                  {{ form.address.country }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  <p>Select all that apply:</p>
+                  {{ form.is_damaged }} {{ form.is_damaged.label }}<br>
+                  {{ form.is_wrong_size }} {{ form.is_wrong_size.label }}<br>
+                  {{ form.is_wrong_quantity }} {{ form.is_wrong_quantity.label }}<br>
+                  {{ form.is_no_exchange }} {{ form.is_no_exchange.label }}<br>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  {{ form.product_image }}
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="large-12 columns">
+                  {{ form.additional_notes }}
+                </div>
+              </div>
+
               <div class="form-row">
-                <label for="card-element">
-                  Credit or debit card
-                </label>
+                <label for="card-element">Credit or Debit Card</label>
                 <div class="row">
-                  <div class="large-8 column">
+                  <div class="large-12 column">
                     <div id="card-element"></div>
                   </div>
-                  <div class="large-4 column">
-                    <input type="submit" name="submit_button" value="Pay $10" class="btn btn-black">
-                  </div>
                 </div>
-
                 <div id="card-errors" role="alert"></div>
               </div>
-                <br>
+              <br><br>
+
+              <em>By submitting this form, you authorize POWERHANDZ to charge your card a $10.00 restocking fee.</em><br><br>
+              {{ form.submit(class_="button btnBlack") }}
             </form>
             <script>
             // Create a Stripe client.

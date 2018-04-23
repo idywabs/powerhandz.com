@@ -41,6 +41,19 @@
       font-size: 12px;
       margin-bottom: 0;
     }
+    .box-error {
+      color: white;
+      padding: 10px;
+      background: #dc3545;
+      margin-bottom: 25px;
+    }
+
+    .box-success {
+      color: white;
+      padding: 10px;
+      background: green;
+      margin-bottom: 25px;
+    }
     </style>
 
     <div class="animsition">
@@ -59,19 +72,25 @@
         <div class="small-12 medium-12 large-12 columns">
           <div id="contact" class="">
             {% if success %}
-            <div style="background: green; color: white; padding: 10px; margin:0; margin-bottom: 25px;">
-              Thank you for your submission. We'll get back to you shortly.
-            </div>
+            <div class="box-success">Thank you for your submission. We'll get back to you shortly.</div>
             {% endif %}
 
             {% if form.errors %}
-            <ul class="errors" style="list-style-type: none; padding: 0; margin:0; margin-bottom: 25px;">
-            {% for field_name, field_errors in form.errors|dictsort if field_errors %}
-            {% for error in field_errors %}
-              <li style="background: #dc3545; color: white; padding: 10px; margin-bottom: 5px;">{{ error }}</li>
-            {% endfor %}
-            {% endfor %}
-            </ul>
+                <ul class="errors" style="list-style-type: none; padding: 0; margin:0; margin-bottom: 25px;">
+                {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+                    {% if field_errors is mapping %}
+                        {% for subfield_name, subfield_errors in field_errors|dictsort if subfield_errors %}
+                            {% for error in subfield_errors %}
+                                <li class="box-error">{{ error }}</li>
+                            {% endfor %}
+                        {% endfor %}
+                    {% else %}
+                        {% for error in field_errors %}
+                            <li class="box-error">{{ error }}</li>
+                        {% endfor %}
+                    {% endif %}
+                {% endfor %}
+                </ul>
             {% endif %}
 
             <p>If you have returns, please send them to:</p>

@@ -56,7 +56,7 @@ class AddressForm(Form):
                     (u'Australia', u'Australia'),
                     (u'Austria', u'Austria'),
                     (u'Azerbaijan', u'Azerbaijan'),
-                    (u'Bahamas, uThe', 'Bahamas, The'),
+                    (u'Bahamas, The', 'Bahamas, The'),
                     (u'Bahrain', u'Bahrain'),
                     (u'Bangladesh', u'Bangladesh'),
                     (u'Barbados', u'Barbados'),
@@ -67,7 +67,7 @@ class AddressForm(Form):
                     (u'Bermuda', u'Bermuda'),
                     (u'Bhutan', u'Bhutan'),
                     (u'Bolivia', u'Bolivia'),
-                    (u'Bonaire, uSaint Eustatius and Saba', 'Bonaire, Saint Eustatius and Saba'),
+                    (u'Bonaire, Saint Eustatius and Saba', 'Bonaire, Saint Eustatius and Saba'),
                     (u'Bosnia and Herzegovina', u'Bosnia and Herzegovina'),
                     (u'Botswana', u'Botswana'),
                     (u'Bouvet Island', u'Bouvet Island'),
@@ -91,7 +91,7 @@ class AddressForm(Form):
                     (u'Colombia', u'Colombia'),
                     (u'Comoros', u'Comoros'),
                     (u'Congo', u'Congo'),
-                    (u'Congo, uThe Democratic Republic of the', 'Congo, The Democratic Republic of the'),
+                    (u'Congo, The Democratic Republic of the', 'Congo, The Democratic Republic of the'),
                     (u'Cook Islands', u'Cook Islands'),
                     (u'Costa Rica', u'Costa Rica'),
                     (u'Cote D\'ivoire', u'Cote D\'ivoire'),
@@ -119,7 +119,7 @@ class AddressForm(Form):
                     (u'French Polynesia', u'French Polynesia'),
                     (u'French Southern Territories', u'French Southern Territories'),
                     (u'Gabon', u'Gabon'),
-                    (u'Gambia, uThe', 'Gambia, The'),
+                    (u'Gambia, The', 'Gambia, The'),
                     (u'Georgia', u'Georgia'),
                     (u'Germany', u'Germany'),
                     (u'Ghana', u'Ghana'),
@@ -155,7 +155,7 @@ class AddressForm(Form):
                     (u'Kazakhstan', u'Kazakhstan'),
                     (u'Kenya', u'Kenya'),
                     (u'Kiribati', u'Kiribati'),
-                    (u'Korea, uRepublic of', 'Korea, Republic of'),
+                    (u'Korea, Republic of', 'Korea, Republic of'),
                     (u'Kosovo', u'Kosovo'),
                     (u'Kuwait', u'Kuwait'),
                     (u'Kyrgyzstan', u'Kyrgyzstan'),
@@ -169,7 +169,7 @@ class AddressForm(Form):
                     (u'Lithuania', u'Lithuania'),
                     (u'Luxembourg', u'Luxembourg'),
                     (u'Macao', u'Macao'),
-                    (u'Macedonia, uThe Former Yugoslav Republic of', 'Macedonia, The Former Yugoslav Republic of'),
+                    (u'Macedonia, The Former Yugoslav Republic of', 'Macedonia, The Former Yugoslav Republic of'),
                     (u'Madagascar', u'Madagascar'),
                     (u'Malawi', u'Malawi'),
                     (u'Malaysia', u'Malaysia'),
@@ -182,8 +182,8 @@ class AddressForm(Form):
                     (u'Mauritius', u'Mauritius'),
                     (u'Mayotte', u'Mayotte'),
                     (u'Mexico', u'Mexico'),
-                    (u'Micronesia, uFederated States of', 'Micronesia, Federated States of'),
-                    (u'Moldova, uRepublic of', 'Moldova, Republic of'),
+                    (u'Micronesia, Federated States of', 'Micronesia, Federated States of'),
+                    (u'Moldova, Republic of', 'Moldova, Republic of'),
                     (u'Monaco', u'Monaco'),
                     (u'Mongolia', u'Mongolia'),
                     (u'Montenegro', u'Montenegro'),
@@ -271,20 +271,22 @@ class AddressForm(Form):
                     (u'Ukraine', u'Ukraine'),
                     (u'United Arab Emirates', u'United Arab Emirates'),
                     (u'United Kingdom', u'United Kingdom'),
+                    (u'United States', u'United States'),
                     (u'United States Minor Outlying Islands', u'United States Minor Outlying Islands'),
                     (u'Uruguay', u'Uruguay'),
                     (u'Uzbekistan', u'Uzbekistan'),
                     (u'Vanuatu', u'Vanuatu'),
                     (u'Venezuela', u'Venezuela'),
                     (u'Vietnam', u'Vietnam'),
-                    (u'Virgin Islands, uBritish', 'Virgin Islands, British'),
-                    (u'Virgin Islands, uU.S.', 'Virgin Islands, U.S.'),
+                    (u'Virgin Islands, British', 'Virgin Islands, British'),
+                    (u'Virgin Islands, U.S.', 'Virgin Islands, U.S.'),
                     (u'Wallis and Futuna', u'Wallis and Futuna'),
                     (u'Western Sahara', u'Western Sahara'),
                     (u'Yemen', u'Yemen'),
                     (u'Zambia', u'Zambia'),
                     (u'Zimbabwe', u'Zimbabwe')],
-            render_kw={'placeholder': 'Address *'})
+            render_kw={'placeholder': 'Address *'},
+            default='United States')
 
 class AffiliateApplication(Form):
     name = TextField(
@@ -464,5 +466,5 @@ class ReturnForm(Form):
     additional_notes = TextAreaField(
             'Additional notes',
             render_kw={'placeholder': 'Additional Notes'})
-    submit = SubmitField('Send')
+    submit = SubmitField('Submit')
 
