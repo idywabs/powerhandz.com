@@ -460,6 +460,9 @@ class ReturnForm(Form):
     is_wrong_size = BooleanField('Wrong size')
     is_wrong_quantity = BooleanField('Received multiple')
     is_no_exchange = BooleanField('Return without exchange')
+    exchange_information = TextField(
+            'Exchange information',
+            render_kw={'placeholder': 'Please enter the size and type of the glove you would like for your exchange, if applicable.'})
     product_image = FileField(
             'Product Image (If Damaged):',
             render_kw={'multiple': True})
