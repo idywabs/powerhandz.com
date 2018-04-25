@@ -136,7 +136,11 @@ def power_to_give():
 def press():
     return render_template('press.html')
 
-@app.route('/resources')
+@app.route('/press/releases/2018-nfl-draft')
+def release_2018_nfl_draft():
+    return render_template('releases/2018-nfl-draft-release.html')
+
+@app.route('/press/resources')
 def resources():
     return render_template('resources.html')
 
@@ -316,6 +320,10 @@ def redirect_ourtime():
 @app.route('/powertogive')
 def redirect_powertogive():
     return redirect(app.config['SITE_URL'] + '/power-to-give', 301)
+
+@app.route('/resources')
+def redirect_resources():
+    return redirect(app.config['SITE_URL'] + '/press/resources', 301)
 
 @app.route('/shop')
 def redirect_shop():
