@@ -1,5 +1,5 @@
 from flask import Flask, render_template, redirect, request, send_from_directory, flash
-from forms import AffiliateApplication, ContactForm, ReturnForm
+from forms import AffiliateApplication, ContactForm, DrillForm, ReturnForm
 from flask_mail import Attachment, Message, Mail
 from datetime import datetime
 from werkzeug.utils import secure_filename
@@ -109,8 +109,25 @@ def football():
 
 @app.route('/football-training', methods=['GET', 'POST'])
 def football_training():
-    form = ContactForm()
-    return render_template('football-training.html', form=form)
+    form = DrillForm()
+    if request.method == 'GET':
+        return render_template('football-training.html', form=form)
+    else:
+        if form.validate():
+            msg = Message(
+                    'POWERHANDZ Drill Form ' + str(datetime.utcnow()) + ' UTC',
+                    sender=app.config['DEFAULT_SENDER_ADDRESS'],
+                    recipients=[app.config['DRILL_FORM_RECIPIENT']])
+            msg.body = 'This message was automatically generated from %s.\n\n'\
+                    % (app.config['SITE_URL'] + request.path)
+            for field in form:
+                if field.type not in ['CSRFTokenField', 'SubmitField']:
+                    msg.body += '%s: %s\n' % (field.label.text, field.data)
+            mail.send(msg)
+            return render_template('football-training.html', form=form, success=True)
+        else:
+            flash('All fields are required.')
+            return render_template('football-training.html', form=form)
 
 @app.route('/handz-of-the-future')
 def handz_of_the_future():

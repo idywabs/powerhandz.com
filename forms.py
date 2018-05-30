@@ -471,3 +471,25 @@ class ReturnForm(Form):
             render_kw={'placeholder': 'Additional Notes'})
     submit = SubmitField('Submit')
 
+class DrillForm(Form):
+    name = TextField(
+            'Full Name',
+            [
+                InputRequired('Please enter your full name.')
+            ],
+            render_kw={'placeholder': 'Full Name'})
+    email = TextField(
+            'Email',
+            [
+                InputRequired('Please enter your email address.'),
+                Email('Please enter a valid email address.')
+            ],
+            render_kw={'placeholder': 'Email Address'})
+    zip_code = TextField(
+            'Zip Code',
+            [
+                InputRequired('Please enter your zip code.'),
+            ],
+            render_kw={'placeholder': 'Zip Code'})
+    submit = SubmitField('Subscribe')
+
