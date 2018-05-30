@@ -6,7 +6,7 @@
 {% block content %}
   {% include 'includes/top-bar.html' %}
   <div class="heroWrapper relPosition">
-    <div class="heroSmallBlack relPosition" style="background-image: url('{{ config.ASSET_BASE_URL }}/images/football-hero.jpg');background-position: 50% 50%;">
+    <div class="heroSmallBlack relPosition" style="background-image: url('https://blog.powerhandz.com/wp-content/uploads/2017/08/44c60b2c-0f97-4292-8373-035d9b352cc6.jpeg');background-position: 50% 50%;">
       <div class="row">
         <div class="heroIntro padding horizontalCenter">
           <div class="small-10 medium-8 large-6 columns">
@@ -23,34 +23,25 @@
   </div>
 
   <div class="row">
-    <div class="small-12 large-10 large-centered">
-      <h2><a href="https://shop.powerhandz.com/collections/football">Use code NFL18 at checkout for a 10% off your purchase at shop.powerhandz.com</a></h2>
+    <div class="text-center">
+        <h2 style="background-color: rgba(191,155,65, 1); padding: 10px"><a style="color: white;" href="https://shop.powerhandz.com/collections/football">Use code <strong>NFL18</strong> at checkout for a 10% off your purchase at shop.powerhandz.com</a></h2>
     </div>
   </div>
 
   <div class="row">
-    <div class="small-12 large-10 large-centered">
+    <div class="text-center" style="padding: 50px 0;">
       <h2>Football Training Videos</h2>
       <h3>Powered by POWERHANDZ</h3>
+      <br><br><br>
       <div class="row">
-        <div class="small-12 large-6 large-centered">
+        <div class="large-6 columns">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Hm1f-OJP81M?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           <h3></h3>
           <h4></h4>
           <p></p>
         </div>
-        <div class="small-12 large-6 large-centered">
-          <h3></h3>
-          <h4></h4>
-          <p></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="small-12 large-6 large-centered">
-          <h3></h3>
-          <h4></h4>
-          <p></p>
-        </div>
-        <div class="small-12 large-6 large-centered">
+        <div class="large-6 columns">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/MNtODcuai2M?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           <h3></h3>
           <h4></h4>
           <p></p>
@@ -59,13 +50,38 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="small-12 large-10 large-centered">
+  <div style="background: black; padding: 25px;">
+    <div class="row text-center">
+      <h3 style="color: white; margin-bottom: 25px">Want more training drills? Let us know and we will send them to you.</h3>
+      {% if success %}
+      <div style="background: green; color: white; padding: 10px; margin:0; margin-bottom: 25px;">
+          Thank you for your message. We'll get back to you shortly.
+      </div>
+      {% endif %}
+
+      {% if form.errors %}
+      <ul class="errors" style="list-style-type: none; padding: 0; margin:0; margin-bottom: 25px;">
+      {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+        {% for error in field_errors %}
+          <li style="background: #dc3545; color: white; padding: 10px; margin-bottom: 5px;">{{ error }}</li>
+        {% endfor %}
+      {% endfor %}
+      </ul>
+      {% endif %}
       <form action="{{ url_for('football_training') }}" method="post">
-        {{ form.name }}
-        {{ form.email }}
-        {{ form.zip_code }}
-        {{ form.submit }}
+        {{ form.hidden_tag() }}
+        <div class="large-4 columns">
+          {{ form.name }}
+        </div>
+        <div class="large-4 columns">
+          {{ form.email }}
+        </div>
+        <div class="large-4 columns">
+          {{ form.zip_code }}
+        </div>
+        <div class="large-3 large-centered columns">
+          {{ form.submit }}
+        </div>
       </form>
     </div>
   </div>
