@@ -449,7 +449,7 @@ class ReturnForm(Form):
                 InputRequired('Please enter your email address.'),
             ],
             render_kw={'placeholder': 'Phone Number *'})
-    order_number = IntegerField(
+    order_number = TextField(
             'Order number',
             [
                 InputRequired('Please enter your order number.')
