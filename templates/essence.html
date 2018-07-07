@@ -1,0 +1,45 @@
+{% extends 'layouts/base.html' %}
+
+{% block meta_description %}{% endblock %}
+{% block meta_author %}POWERHANDZ{% endblock %}
+{% block title %}Essence | POWERHANDZ{% endblock %}
+{% block content %}
+  {% include 'includes/top-bar.html' %}
+
+  <div class="footerWrapper">
+    <div class="row text-center" style="background: black; padding: 25px;">
+      <h2 style="color: white; margin: 25px;">POWERHANDZ Essence</h2>
+      {% if success %}
+      <div style="background: green; color: white; padding: 10px; margin:0; margin-bottom: 25px;">
+          Thank you,  we'll get back to you shortly.
+      </div>
+      {% endif %}
+
+      {% if form.errors %}
+      <ul class="errors" style="list-style-type: none; padding: 0; margin:0; margin-bottom: 25px;">
+      {% for field_name, field_errors in form.errors|dictsort if field_errors %}
+        {% for error in field_errors %}
+          <li style="background: #dc3545; color: white; padding: 10px; margin-bottom: 5px;">{{ error }}</li>
+        {% endfor %}
+      {% endfor %}
+      </ul>
+      {% endif %}
+      <form action="{{ url_for('essence') }}" method="post">
+        {{ form.hidden_tag() }}
+        <div class="columns">
+          {{ form.name }}
+        </div>
+        <div class="columns">
+          {{ form.email }}
+        </div>
+        <div class="columns">
+          {{ form.zip_code }}
+        </div>
+        <div class="large-3 large-centered columns">
+          {{ form.submit }}
+        </div>
+      </form>
+    </div>
+  </div>
+
+{% endblock %}

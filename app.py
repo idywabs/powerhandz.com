@@ -91,6 +91,28 @@ def contact():
             flash('All fields are required.')
             return render_template('contact.html', form=form)
 
+@app.route('/essence', methods=['GET', 'POST'])
+def essence():
+    form = DrillForm()
+    if request.method == 'GET':
+        return render_template('essence.html', form=form)
+    else:
+        if form.validate():
+            msg = Message(
+                    'POWERHANDZ Essence Form ' + str(datetime.utcnow()) + ' UTC',
+                    sender=app.config['DEFAULT_SENDER_ADDRESS'],
+                    recipients=[app.config['DRILL_FORM_RECIPIENT']])
+            msg.body = 'This message was automatically generated from %s.\n\n'\
+                    % (app.config['SITE_URL'] + request.path)
+            for field in form:
+                if field.type not in ['CSRFTokenField', 'SubmitField']:
+                    msg.body += '%s: %s\n' % (field.label.text, field.data)
+            mail.send(msg)
+            return render_template('essence.html', form=form, success=True)
+        else:
+            flash('All fields are required.')
+            return render_template('essence.html', form=form)
+
 @app.route('/events')
 def events():
     return render_template('events.html')
