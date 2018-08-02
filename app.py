@@ -91,6 +91,10 @@ def contact():
             flash('All fields are required.')
             return render_template('contact.html', form=form)
 
+@app.route('/dawkins')
+def dawkins():
+    return render_template('dawkins.html')
+
 @app.route('/essence', methods=['GET', 'POST'])
 def essence():
     form = DrillForm()
