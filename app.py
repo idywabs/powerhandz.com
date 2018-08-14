@@ -57,6 +57,10 @@ def affiliate_application():
             flash('All fields are required.')
             return render_template('affiliate-application.html', form=form)
 
+@app.route('/back2school')
+def back_2_school():
+    return render_template('back_2_school.html')
+
 @app.route('/baseball')
 def baseball():
     return render_template('baseball.html')
